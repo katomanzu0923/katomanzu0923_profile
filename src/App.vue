@@ -1,28 +1,76 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <Header></Header>
+    <div class="top_button">
+      <button @click="currentComponet = 'Home'" class="home">Home</button>
+      <button @click="currentComponet = 'Programing'" class="programing">Programing</button>
+      <button @click="currentComponet = 'Products'" class="products">Products</button>
+      <button @click="currentComponet = 'WebDesign'" class="webdesign">WebDesign</button>
+      <button @click="currentComponet = 'AndMore'" class="more">And more</button>
+    </div>  
+      <component :is="currentComponet" class="co"></component>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Header from "./components/Header"
+import Programing from "./components/Programing"
+import Products from "./components/Products"
+import WebDesign from "./components/WebDesign"
+import AndMore from "./components/AndMore"
+import Home from "./components/Home"
 export default {
-  name: 'App',
+  data() {
+    return {
+      currentComponet: "Home"
+    };
+  },
   components: {
-    HelloWorld
+    Header,
+    Programing,
+    Products,
+    WebDesign,
+    AndMore,
+    Home
   }
-}
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+  * {
+    font-size: 2vh;
+  }
+
+  .home {
+    background-color: red;
+    display: block;
+    height: 20%;
+  }
+  .programing {
+    background-color: red;
+    display: block;
+  }
+  .roducts {
+    display: block;
+  }
+
+  .webdesign {
+    background-color: red;
+    display: block;
+  }
+
+  .more {
+    background-color: red;
+    display: block;
+  }
+
+  .co {
+    
+  }
+
+
+
+
+
+
 </style>

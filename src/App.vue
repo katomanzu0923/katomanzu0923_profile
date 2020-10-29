@@ -8,7 +8,9 @@
       <button @click="currentComponet = 'WebDesign'" class="webdesign">WebDesign</button>
       <button @click="currentComponet = 'AndMore'" class="more">And more</button>
     </div>  
+    <div>
       <component :is="currentComponet" class="co"></component>
+    </div>  
   </div>
 </template>
 
@@ -44,28 +46,41 @@ export default {
   .home {
     background-color: red;
     display: block;
-    height: 20%;
+    margin-top: 5%;
+    width: 20%;
   }
   .programing {
     background-color: red;
     display: block;
+    margin-top: 5%;
+    width: 20%;
   }
-  .roducts {
+  .products {
     display: block;
+    margin-top: 5%;
+    width: 20%;
   }
 
   .webdesign {
     background-color: red;
     display: block;
+    margin-top: 5%;
+    width: 20%;
+    
   }
 
   .more {
     background-color: red;
     display: block;
+    margin-top: 5%;
+    width: 20%;
   }
 
   .co {
-    
+    position: absolute;
+    right: 5%;
+    width: 70%;
+    top: 80px;
   }
 
 

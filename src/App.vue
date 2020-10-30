@@ -48,6 +48,7 @@ export default {
     display: block;
     margin-top: 5%;
     width: 20%;
+    top: 80px;
   }
   .programing {
     background-color: red;

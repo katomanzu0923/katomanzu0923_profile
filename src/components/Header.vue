@@ -23,7 +23,6 @@ export default {
 		left: 0;
 		top: 0;
 		text-align: center;
-
 	}
 	
 	

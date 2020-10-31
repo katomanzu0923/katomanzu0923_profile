@@ -1,11 +1,17 @@
 <template>
 	<div class="home_message">
-		<h1>作ったもの</h1>
-		<p>昨年からプログラミンを学びはじめました</p><br>
-		sonfafaoaifja
-		ajfaofjaofafjafjao
-		ffafaffafa
-		faaafafa
+		<h1>主な制作物</h1>
+		<div>
+			<h2>動的アプリケーション</h2>
+			<p>チケットマッチアプリケーション</p>
+		</div>
+		<div>
+			<h2>静的アプリケーション</h2>
+			<p>自己紹介アプリケーション</p>
+		</div>
+		<div>
+			<h2>and more</h2>
+		</div>
 	</div>
 </template>
 

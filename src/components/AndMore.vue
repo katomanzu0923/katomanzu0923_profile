@@ -1,11 +1,6 @@
 <template>
 	<div class="home_message">
 		<h1>and more</h1>
-		<p>昨年からプログラミンを学びはじめました</p><br>
-		sonfafaoaifja
-		ajfaofjaofafjafjao
-		ffafaffafa
-		faaafafa
 	</div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
   <div>
     <header class="header">
-      プログミング  {{ message }}日の学習記！！
+      プログラミング学びはじめて{{ message }}日
     </header>   
     <div class="top_button">
       <button @click="currentComponet = 'Home'; change_home()"  class="home">{{ home }}</button>
@@ -86,10 +86,10 @@ export default {
   .header {
 		width: 100%;
     height: 80px;
-   
     text-align: center;
     font-size: 3vw;
     padding: 2%;
+    background: #919cff;
 	}
   .header::after {
     content: "";
@@ -115,8 +115,8 @@ export default {
     padding: 0.5em 1em;
     text-decoration: none;
     background: #f7f7f7;
-    border-left: solid 6px #ff7c5c;/*左線*/
-    color: #ff7c5c;/*文字色*/
+    border-left: solid 6px #919cff;/*左線*/
+    color: #919cff;/*文字色*/
     font-weight: bold;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
     
@@ -126,7 +126,7 @@ export default {
     transform: translateY(2px);
   }
   .home:focus  {
-    background: #ff7c5c;
+    background: #919cff;
     border-left: solid 6px #f7f7f7;/*左線*/
     color: #f7f7f7;/*文字色*/
   }
@@ -157,8 +157,8 @@ export default {
     padding: 0.5em 1em;
     text-decoration: none;
     background: #f7f7f7;
-    border-left: solid 6px #ff7c5c;/*左線*/
-    color: #ff7c5c;/*文字色*/
+    border-left: solid 6px #7fe07b;/*左線*/
+    color: #7fe07b;/*文字色*/
     font-weight: bold;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
     margin-top: 5%;
@@ -169,7 +169,7 @@ export default {
     transform: translateY(2px);
   }
   .products:focus  {
-    background: #ff7c5c;
+    background: #7fe07b;
     border-left: solid 6px #f7f7f7;/*左線*/
     color: #f7f7f7;/*文字色*/
   }
@@ -179,8 +179,8 @@ export default {
     padding: 0.5em 1em;
     text-decoration: none;
     background: #f7f7f7;
-    border-left: solid 6px #ff7c5c;/*左線*/
-    color: #ff7c5c;/*文字色*/
+    border-left: solid 6px #7bd4e0;/*左線*/
+    color: #7bd4e0;/*文字色*/
     font-weight: bold;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
     margin-top: 5%;
@@ -191,7 +191,7 @@ export default {
     transform: translateY(2px);
   }
   .webdesign:focus  {
-    background: #ff7c5c;
+    background: #7bd4e0;
     border-left: solid 6px #f7f7f7;/*左線*/
     color: #f7f7f7;/*文字色*/
   }
@@ -201,8 +201,8 @@ export default {
     padding: 0.5em 1em;
     text-decoration: none;
     background: #f7f7f7;
-    border-left: solid 6px #ff7c5c;/*左線*/
-    color: #ff7c5c;/*文字色*/
+    border-left: solid 6px #f691fa;/*左線*/
+    color: #f691fa;/*文字色*/
     font-weight: bold;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
     margin-top: 5%;
@@ -213,7 +213,7 @@ export default {
     transform: translateY(2px);
   }
   .more:focus  {
-    background: #ff7c5c;
+    background: #f691fa;
     border-left: solid 6px #f7f7f7;/*左線*/
     color: #f7f7f7;/*文字色*/
   }

@@ -3,19 +3,69 @@
 		<h2>動的アプリケーション</h2>
 		<div class="html">
 			<div class="html_main">
-				yamada
-			</div>
+					Train Matching
+				</div>
+				<div class="readmore">
+					私がHTMLで学んだことは以下のことです。<br>
+					そのため此のときに此のようなことに苦労しました<br>
+				</div>
+				<div class="readmore">	
+          <input id="check1" class="readmore-check" type="checkbox">
+          <div class="readmore-content">
+          <span class="aa" v-bind:class='{active:isActiveProduct01}'>
+          <div class="sub-message-none" v-bind:class='{sub:isActiveProduct01}'>
+						
+					</div>
+					<br>
+					また、HTMLを学んだ理由としては</span><br>
+					そのため此のときに此のようなことに苦労しました<br>
+					頑張ろうと思いました。<br>
+					また、HTMLを学んだ理由としては
+          </div>
+          <label v-on:click='isActiveProduct01=!isActiveProduct01' class="readmore-label" for="check1">
+					</label>
+        </div>
 		</div>
 		<h2>静的アプリケーション</h2>
 		<div class="html">
 			<div class="html_main">
-				aaaa
-			</div>
+					Train Matching
+				</div>
+				<div class="readmore">
+					私がHTMLで学んだことは以下のことです。<br>
+					そのため此のときに此のようなことに苦労しました<br>
+				</div>
+				<div class="readmore">	
+          <input id="check2" class="readmore-check" type="checkbox">
+          <div class="readmore-content">
+          <span class="aa" v-bind:class='{active:isActiveProduct02}'>
+          <div class="sub-message-none" v-bind:class='{sub:isActiveProduct02}'>
+						工夫した点
+					</div>
+					<br>
+					また、HTMLを学んだ理由としては</span><br>
+					そのため此のときに此のようなことに苦労しました<br>
+					頑張ろうと思いました。<br>
+					また、HTMLを学んだ理由としては
+          </div>
+          <label v-on:click='isActiveProduct02=!isActiveProduct02' class="readmore-label" for="check2">
+					</label>
+        </div>
 		</div>
 		<h2>and more</h2>
 	</div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      isActiveProduct01: false,
+      isActiveProduct02: false
+    }
+  }
+}
+</script>
 <style scoped>
   .home_message {
 		position: absolute;
@@ -75,4 +125,88 @@
 		text-align: start;
 		color: #7fe07b;
 	}
+	.readmore{
+    position: relative;
+    box-sizing: border-box;
+    /*以下お好み*/
+    /* ボーダーを付ける場合 */
+    padding: 10px;
+    border: 1px solid #CCC;
+		text-align: start;
+		color: #7fe07b;
+}
+.readmore-content{
+    position: relative;
+    overflow: hidden;
+    /*以下お好み*/
+    /*高さの初期値*/
+    height: 20px;
+}
+.readmore-content::before {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    content: "";
+    height: 50px;
+    background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 10%, rgba(255,255,255,0.8) 10%, #fff 100%);
+    background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 10%, #fff 10%);
+}
+.readmore-label{
+    display: table;
+    bottom: 5px;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+		width: 60%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    margin: 0 auto;
+    z-index: 2;
+    padding: 0 10px;
+    background-color: #1bdf14;
+    border-radius: 10px;
+		text-align: center;
+		color: #f7f7f7;
+}
+.readmore-label:before{
+    content: '↓作成したアプリの詳細↓';
+}
+.readmore-check{
+    display: none;
+}
+.readmore-check:checked ~ .readmore-label{
+    position: static;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+.readmore-check:checked ~ .readmore-label:before{
+    content: '閉じる';
+}
+.readmore-check:checked ~ .readmore-content{
+    height: auto;
+}
+.readmore-check:checked ~ .readmore-content::before {
+    display: none;
+}
+.sub-message-none {
+	filter: opacity(0%);
+}
+.sub {
+	filter: opacity(100%);
+	color: #1bdf14;
+	text-align: center;
+}
 </style>
+
+
+<img src="@/assets/n_icon_info.png" class="f">
+          <div class="home_profile_left_content">
+            <div class="right">
+              <a href="mailto:katomanzu86@gmail.com"><img src="@/assets/download.png" class="ff"></a>
+            </div>
+            <div class="left">
+              <a href="https://github.com/katomanzu0923"><img src="@/assets/download.png" alt="次へ" class="ff"></a>
+            </div>
+          </div>

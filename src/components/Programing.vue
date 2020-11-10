@@ -7,20 +7,15 @@
 					HTML
 				</div>
 				<div class="readmore">
-					私がHTMLで学んだことは以下のことです。<br>
-					そのため此のときに此のようなことに苦労しました<br>
+					私がHTMLにおいてHTMLの基礎的な文法や役割を学びました。<br>
+					ブロック要素とインライン要素の積木法則、brを用いた改行、aタグやbuttonタグなど頻繁に使われる文法を習得しました。<br>
 				</div>
 				<div class="readmore">	
           <input id="check1" class="readmore-check" type="checkbox">
           <div class="readmore-content">
-          <span class="aa" v-bind:class='{active:isActive01}'>
-					<br>
-					また、HTMLを学んだ理由としては</span><br>
-					そのため此のときに此のようなことに苦労しました<br>
-					頑張ろうと思いました。<br>
-					また、HTMLを学んだ理由としては
+            <span class="aa" v-bind:class='{active:isActiveHtml}'><div class="sub-message-none" v-bind:class='{sub:isActiveHtml}'>工夫した点</div><br>HTMLを学ぶ際に工夫した点はコードの可読性です。</span><br>属性名を後で読んでもわかるように記述することによって再現性の高いコードを記述することができました。<br>
           </div>
-          <label v-on:click='isActive01=!isActive01' class="readmore-label" for="check1">
+          <label v-on:click='isActiveHtml=!isActiveHtml' class="readmore-label" for="check1">
 					</label>
         </div>
 			</div>
@@ -29,40 +24,32 @@
 					CSS
 				</div>
 				<div class="readmore">
-					私がHTMLで学んだことは以下のことです。<br>
-					そのため此のときに此のようなことに苦労しました<br>
+					私がCSSにおいて基本的な文法を学びました。<br>
+					HTMLの基本的な装飾、ブレイクポイントを用いたモバイル対応、擬似要素を用いた複雑なマークアップ手法を学びました。<br>
 				</div>	
 				<div class="readmore">
           <input id="check2" class="readmore-check" type="checkbox">
           <div class="readmore-content">
-          <span class="aa" v-bind:class='{active:isActive01}'>
-					<br>
-					また、HTMLを学んだ理由としては</span><br>
-					そのため此のときに此のようなことに苦労しました<br>
-					頑張ろうと思いました。<br>
-					また、HTMLを学んだ理由としては
+            <span class="aa" v-bind:class='{active:isActiveCss}'><div class="sub-message-none" v-bind:class='{sub:isActiveCss}'>工夫した点</div><br>CSSを学ぶ際に工夫したことは親子関係への意識です。</span><br>親子関係をしっかりと意識することでHTMLを適切に装飾するだけでなく、無駄なコード記述を減らすことができ、より可読性の高いコードを記述することが可能になりました。<br>
           </div>
-          <label v-on:click='isActive01=!isActive01' class="readmore-label" for="check2">
+          <label v-on:click='isActiveCss=!isActiveCss' class="readmore-label" for="check2">
 					</label>
         </div>
 			</div>
 			<div class="scss">
-				<div class="scss_top">SCSS</div>
+				<div class="scss_top">
+					SCSS
+				</div>
 				<div class="readmore">
-					私がHTMLで学んだことは以下のことです。<br>
-					そのため此のときに此のようなことに苦労しました<br>
+					私がSCSSで学んだことは効率的なCSSの記述手法です。<br>変数を用いたコードの短縮などCSSでは手の届かない痒いところ記述する手法を身に付けました。<br>
 				</div>	
 				<div class="readmore">
           <input id="check3" class="readmore-check" type="checkbox">
           <div class="readmore-content">
-          <span class="aa" v-bind:class='{active:isActive01}'>
-					<br>
-					また、HTMLを学んだ理由としては</span><br>
-					そのため此のときに此のようなことに苦労しました<br>
-					頑張ろうと思いました。<br>
-					また、HTMLを学んだ理由としては
+            <span class="aa" v-bind:class='{active:isActiveScss}'><div class="sub-message-none" v-bind:class='{sub:isActiveScss}'>
+							工夫した点</div><br>SCSSを学ぶ際に工夫したことはコメントアウトの記述を積極的に用いたことです</span><br>SCSSを用いる際にコメントアウトを用いなければ、コンパイルされたCSSとの比較することが難しくなると考え、複雑な記述になるところは積極的にコメントアウト用いました<br>
           </div>
-          <label v-on:click='isActive01=!isActive01' class="readmore-label" for="check3">
+          <label v-on:click='isActiveScss=!isActiveScss' class="readmore-label" for="check3">
 					</label>
         </div>
 			</div>
@@ -71,23 +58,14 @@
 					Javascript
 				</div>
 				<div class="readmore">
-					私がHTMLで学んだことは以下のことです。<br>
-					そのため此のときに此のようなことに苦労しました<br>
+					私はJavascriptではJavascriptの変数の定義の手法からDOM要素を操作という重要な概念まで学びました。<br>
 				</div>	
 				<div class="readmore">
           <input id="check4" class="readmore-check" type="checkbox">
           <div class="readmore-content">
-          <span class="aa" v-bind:class='{su:isActive01}'>
-					<div class="sub-message-none" v-bind:class='{sub:isActive01}'>
-						工夫した点
-					</div>
-					<br>
-					また、HTMLを学んだ理由としては</span><br>
-					そのため此のときに此のようなことに苦労しました<br>
-					頑張ろうと思いました。<br>
-					また、HTMLを学んだ理由としては
+            <span class="aa" v-bind:class='{active:isActiveJavascript}'><div class="sub-message-none" v-bind:class='{sub:isActiveJavascript}'>工夫した点</div><br>Javascriptを学ぶ際に工夫したことは検証ツールを用いることです。</span><br>イベントを発生させるたびにコンソールを確認し動きを理解することでJavascriptにおけるライフサイクルを体に染み込ませること執着しました。<br>
           </div>
-          <label v-on:click='isActive01=!isActive01' class="readmore-label" for="check4">
+          <label v-on:click='isActiveJavascript=!isActiveJavascript' class="readmore-label" for="check4">
 					</label>
         </div>
 			</div>
@@ -96,20 +74,20 @@
 					jQuery
 				</div>
 				<div class="readmore">
-					私がHTMLで学んだことは以下のことです。<br>
-					そのため此のときに此のようなことに苦労しました<br>
+					私はjQueryでは簡略的なJavascriptの運用を学びました<br>jQueryを用いることでJavascriptを簡潔に記述し適切にする手法を学びました。
 				</div>	
 				<div class="readmore">
           <input id="check5" class="readmore-check" type="checkbox">
           <div class="readmore-content">
-          <span class="aa" v-bind:class='{active:isActive01}'>
-					<br>
-					また、HTMLを学んだ理由としては</span><br>
-					そのため此のときに此のようなことに苦労しました<br>
-					頑張ろうと思いました。<br>
-					また、HTMLを学んだ理由としては
+            <span class="aa" v-bind:class='{active:isActiveJquery}'>
+							<div class="sub-message-none" v-bind:class='{sub:isActiveJquery}'>
+								工夫した点</div><br>jQueryを学ぶ際に工夫したことはPCとモバイルの住み分けです
+						</span>
+						<br>
+						あるイベントも両者では動きが異なることが多々あり、PCでは働くがモバイルだと働かないといった現象に記述するたびに適宜調整し、媒体に応じたイベントを発生させることを工夫しました。
+						<br>
           </div>
-          <label v-on:click='isActive01=!isActive01' class="readmore-label" for="check5">
+          <label v-on:click='isActiveJquery=!isActiveJquery' class="readmore-label" for="check5">
 					</label>
         </div>
 			</div>
@@ -118,24 +96,21 @@
 					Vue.js
 				</div>
 				<div class="readmore">
-					私がHTMLで学んだことは以下のことです。<br>
-					そのため此のときに此のようなことに苦労しました<br>
-				</div>	
-				<div class="readmore">
-          <input id="check6" class="readmore-check" type="checkbox">
+					私がVue.jsではモダンなフロント構築を学びました<br>componentや仮装dom、spaなど現在のフロント構築に必要な技術を学び、活かした記述を行いました。<br>
+				</div>
+				<div class="readmore"><input id="check6" class="readmore-check" type="checkbox">
           <div class="readmore-content">
-          <span class="aa" v-bind:class='{active:isActive01}'>
+          <span class="aa" v-bind:class='{active:isActiveVue}'>
+					<div class="sub-message-none" v-bind:class='{sub:isActiveVue}'>
+						工夫した点
+					</div>
 					<br>
-					また、HTMLを学んだ理由としては</span><br>
-					そのため此のときに此のようなことに苦労しました<br>
-					頑張ろうと思いました。<br>
-					また、HTMLを学んだ理由としては
+					Vue.jsを学ぶ際に工夫したことは</span><br>
           </div>
-          <label v-on:click='isActive01=!isActive01' class="readmore-label" for="check6">
+          <label v-on:click='isActiveVue=!isActiveVue' class="readmore-label" for="check6">
 					</label>
         </div>
 			</div>
-
 		</div>
 		<h2>サーバーサイド</h2>
 		<div class="server"> 
@@ -144,20 +119,23 @@
 					Ruby
 				</div>
 				<div class="readmore">
-					私がHTMLで学んだことは以下のことです。<br>
+					私はRubyでruby on rails<br>
 					そのため此のときに此のようなことに苦労しました<br>
 				</div>	
 				<div class="readmore">
           <input id="check7" class="readmore-check" type="checkbox">
           <div class="readmore-content">
-          <span class="aa" v-bind:class='{active:isActive01}'>
+          <span class="aa" v-bind:class='{active:isActiveRuby}'>
+					<div class="sub-message-none" v-bind:class='{sub:isActiveRuby}'>
+						工夫した点
+					</div>
 					<br>
 					また、HTMLを学んだ理由としては</span><br>
 					そのため此のときに此のようなことに苦労しました<br>
 					頑張ろうと思いました。<br>
 					また、HTMLを学んだ理由としては
           </div>
-          <label v-on:click='isActive01=!isActive01' class="readmore-label" for="check7">
+          <label v-on:click='isActiveRuby=!isActiveRuby' class="readmore-label" for="check7">
 					</label>
         </div>
 			</div>
@@ -172,14 +150,17 @@
 				<div class="readmore">
           <input id="check8" class="readmore-check" type="checkbox">
           <div class="readmore-content">
-          <span class="aa" v-bind:class='{active:isActive01}'>
+          <span class="aa" v-bind:class='{active:isActiveMysql}'>
+					<div class="sub-message-none" v-bind:class='{sub:isActiveMysql}'>
+						工夫した点
+					</div>
 					<br>
 					また、HTMLを学んだ理由としては</span><br>
 					そのため此のときに此のようなことに苦労しました<br>
 					頑張ろうと思いました。<br>
 					また、HTMLを学んだ理由としては
           </div>
-          <label v-on:click='isActive01=!isActive01' class="readmore-label" for="check8">
+          <label @click='isActiveMysql=!isActiveMysql' class="readmore-label" for="check8">
 					</label>
         </div>
 			</div>
@@ -187,15 +168,20 @@
 	</div>
 </template>
 <script>
-export default {
+  export default {
 	data() {
 			return {
-				isActive01: false
+				isActiveHtml: false,
+				isActiveCss: false,
+				isActiveScss: false,
+				isActiveJavascript: false,
+				isActiveJquery: false,
+				isActiveVue: false,
+				isActiveRuby: false,
+				isActiveMysql: false
 			}
 		}
 }
-</script>
-  
 </script>
 
 <style scoped>

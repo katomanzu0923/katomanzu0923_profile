@@ -1,56 +1,198 @@
 <template>
 	<div class="home_message">
 		<h2>動的アプリケーション</h2>
-		<div class="html">
-			<div class="html_main">
+		<div class="product">
+			<div class="product01">
 					Train Matching
-				</div>
-				<div class="readmore">
-					私がHTMLで学んだことは以下のことです。<br>
-					そのため此のときに此のようなことに苦労しました<br>
-				</div>
-				<div class="readmore">	
-          <input id="check1" class="readmore-check" type="checkbox">
-          <div class="readmore-content">
-          <span class="aa" v-bind:class='{active:isActiveProduct01}'>
-          <div class="sub-message-none" v-bind:class='{sub:isActiveProduct01}'>
-						
-					</div>
-					<br>
-					また、HTMLを学んだ理由としては</span><br>
-					そのため此のときに此のようなことに苦労しました<br>
-					頑張ろうと思いました。<br>
-					また、HTMLを学んだ理由としては
+			</div>
+			<div class="product01_content">
+          <div>
+            <img src="@/assets/train.png" alt="次へ" class="main">
+          </div>
+          <div class="content_left">
+            <ul>
+              <h3>＜作成して工夫した点＞</h3>
+              <li>
+                多言語化対応
+              </li>
+              <li>
+                
+              </li>
+              <li>
+
+              </li>
+              <li>
+
+              </li>
+              <li>
+
+              </li>
+            </ul>
+          </div>
+          <div class="content_right">
+            <h3>＜作成して反省すべき点＞</h3>
+            <ul>
+              <li>
+                コード設計が煩雑になり可読性が著しく低下した事
+              </li>
+              <li>
+                画像の多用によりUIが著しく低下した事
+              </li>
+              <li>
+                jQueryの運用に際して、コード量が膨大になった事
+              </li>
+              <li>
+
+              </li>
+              <li>
+
+              </li>
+            </ul>
+          </div>
+          <div class="product01_content_more">	
+            <input id="check1" class="readmore-check" type="checkbox">
+            <div class="product01_content_more-content">
+              <div class="sub-message-none" v-bind:class='{sub:isActiveProduct01}'>
+                作成したアプリの詳細
+              </div><br>
+              <div>
+              <div>
+              </div>
+              <div class="product_top">
+                <img src="@/assets/915333465e0072b4b9412b3c48c4926b.gif" alt="次へ" class="ff">
+                <div class="product_top_coment">
+                  <h3 class="title_top">Topページ</h3>
+                  多言語対応としてマウスオーバーで日本語、英語、中国語に対応。<br>
+                  背景の写真は各言語利用者を想定して写真を選定
+                </div>
+              </div>
+              <div class="product_login">
+                <img src="@/assets/5c513750d58970280c3cea39f9ef16b2.gif" alt="次へ" class="ff">
+                <div class="product_login_coment">
+                  <h3 class="title_login">ログインページ</h3>
+                  多言語対応としてマウスオーバーで日本語、英語、中国語に対応。<br>
+                  背景の写真は各言語利用者を想定して写真を選定
+                </div>
+              </div>
+              <div class="product_login">
+                <img src="@/assets/431a3eab6ad967fa7aaae871fb1b8e57.gif" alt="次へ" class="ff">
+                <div class="product_login_coment">
+                  <h3 class="title_login">エリアページ</h3>
+                  多言語対応としてマウスオーバーで日本語、英語、中国語に対応。<br>
+                  背景の写真は各言語利用者を想定して写真を選定
+                </div>
+              </div>
+              <div class="product_login">
+                <img src="@/assets/1c381f0e13da74e62c607421d8c94ab1.gif" alt="次へ" class="ff">
+                <div class="product_login_coment">
+                  <h3 class="title_login">ログインページ</h3>
+                  多言語対応としてマウスオーバーで日本語、英語、中国語に対応。<br>
+                  背景の写真は各言語利用者を想定して写真を選定
+                </div>
+              </div>
+            </div>
           </div>
           <label v-on:click='isActiveProduct01=!isActiveProduct01' class="readmore-label" for="check1">
 					</label>
         </div>
+			</div>
 		</div>
 		<h2>静的アプリケーション</h2>
-		<div class="html">
-			<div class="html_main">
+		<div class="product">
+			<div class="product01">
 					Train Matching
-				</div>
-				<div class="readmore">
-					私がHTMLで学んだことは以下のことです。<br>
-					そのため此のときに此のようなことに苦労しました<br>
-				</div>
-				<div class="readmore">	
-          <input id="check2" class="readmore-check" type="checkbox">
-          <div class="readmore-content">
-          <span class="aa" v-bind:class='{active:isActiveProduct02}'>
-          <div class="sub-message-none" v-bind:class='{sub:isActiveProduct02}'>
-						工夫した点
-					</div>
-					<br>
-					また、HTMLを学んだ理由としては</span><br>
-					そのため此のときに此のようなことに苦労しました<br>
-					頑張ろうと思いました。<br>
-					また、HTMLを学んだ理由としては
+			</div>
+			<div class="product01_content">
+          <div>
+            <img src="@/assets/train.png" alt="次へ" class="main">
           </div>
-          <label v-on:click='isActiveProduct02=!isActiveProduct02' class="readmore-label" for="check2">
+          <div class="content_left">
+            <ul>
+              <h3>＜作成して工夫した点＞</h3>
+              <li>
+                多言語化対応
+              </li>
+              <li>
+                
+              </li>
+              <li>
+
+              </li>
+              <li>
+
+              </li>
+              <li>
+
+              </li>
+            </ul>
+          </div>
+          <div class="content_right">
+            <h3>＜作成して反省すべき点＞</h3>
+            <ul>
+              <li>
+                コード設計が煩雑になり可読性が著しく低下した事
+              </li>
+              <li>
+                画像の多用によりUIが著しく低下した事
+              </li>
+              <li>
+                jQueryの運用に際して、コード量が膨大になった事
+              </li>
+              <li>
+
+              </li>
+              <li>
+
+              </li>
+            </ul>
+          </div>
+          <div class="product01_content_more">	
+            <input id="check1" class="readmore-check" type="checkbox">
+            <div class="product01_content_more-content">
+              <div class="sub-message-none" v-bind:class='{sub:isActiveProduct01}'>
+                作成したアプリの詳細
+              </div><br>
+              <div>
+              <div>
+              </div>
+              <div class="product_top">
+                <img src="@/assets/915333465e0072b4b9412b3c48c4926b.gif" alt="次へ" class="ff">
+                <div class="product_top_coment">
+                  <h3 class="title_top">Topページ</h3>
+                  多言語対応としてマウスオーバーで日本語、英語、中国語に対応。<br>
+                  背景の写真は各言語利用者を想定して写真を選定
+                </div>
+              </div>
+              <div class="product_login">
+                <img src="@/assets/5c513750d58970280c3cea39f9ef16b2.gif" alt="次へ" class="ff">
+                <div class="product_login_coment">
+                  <h3 class="title_login">ログインページ</h3>
+                  多言語対応としてマウスオーバーで日本語、英語、中国語に対応。<br>
+                  背景の写真は各言語利用者を想定して写真を選定
+                </div>
+              </div>
+              <div class="product_login">
+                <img src="@/assets/431a3eab6ad967fa7aaae871fb1b8e57.gif" alt="次へ" class="ff">
+                <div class="product_login_coment">
+                  <h3 class="title_login">エリアページ</h3>
+                  多言語対応としてマウスオーバーで日本語、英語、中国語に対応。<br>
+                  背景の写真は各言語利用者を想定して写真を選定
+                </div>
+              </div>
+              <div class="product_login">
+                <img src="@/assets/1c381f0e13da74e62c607421d8c94ab1.gif" alt="次へ" class="ff">
+                <div class="product_login_coment">
+                  <h3 class="title_login">ログインページ</h3>
+                  多言語対応としてマウスオーバーで日本語、英語、中国語に対応。<br>
+                  背景の写真は各言語利用者を想定して写真を選定
+                </div>
+              </div>
+            </div>
+          </div>
+          <label v-on:click='isActiveProduct01=!isActiveProduct01' class="readmore-label" for="check1">
 					</label>
         </div>
+			</div>
 		</div>
 		<h2>and more</h2>
 	</div>
@@ -61,7 +203,8 @@ export default {
   data() {
     return {
       isActiveProduct01: false,
-      isActiveProduct02: false
+      isActiveProduct02: false,
+      isActivePro: false
     }
   }
 }
@@ -72,6 +215,57 @@ export default {
 		color: black;
 		text-align: center;
 	}
+  
+  .main {
+    width: 100%;
+  }
+  .content_left {
+    display: inline-block;
+    left: 0;
+    width: 40%;
+    margin-left: 5%;
+  }
+  .content_right {
+    display: inline-block;
+    right: 0;
+    width: 50%;
+  }
+  h3 {
+    text-align: center;
+  }
+  .product_top {
+    width: 100%;
+    position: relative;
+  }
+  .ff {
+    width: 70%;
+  }
+  .product_top_coment {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    width: 30%;
+    top: 0;
+    border-left: solid1px #7fe07b;
+  }
+  .title-top {
+    text-align: center;
+  }
+  .product_login {
+    width: 100%;
+    position: relative;
+  }
+  .product_login_coment {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    width: 30%;
+    top: 0;
+    border-left: solid1px #7fe07b;
+  }
+  .title-login {
+    text-align: center;
+  }
 	h2 {
 		text-align: center;
     width: 60%;
@@ -103,7 +297,7 @@ export default {
     border-right: none;
 		margin-bottom: 5%;
 	}
-	.html {
+	.product {
 		flex-basis: 40%;
 		position: relative;
     display: block;
@@ -115,34 +309,43 @@ export default {
     font-weight: bold;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
 	}
-	.html_main {
+	.product01 {
 		background: transparent;
 		color: #1bdf14;
 	}
+  .product01_content_more{
+    position: relative;
+    box-sizing: border-box;
+    /*以下お好み*/
+    /* ボーダーを付ける場合 */
+    padding: 10px;
+		text-align: start;
+		color: #7fe07b;
+}
 	.html_content {
 		background: transparent;
 		padding: 10%;
 		text-align: start;
 		color: #7fe07b;
 	}
-	.readmore{
+	.product01_content{
     position: relative;
     box-sizing: border-box;
     /*以下お好み*/
     /* ボーダーを付ける場合 */
     padding: 10px;
-    border: 1px solid #CCC;
+    border: 1px solid #7fe07b;
 		text-align: start;
 		color: #7fe07b;
 }
-.readmore-content{
+.product01_content_more-content{
     position: relative;
     overflow: hidden;
     /*以下お好み*/
     /*高さの初期値*/
     height: 20px;
 }
-.readmore-content::before {
+.product01_content_more-content::before {
     display: block;
     position: absolute;
     bottom: 0;
@@ -184,10 +387,10 @@ export default {
 .readmore-check:checked ~ .readmore-label:before{
     content: '閉じる';
 }
-.readmore-check:checked ~ .readmore-content{
+.readmore-check:checked ~ .product01_content_more-content{
     height: auto;
 }
-.readmore-check:checked ~ .readmore-content::before {
+.readmore-check:checked ~ .product01_content_more-content::before {
     display: none;
 }
 .sub-message-none {
@@ -197,16 +400,11 @@ export default {
 	filter: opacity(100%);
 	color: #1bdf14;
 	text-align: center;
+  border-top: 3px solid #7fe07b;
+  padding-top: 2%;
+}
+
+.aa {
+  filter: opacity(0);
 }
 </style>
-
-
-<img src="@/assets/n_icon_info.png" class="f">
-          <div class="home_profile_left_content">
-            <div class="right">
-              <a href="mailto:katomanzu86@gmail.com"><img src="@/assets/download.png" class="ff"></a>
-            </div>
-            <div class="left">
-              <a href="https://github.com/katomanzu0923"><img src="@/assets/download.png" alt="次へ" class="ff"></a>
-            </div>
-          </div>

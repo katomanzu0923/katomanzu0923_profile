@@ -162,8 +162,3 @@
 .sub-message-none {
 	filter: opacity(0%);
 }
-</style>
-<div class="profile">
-      <img src="./assets/n_icon_info.png">
-      <button onclick="location.href='https://github.com/katomanzu0923'" target="_blank" class="link">GitHub</button>
-    </

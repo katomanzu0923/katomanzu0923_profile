@@ -9,8 +9,7 @@
 				<div class="readmore">
 					私がHTMLにおいてHTMLの基礎的な文法や役割を学びました。<br>
 					ブロック要素とインライン要素の積木法則、brを用いた改行、aタグやbuttonタグなど頻繁に使われる文法を習得しました。<br>
-				</div>
-				<div class="readmore">	
+					<div class="readmore_more">	
           <input id="check1" class="readmore-check" type="checkbox">
           <div class="readmore-content">
             <span class="aa" v-bind:class='{active:isActiveHtml}'><div class="sub-message-none" v-bind:class='{sub:isActiveHtml}'>工夫した点</div><br>HTMLを学ぶ際に工夫した点はコードの可読性です。</span><br>属性名を後で読んでもわかるように記述することによって再現性の高いコードを記述することができました。<br>
@@ -18,6 +17,7 @@
           <label v-on:click='isActiveHtml=!isActiveHtml' class="readmore-label" for="check1">
 					</label>
         </div>
+				</div>
 			</div>
 			<div class="css">
 				<div class="css_top">
@@ -26,8 +26,7 @@
 				<div class="readmore">
 					私がCSSにおいて基本的な文法を学びました。<br>
 					HTMLの基本的な装飾、ブレイクポイントを用いたモバイル対応、擬似要素を用いた複雑なマークアップ手法を学びました。<br>
-				</div>	
-				<div class="readmore">
+					<div class="readmore_more">
           <input id="check2" class="readmore-check" type="checkbox">
           <div class="readmore-content">
             <span class="aa" v-bind:class='{active:isActiveCss}'><div class="sub-message-none" v-bind:class='{sub:isActiveCss}'>工夫した点</div><br>CSSを学ぶ際に工夫したことは親子関係への意識です。</span><br>親子関係をしっかりと意識することでHTMLを適切に装飾するだけでなく、無駄なコード記述を減らすことができ、より可読性の高いコードを記述することが可能になりました。<br>
@@ -35,6 +34,7 @@
           <label v-on:click='isActiveCss=!isActiveCss' class="readmore-label" for="check2">
 					</label>
         </div>
+				</div>	
 			</div>
 			<div class="scss">
 				<div class="scss_top">
@@ -42,8 +42,7 @@
 				</div>
 				<div class="readmore">
 					私がSCSSで学んだことは効率的なCSSの記述手法です。<br>変数を用いたコードの短縮などCSSでは手の届かない痒いところ記述する手法を身に付けました。<br>
-				</div>	
-				<div class="readmore">
+					<div class="readmore_more">
           <input id="check3" class="readmore-check" type="checkbox">
           <div class="readmore-content">
             <span class="aa" v-bind:class='{active:isActiveScss}'><div class="sub-message-none" v-bind:class='{sub:isActiveScss}'>
@@ -52,6 +51,7 @@
           <label v-on:click='isActiveScss=!isActiveScss' class="readmore-label" for="check3">
 					</label>
         </div>
+				</div>	
 			</div>
 			<div class="javascript">
 				<div class="javascript_top">
@@ -59,8 +59,7 @@
 				</div>
 				<div class="readmore">
 					私はJavascriptではJavascriptの変数の定義の手法からDOM要素を操作という重要な概念まで学びました。<br>
-				</div>	
-				<div class="readmore">
+					<div class="readmore_more">
           <input id="check4" class="readmore-check" type="checkbox">
           <div class="readmore-content">
             <span class="aa" v-bind:class='{active:isActiveJavascript}'><div class="sub-message-none" v-bind:class='{sub:isActiveJavascript}'>工夫した点</div><br>Javascriptを学ぶ際に工夫したことは検証ツールを用いることです。</span><br>イベントを発生させるたびにコンソールを確認し動きを理解することでJavascriptにおけるライフサイクルを体に染み込ませること執着しました。<br>
@@ -68,6 +67,7 @@
           <label v-on:click='isActiveJavascript=!isActiveJavascript' class="readmore-label" for="check4">
 					</label>
         </div>
+				</div>	
 			</div>
 			<div class="jquery">
 				<div class="jquery_top">
@@ -75,8 +75,7 @@
 				</div>
 				<div class="readmore">
 					私はjQueryでは簡略的なJavascriptの運用を学びました<br>jQueryを用いることでJavascriptを簡潔に記述し適切にする手法を学びました。
-				</div>	
-				<div class="readmore">
+					<div class="readmore_more">
           <input id="check5" class="readmore-check" type="checkbox">
           <div class="readmore-content">
             <span class="aa" v-bind:class='{active:isActiveJquery}'>
@@ -90,6 +89,7 @@
           <label v-on:click='isActiveJquery=!isActiveJquery' class="readmore-label" for="check5">
 					</label>
         </div>
+				</div>	
 			</div>
 			<div class="vue">
 				<div class="vue_top">
@@ -97,8 +97,7 @@
 				</div>
 				<div class="readmore">
 					私がVue.jsではモダンなフロント構築を学びました<br>componentや仮装dom、spaなど現在のフロント構築に必要な技術を学び、活かした記述を行いました。<br>
-				</div>
-				<div class="readmore"><input id="check6" class="readmore-check" type="checkbox">
+					<div class="readmore_more"><input id="check6" class="readmore-check" type="checkbox">
           <div class="readmore-content">
           <span class="aa" v-bind:class='{active:isActiveVue}'>
 					<div class="sub-message-none" v-bind:class='{sub:isActiveVue}'>
@@ -110,6 +109,7 @@
           <label v-on:click='isActiveVue=!isActiveVue' class="readmore-label" for="check6">
 					</label>
         </div>
+				</div>
 			</div>
 		</div>
 		<h2>サーバーサイド</h2>
@@ -121,8 +121,7 @@
 				<div class="readmore">
 					私はRubyでruby on rails<br>
 					そのため此のときに此のようなことに苦労しました<br>
-				</div>	
-				<div class="readmore">
+					<div class="readmore_more">
           <input id="check7" class="readmore-check" type="checkbox">
           <div class="readmore-content">
           <span class="aa" v-bind:class='{active:isActiveRuby}'>
@@ -138,16 +137,15 @@
           <label v-on:click='isActiveRuby=!isActiveRuby' class="readmore-label" for="check7">
 					</label>
         </div>
+				</div>	
 			</div>
 			<div class="mysql">
 				<div class="mysql_top">
 					mysql
 				</div>
 				<div class="readmore">
-					私がHTMLで学んだことは以下のことです。<br>
-					そのため此のときに此のようなことに苦労しました<br>
-				</div>	
-				<div class="readmore">
+					fafa
+					<div class="readmore_more">
           <input id="check8" class="readmore-check" type="checkbox">
           <div class="readmore-content">
           <span class="aa" v-bind:class='{active:isActiveMysql}'>
@@ -163,6 +161,7 @@
           <label @click='isActiveMysql=!isActiveMysql' class="readmore-label" for="check8">
 					</label>
         </div>
+				</div>	
 			</div>
 		</div>
 	</div>
@@ -191,7 +190,16 @@
     /*以下お好み*/
     /* ボーダーを付ける場合 */
     padding: 10px;
-    border: 1px solid #CCC;
+    border: 1px solid #ff7d5c;
+		text-align: start;
+		color: #ff7d5c;
+}
+.readmore_more{
+    position: relative;
+    box-sizing: border-box;
+    /*以下お好み*/
+    /* ボーダーを付ける場合 */
+    padding: 10px;
 		text-align: start;
 		color: #ff7d5c;
 }
@@ -257,6 +265,8 @@
 	filter: opacity(100%);
 	color: #ff4618;
 	text-align: center;
+	border-top: 3px solid #ff7c5c;
+  padding-top: 2%;
 }
   .programing_message {
 		position: absolute;

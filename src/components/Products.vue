@@ -1,6 +1,8 @@
 <template>
 	<div class="home_message">
-		<h2>動的アプリケーション</h2>
+    <div  class="header_left">
+      動的アプリケーション
+    </div>
 		<div class="product">
 			<div class="product01">
 					Train Matching
@@ -11,12 +13,12 @@
           </div>
           <div class="content_left">
             <ul>
-              <h3>＜作成して工夫した点＞</h3>
+              <h3>＜作成時に工夫した点＞</h3>
               <li>
                 多言語化対応
               </li>
               <li>
-                
+                ユーザー視点にそったDB設計
               </li>
               <li>
 
@@ -30,16 +32,16 @@
             </ul>
           </div>
           <div class="content_right">
-            <h3>＜作成して反省すべき点＞</h3>
+            <h3>＜作成後の反省点＞</h3>
             <ul>
               <li>
-                コード設計が煩雑になり可読性が著しく低下した事
+                コード設計が疎かにした結果、可読性が著しく低下した事
               </li>
               <li>
-                画像の多用によりUIが著しく低下した事
+                画像の多用にの結果、UXが著しく低下した事
               </li>
               <li>
-                jQueryの運用に際して、コード量が膨大になった事
+                jQueryの多用の結果、コード量が膨大になった事
               </li>
               <li>
 
@@ -53,7 +55,7 @@
             <input id="check1" class="readmore-check" type="checkbox">
             <div class="product01_content_more-content">
               <div class="sub-message-none" v-bind:class='{sub:isActiveProduct01}'>
-                作成したアプリの詳細
+                各ページの詳細
               </div><br>
               <div>
               <div>
@@ -62,32 +64,48 @@
                 <img src="@/assets/915333465e0072b4b9412b3c48c4926b.gif" alt="次へ" class="ff">
                 <div class="product_top_coment">
                   <h3 class="title_top">Topページ</h3>
-                  多言語対応としてマウスオーバーで日本語、英語、中国語に対応。<br>
-                  背景の写真は各言語利用者を想定して写真を選定
+                  <p>このサイトのTopページ。ユーザーに応じてクリックなど余分な動作をすることなく各言語使用者を適切なページへ誘導。<br>
+                  テキストのフォントサイズは言語別に調整し、背景の写真は各言語利用者にマッチした写真をで誘導を促す。<br>
+                  このページのコードはこちらから</p>
+                  <div class="product_link">
+                    <span class="code_link"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/views/top/index.erb" target="_blank">HTML</a></span><span class="code_link"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/assets/stylesheets/top.scss" target="_blank">SCSS</a></span>
+                    <span class="code_link"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/javascript/top.js" target="_blank">Javascript</a></span>
+                  </div>
                 </div>
               </div>
               <div class="product_login">
                 <img src="@/assets/5c513750d58970280c3cea39f9ef16b2.gif" alt="次へ" class="ff">
                 <div class="product_login_coment">
                   <h3 class="title_login">ログインページ</h3>
-                  多言語対応としてマウスオーバーで日本語、英語、中国語に対応。<br>
-                  背景の写真は各言語利用者を想定して写真を選定
+                  <p>リアルタイムバリデーション機能を実装。フォームの記述に応じてエラーがある場合はエラー理由表示、エラーがない場合はオッケーマークを表示。また、この時国籍の情報を取得し、以後それに応じた表示の多言語化を実装。<br>
+                  このページのコードはこちらから</p>
+                  <div class="product_link">
+                    <span class="product_link" target="_blank"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/views/devise/registrations/new.html.erb" target="_blank">HTML</a></span><span class="product_link"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/assets/stylesheets/registrations.scss" target="_blank">SCSS</a></span>
+                    <span class="product_link"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/javascript/registrations.js">Javascript</a></span>
+                  </div>  
                 </div>
               </div>
-              <div class="product_login">
+              <div class="product_area">
                 <img src="@/assets/431a3eab6ad967fa7aaae871fb1b8e57.gif" alt="次へ" class="ff">
                 <div class="product_login_coment">
                   <h3 class="title_login">エリアページ</h3>
-                  多言語対応としてマウスオーバーで日本語、英語、中国語に対応。<br>
-                  背景の写真は各言語利用者を想定して写真を選定
+                  <p>行き先に関して、写真は文字より情報量の多いという考えのもと画像を多用し行き先を誘導。<br>
+                  このページのコードはこちらから</p>
+                  <div class="product_link">
+                    <span class="product_link"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/views/area/index.erb" target="_blank">HTML</a></span><span class="product_link" target="_blank"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/assets/stylesheets/area.scss" target="_blank">SCSS</a></span>
+                    <span class="product_link"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/javascript/area.js" target="_blank">Javascript</a></span>
+                  </div>
                 </div>
               </div>
-              <div class="product_login">
+              <div class="product_info">
                 <img src="@/assets/1c381f0e13da74e62c607421d8c94ab1.gif" alt="次へ" class="ff">
                 <div class="product_login_coment">
-                  <h3 class="title_login">ログインページ</h3>
-                  多言語対応としてマウスオーバーで日本語、英語、中国語に対応。<br>
-                  背景の写真は各言語利用者を想定して写真を選定
+                  <h3 class="title_login">チケットページ</h3>
+                  <p>を用いてチケットの情報並べて表示。また、他のページにおいても共通であるが、ぼかしを導入してハンバーグメニューを強調。<p>
+                  <div class="product_link">
+                    <span class="product_link"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/views/kanto_info/index.erb" target="_blank">HTML</a></span><span class="product_link"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/assets/stylesheets/info.scss" target="_blank">SCSS</a></span>
+                    <span class="product_link"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/javascript/info.js" target="_blank">Javascript</a></span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -97,7 +115,9 @@
         </div>
 			</div>
 		</div>
-		<h2>静的アプリケーション</h2>
+    <div  class="header_left01">
+      静的アプリケーション
+    </div>
 		<div class="product">
 			<div class="product01">
 					Train Matching
@@ -158,7 +178,7 @@
               <div class="product_top">
                 <img src="@/assets/915333465e0072b4b9412b3c48c4926b.gif" alt="次へ" class="ff">
                 <div class="product_top_coment">
-                  <h3 class="title_top">Topページ</h3>
+                  <h3 class="title_top">・Topページ</h3>
                   多言語対応としてマウスオーバーで日本語、英語、中国語に対応。<br>
                   背景の写真は各言語利用者を想定して写真を選定
                 </div>
@@ -171,18 +191,18 @@
                   背景の写真は各言語利用者を想定して写真を選定
                 </div>
               </div>
-              <div class="product_login">
+              <div class="product_area">
                 <img src="@/assets/431a3eab6ad967fa7aaae871fb1b8e57.gif" alt="次へ" class="ff">
-                <div class="product_login_coment">
-                  <h3 class="title_login">エリアページ</h3>
+                <div class="product_area_coment">
+                  <h3 class="title_area">エリアページ</h3>
                   多言語対応としてマウスオーバーで日本語、英語、中国語に対応。<br>
                   背景の写真は各言語利用者を想定して写真を選定
                 </div>
               </div>
-              <div class="product_login">
+              <div class="product_info">
                 <img src="@/assets/1c381f0e13da74e62c607421d8c94ab1.gif" alt="次へ" class="ff">
-                <div class="product_login_coment">
-                  <h3 class="title_login">ログインページ</h3>
+                <div class="product_info_coment">
+                  <h3 class="title_info">ログインページ</h3>
                   多言語対応としてマウスオーバーで日本語、英語、中国語に対応。<br>
                   背景の写真は各言語利用者を想定して写真を選定
                 </div>
@@ -210,12 +230,100 @@ export default {
 }
 </script>
 <style scoped>
+  p {
+    text-indent: 1em;
+    background: transparent;
+  }
   .home_message {
 		position: absolute;
 		color: black;
 		text-align: center;
 	}
-  
+  .header_left {
+    display: inline-block;
+    color: #4e60ff;
+    background: #ffffff;
+		padding: 1%;
+    /*transform: rotate(-10deg);*/
+    font-size: 2vw;
+    margin-bottom: 5%;
+    border: 1px solid #CCC;
+    border-top: 3px solid #1bdf14;
+		color: #1bdf14;
+    width: 40%;
+    height: 5%;
+    left: 48%;
+    top: 5%;
+    z-index: 1;
+		font-weight: bold;
+  }
+  .day_left::before {
+   content:"";
+   display:inline-block;
+   width:3px;
+   height:90px;
+   background-color: rgba(85, 82, 81, 0.514);
+   position:absolute;
+   top:-2%;
+   left:35%;
+   filter: drop-shadow(50%);
+   z-index: -1;
+ }
+ .day_right::before {
+   content:"";
+   display:inline-block;
+   width:3px;
+   height:90px;
+   background-color: rgba(85, 82, 81, 0.514);
+   position:absolute;
+   top:-2%;
+   left:65%;
+   filter: drop-shadow(50%);
+   z-index: -11;
+ }
+ .header_left01 {
+    display: inline-block;
+    color: #4e60ff;
+    background: #ffffff;
+		padding: 1%;
+    /*transform: rotate(-10deg);*/
+    font-size: 2vw;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border: 1px solid #CCC;
+    border-top: 3px solid #1bdf14;
+		color: #1bdf14;
+    width: 40%;
+    height: 5%;
+    left: 38%;
+    top: 5%;
+    font-weight: bold;
+    z-index: 1;
+  }
+ .day_left01::before {
+   content:"";
+   display:inline-block;
+   width:3px;
+   height:30px;
+   background-color: rgba(85, 82, 81, 0.514);
+   position:absolute;
+   top:100%;
+   left:40%;
+   filter: drop-shadow(50%);
+   z-index: 1;
+ }
+ .day_right01::before {
+   content:"";
+   display:inline-block;
+   width:3px;
+   height:30px;
+   background-color: rgba(85, 82, 81, 0.514);
+   position:absolute;
+   top:100%;
+   left:60%;
+   filter: drop-shadow(50%);
+   z-index: 1;
+ }
   .main {
     width: 100%;
   }
@@ -229,42 +337,119 @@ export default {
     display: inline-block;
     right: 0;
     width: 50%;
+    margin-left: 2%;
   }
   h3 {
     text-align: center;
   }
   .product_top {
-    width: 100%;
     position: relative;
+    padding-top: 1%;
+    margin: 0 1%;
+  }
+  .product_link {
+    width: 100%;
+    text-align: center;
+    margin-top: 3%;
   }
   .ff {
     width: 70%;
+    border: 1px solid rgba(0, 0, 0, 0.589);
   }
   .product_top_coment {
     display: inline-block;
     position: absolute;
-    text-align: center;
+    text-align: start;
     width: 30%;
     top: 0;
-    border-left: solid1px #7fe07b;
+    height: 90%;
+    padding-top: 3%;
+    margin-left: 1%;
   }
-  .title-top {
+  .title_top {
     text-align: center;
+    background-color: #1bdf14;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 2%;
   }
   .product_login {
-    width: 100%;
     position: relative;
+    padding-top: 1%;
+    margin: 0 1%;
+    border-top: solid 2px #7fe07b;
   }
   .product_login_coment {
     display: inline-block;
     position: absolute;
-    text-align: center;
+    text-align: start;
     width: 30%;
     top: 0;
-    border-left: solid1px #7fe07b;
+    padding-top: 3%;
+    margin-left: 1%;
   }
-  .title-login {
+  .title_login {
     text-align: center;
+    background-color: #1bdf14;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+  }
+  .product_area {
+    position: relative;
+    padding-top: 1%;
+    margin: 0 1%;
+    border-top: solid 2px #7fe07b;
+  }
+  .product_area_coment {
+    display: inline-block;
+    position: absolute;
+    text-align: start;
+    width: 30%;
+    top: 0;
+    padding-top: 3%;
+  }
+  .title_area {
+    text-align: center;
+    background-color: #1bdf14;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+  }
+  .product_info {
+    position: relative;
+    padding-top: 1%;
+    margin: 0 1%;
+    border-top: solid 2px #7fe07b;
+    border-bottom: solid 2px #7fe07b;
+  }
+  .product_info_coment {
+    display: inline-block;
+    position: absolute;
+    text-align: start;
+    width: 30%;
+    top: 0;
+    padding-top: 5%;
+    margin-left: 3%;
+  }
+  .title_info {
+    text-align: center;
+    background-color: #1bdf14;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 2%;
   }
 	h2 {
 		text-align: center;
@@ -360,12 +545,11 @@ export default {
     display: table;
     bottom: 5px;
     position: absolute;
-    bottom: 5px;
     left: 50%;
-		width: 60%;
+		width: 20%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
-    margin: 0 auto;
+    margin: 1% auto 0 auto;
     z-index: 2;
     padding: 0 10px;
     background-color: #1bdf14;
@@ -400,11 +584,37 @@ export default {
 	filter: opacity(100%);
 	color: #1bdf14;
 	text-align: center;
-  border-top: 3px solid #7fe07b;
   padding-top: 2%;
+  display: table;
+  margin: 0 auto;
+  z-index: 2;
+  padding: 0 10px;
+  background-color: #1bdf14;
+  border-radius: 10px;
+	text-align: center;
+	color: #f7f7f7;
+  margin-top: 1%;
+}
+.sub::before {
+  content:"";
+  display:block;
+  height:2px;
+  width: 700%;
+  background-color: #7fe07b;
+  position: absolute;
+  top: -10px;
+  left: -300%;
 }
 
 .aa {
   filter: opacity(0);
 }
+a {
+  color: #1bdf14;
+  border:1px solid #1bdf14;
+  text-decoration: none;
+  padding: 5px;
+  margin: 1%;
+}
+
 </style>

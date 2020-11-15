@@ -1,6 +1,5 @@
 <template>
 	<div class="home_top">
-		<h2>プロフィール</h2>
     <div class="home_main">
       <div class="home_title">
         自己紹介
@@ -25,9 +24,7 @@
           <div class="home_profile_right_top">
           </div>
           <div class="home_profile_right_content">
-            昨年、既卒ながら新卒として就活を始めるも方向性が決めれず悩む日々。<br>
-            そんな中webエンジニアとして活躍すべく、力をつけて就活に挑みたいと決意。<br>
-            PProgate、TECH::CHANP、Udemyを経てフロントエンジニアを目指し就活中。
+            <p>今年の2月まで既卒の状態で新卒就活を始めるも歩みたい道がわからず悩む日々。そんな中webエンジニアとして活躍したいと思いwebエンジニアを志す。まずは力をつけたい。このwebサイトはそんな学習中での気づきのログです。</p>
           </div>
         </div>
       </div>
@@ -37,15 +34,15 @@
 					学習歴
 				</div>
 				<div class="home_content">
-          <h1>PProgate</h1>
+          <h1>Progate</h1>
           <div class="topic0">
             <div class="content1">
-              HTMLとCSSがどのような働きも知らないという状態
+              HTMLって何？という状態。
             </div>
             <div class="a">
             </div>
             <div class="content2">
-              環境が構築された状態で様々な言語がどういう働きをするか理解出来る状態でと成長
+              <p>様々な言語を使って表現の仕組みは理解したが、世の中にそれを実現させるためには何が必要かどの手段が最適なのかがわからない状態</p>
             </div>
           </div>
           <input id="check2" class="home_content-check" type="checkbox">
@@ -55,7 +52,7 @@
             学ぶ際に工夫していた事
           </div> 
 					</span>
-          プログラミング言語で何が出来るのかという事を意識しながら学習を進めました。また、学習する過程で出来るようになった事を完成しているwebサイトと比較してこのサイトのここはこの言語が使われれているのだろうかと意識しながら学習を進めました。
+          <p class="re-content">プログラミング言語で何が出来るのかという事を意識しながら学習を進めました。また、学習する過程で出来るようになった事を完成しているwebサイトと比較してこのサイトのここはこの言語が使われれているのだろうかと意識しながら学習を進めました。</p>
           </div>
           <label v-on:click='isActivePro=!isActivePro' class="home_content-label" for="check2">
 					</label>
@@ -64,12 +61,12 @@
           <h1 class="line">TECH::CHANP</h1>
           <div class="topic1">
             <div class="content1">
-              マークアップ言語、プログラミング言語の各種の働きは理解したがその言語の運用方法が理解できない状態
+              <p>様々な言語を使って表現の仕組みは理解したが、世の中にそれを実現させるためには何が必要かどの手段が最適なのかがわからない状態</p>
             </div>
             <div class="a">
             </div>
             <div class="content2">
-              マークアップ及びプログラミング言語を用いたwebアプリの開発、自身のpcをサーバーとした開発環境、DBを用いた動的アプリケーション、githubを用いた開発環境、レンタルサーバーを用いた本番環境での運用が出来る状態へと成長。
+              <p>Ruby on rainls を用いてマークアップ言語からプログラミング言語を駆使して静的及び動的アプリケーションを開発できる状態へと成長。また、プログラミング言語だけでなく、slak,ターミナル、github,mysqlなどweb開発に必要な知識や武器を取得し使える状態へと成長</p>
             </div>
           </div>
           <input id="check３" class="home_content-check" type="checkbox">
@@ -78,9 +75,9 @@
           <div class="aa" v-bind:class='{sub:isActiveTech}'>
             学ぶ際に工夫していた事
           </div> 
-					</span><br>
-           曖昧な事をゼロにする事を意識しながら学習を進めました。常にわからない事はメンターに質問出来る環境にあったのでどんなことでも質問をしてわからない事を潰していきました。<br>
-           また、質問がより自分のためになるようにわからない点に対してqiitaなどのwebサイトを用いてある程度答えを出して質問することによって自己解決能力を効率よく高めることに成功しました。
+					</span>
+           <p class="re-content">曖昧な事をゼロにする事を意識しながら学習を進めました。常にわからない事はメンターに質問出来る環境にあったのでどんなことでも質問をしてわからない事を潰していきました。<br>
+           また、質問がより自分のためになるようにわからない点に対してqiitaなどのwebサイトを用いてある程度答えを出して質問することによって自己解決能力を効率よく高めることに成功しました。</p>
           </div>
           <label v-on:click='isActiveTech=!isActiveTech' class="home_content-label" for="check３">
 					</label>
@@ -89,12 +86,12 @@
           <h1 class="line">Udemy</h1>
           <div class="topic2">
             <div class="content1">
-              ruby on rails を用いて一通りアプリケーションをゼロから開発出来るようになった状態
+              <p>Ruby on rails Web開発を行う中でできることが増えた反面自分に必要なことが、自分の現在地が明確にわかる状態</p>
             </div>
             <div class="a">
             </div>
             <div class="content2">
-              ただ作れる状態から開発に多く利用されている状態への成長へ学習。scssやモダンなjsであるvue.jsを取得し知識を広げる状態に至っています
+              <p>Scssを用いて差的な開発における最適css設計、現在多用されているモダンなjavascriptであるvueを用いた開発ができる状態へと成長</p>
             </div>
           </div>
           <input id="check4" class="home_content-check" type="checkbox">
@@ -103,10 +100,9 @@
           <div class="aa" v-bind:class='{sub:isActive}'>
             学ぶ際に工夫していた事
           </div> 
-					<br>
 					</span>
-          曖昧な事をゼロにする事を意識しながら学習を進めました。常にわからない事はメンターに質問出来る環境にあったのでどんなことでも質問をしてわからない事を潰していきました。<br>
-           また、質問がより自分のためになるようにわからない点に対してqiitaなどのwebサイトを用いてある程度答えを出して質問することによって自己解決能力を効率よく高めることに成功しました。
+          <p class="re-content">曖昧な事をゼロにする事を意識しながら学習を進めました。常にわからない事はメンターに質問出来る環境にあったのでどんなことでも質問をしてわからない事を潰していきました。<br>
+           また、質問がより自分のためになるようにわからない点に対してqiitaなどのwebサイトを用いてある程度答えを出して質問することによって自己解決能力を効率よく高めることに成功しました。</p>
           </div>
           <label v-on:click='isActive=!isActive' class="home_content-label" for="check4">
 					</label>
@@ -128,6 +124,15 @@ export default {
 </script>
 
 <style scoped>
+p {
+  text-indent: 1em;
+  background: transparent;
+}
+.re-content {
+  border-bottom: 3px solid #4e60ff;
+  margin: 1% 0;
+  padding-bottom: 2%;
+}
 .home_profile {
   position: relative;
     box-sizing: border-box;
@@ -418,4 +423,28 @@ h1 {
 		text-align: start;
 		color: #919cff;
 	}
+  .sub {
+    filter: opacity(100%);
+    padding-top: 2%;
+    display: table;
+    margin: 0 auto;
+    z-index: 2;
+    padding: 0 10px;
+    background-color: #4e5fff;
+    color: white;
+    border-radius: 10px;
+    margin-top: 1%;
+    text-align: center;
+  }
+  .sub::before {
+  content:"";
+   display:block;
+   width: 550%;
+   height:2px;
+   background-color: #4e5fff;
+   position:absolute;
+   top:-10px;
+   left: -200%;
+}
+  
 </style>

@@ -1,18 +1,20 @@
 <template>
 	<div class="programing_message">
-		<h1>フロントエンド</h1>
+		<div  class="header_left">
+      フロントエンド
+    </div>
 		<div class="front">
 			<div class="html">
 				<div class="html_main">
 					HTML
 				</div>
 				<div class="readmore">
-					私がHTMLにおいてHTMLの基礎的な文法や役割を学びました。<br>
-					ブロック要素とインライン要素の積木法則、brを用いた改行、aタグやbuttonタグなど頻繁に使われる文法を習得しました。<br>
+					<p>私はhtmlでは積み木の法則aタグやボタンタグなどを理解することができました</p>
 					<div class="readmore_more">	
           <input id="check1" class="readmore-check" type="checkbox">
           <div class="readmore-content">
-            <span class="aa" v-bind:class='{active:isActiveHtml}'><div class="sub-message-none" v-bind:class='{sub:isActiveHtml}'>工夫した点</div><br>HTMLを学ぶ際に工夫した点はコードの可読性です。</span><br>属性名を後で読んでもわかるように記述することによって再現性の高いコードを記述することができました。<br>
+            <span class="aa" v-bind:class='{active:isActiveHtml}'><div class="sub-message-none" v-bind:class='{sub:isActiveHtml}'>工夫した点</div></span>
+						<p class="re-content">HTMLを学ぶ際に工夫したことはコードの可読性を高めることです。属性名を後で別の人が読んでもわかるようにする記述することによって再現性の高いコードを記述することができました</p>
           </div>
           <label v-on:click='isActiveHtml=!isActiveHtml' class="readmore-label" for="check1">
 					</label>
@@ -24,12 +26,12 @@
 					CSS
 				</div>
 				<div class="readmore">
-					私がCSSにおいて基本的な文法を学びました。<br>
-					HTMLの基本的な装飾、ブレイクポイントを用いたモバイル対応、擬似要素を用いた複雑なマークアップ手法を学びました。<br>
+					<p>私はCSSで学んだことはhtmlの装飾方法です。特にその中でもブレイクポインを用いたモバイル対応や擬似要素を用いた発展的な手法も積極的に取り入れ学習しました</p>
 					<div class="readmore_more">
           <input id="check2" class="readmore-check" type="checkbox">
           <div class="readmore-content">
-            <span class="aa" v-bind:class='{active:isActiveCss}'><div class="sub-message-none" v-bind:class='{sub:isActiveCss}'>工夫した点</div><br>CSSを学ぶ際に工夫したことは親子関係への意識です。</span><br>親子関係をしっかりと意識することでHTMLを適切に装飾するだけでなく、無駄なコード記述を減らすことができ、より可読性の高いコードを記述することが可能になりました。<br>
+            <span class="aa" v-bind:class='{active:isActiveCss}'><div class="sub-message-none" v-bind:class='{sub:isActiveCss}'>工夫した点</div></span>
+						<p class="re-content">を学ぶ際に工夫したことは記述を一つ一つ理解したことで。開発を行う中で複雑なcssを検索して見つけ記述していく中でこの記述はこの意味があると一つ一つコピペで終わらせずに理解に試みました。</p>
           </div>
           <label v-on:click='isActiveCss=!isActiveCss' class="readmore-label" for="check2">
 					</label>
@@ -41,12 +43,13 @@
 					SCSS
 				</div>
 				<div class="readmore">
-					私がSCSSで学んだことは効率的なCSSの記述手法です。<br>変数を用いたコードの短縮などCSSでは手の届かない痒いところ記述する手法を身に付けました。<br>
+					<p>私がSCSSで学んだことは効率的なCSSの記述手法です。<br>変数を用いたコードの短縮などCSSでは手の届かない痒いところ記述する手法を身に付けました。</p>
 					<div class="readmore_more">
           <input id="check3" class="readmore-check" type="checkbox">
           <div class="readmore-content">
             <span class="aa" v-bind:class='{active:isActiveScss}'><div class="sub-message-none" v-bind:class='{sub:isActiveScss}'>
-							工夫した点</div><br>SCSSを学ぶ際に工夫したことはコメントアウトの記述を積極的に用いたことです</span><br>SCSSを用いる際にコメントアウトを用いなければ、コンパイルされたCSSとの比較することが難しくなると考え、複雑な記述になるところは積極的にコメントアウト用いました<br>
+							工夫した点</div>
+							<p class="re-content">SCSSを学ぶ際に工夫したことは必ずコンパイルされた後のcssを見返したことです。また、scssを学ぶ前のcssとscssを見比べることによってここがより可読性の高い設計ができると振り返りを多く行いました</p></span>
           </div>
           <label v-on:click='isActiveScss=!isActiveScss' class="readmore-label" for="check3">
 					</label>
@@ -58,11 +61,12 @@
 					Javascript
 				</div>
 				<div class="readmore">
-					私はJavascriptではJavascriptの変数の定義の手法からDOM要素を操作という重要な概念まで学びました。<br>
+					<p>私がjavascriptで学んだことは変数の定義の仕方からdomという概念まで基本的なことから非同期通信など幅広く学びました。</p>
 					<div class="readmore_more">
           <input id="check4" class="readmore-check" type="checkbox">
           <div class="readmore-content">
-            <span class="aa" v-bind:class='{active:isActiveJavascript}'><div class="sub-message-none" v-bind:class='{sub:isActiveJavascript}'>工夫した点</div><br>Javascriptを学ぶ際に工夫したことは検証ツールを用いることです。</span><br>イベントを発生させるたびにコンソールを確認し動きを理解することでJavascriptにおけるライフサイクルを体に染み込ませること執着しました。<br>
+            <span class="aa" v-bind:class='{active:isActiveJavascript}'><div class="sub-message-none" v-bind:class='{sub:isActiveJavascript}'>工夫した点</div>
+						<p class="re-content">Javascriptを学ぶ際に工夫したことは検証ツールを必ず用いたことです。イベントを発火するたびに要素が取れているかなど確認しJavascriptにおけるライサイクルを理解することに執着しました</p></span>
           </div>
           <label v-on:click='isActiveJavascript=!isActiveJavascript' class="readmore-label" for="check4">
 					</label>
@@ -74,17 +78,15 @@
 					jQuery
 				</div>
 				<div class="readmore">
-					私はjQueryでは簡略的なJavascriptの運用を学びました<br>jQueryを用いることでJavascriptを簡潔に記述し適切にする手法を学びました。
+					<p>私はjqueryではjavascriptの簡易的で使いやすい運用を学び実践することができました</p>
 					<div class="readmore_more">
           <input id="check5" class="readmore-check" type="checkbox">
           <div class="readmore-content">
             <span class="aa" v-bind:class='{active:isActiveJquery}'>
 							<div class="sub-message-none" v-bind:class='{sub:isActiveJquery}'>
-								工夫した点</div><br>jQueryを学ぶ際に工夫したことはPCとモバイルの住み分けです
+								工夫した点</div>
+								<p class="re-content">jQueryを学ぶ際に工夫したことはJSFiddleを多用したことです。実装する前に毎回JSFiddleで動きを確認しどの要素に対してどのイベントを起こすのが適切か確認しながら導入を進めました</p>
 						</span>
-						<br>
-						あるイベントも両者では動きが異なることが多々あり、PCでは働くがモバイルだと働かないといった現象に記述するたびに適宜調整し、媒体に応じたイベントを発生させることを工夫しました。
-						<br>
           </div>
           <label v-on:click='isActiveJquery=!isActiveJquery' class="readmore-label" for="check5">
 					</label>
@@ -96,15 +98,14 @@
 					Vue.js
 				</div>
 				<div class="readmore">
-					私がVue.jsではモダンなフロント構築を学びました<br>componentや仮装dom、spaなど現在のフロント構築に必要な技術を学び、活かした記述を行いました。<br>
+					<p>私がVue.jsではモダンなフロント構築を学びました。componentや仮装dom、spaなど現在のフロント構築に必要な技術を学び、活かした記述を行いました</p>
 					<div class="readmore_more"><input id="check6" class="readmore-check" type="checkbox">
           <div class="readmore-content">
           <span class="aa" v-bind:class='{active:isActiveVue}'>
 					<div class="sub-message-none" v-bind:class='{sub:isActiveVue}'>
 						工夫した点
 					</div>
-					<br>
-					Vue.jsを学ぶ際に工夫したことは</span><br>
+					<p class="re-content">Vue.jsを学ぶ際に工夫したことは仮想DOMの理解です。今後reactも学ぶ予定ですので両者に共通する仮想DOMの理解を徹底することに工夫しました</p></span>
           </div>
           <label v-on:click='isActiveVue=!isActiveVue' class="readmore-label" for="check6">
 					</label>
@@ -112,27 +113,23 @@
 				</div>
 			</div>
 		</div>
-		<h2>サーバーサイド</h2>
+		<div  class="header_left01">
+      サーバーサイド
+    </div>
 		<div class="server"> 
 			<div class="ruby">
 				<div class="ruby_top">
 					Ruby
 				</div>
 				<div class="readmore">
-					私はRubyでruby on rails<br>
-					そのため此のときに此のようなことに苦労しました<br>
+					<p>私がrubyで学んだことはobject思考のプログラム設計です。元々オブジェクト指向で作られrた言語であるためオブジェクト指向で理解しやすく、他のプログラミング言語にも考え方として応用できる考え方を学びました</p>
 					<div class="readmore_more">
           <input id="check7" class="readmore-check" type="checkbox">
           <div class="readmore-content">
-          <span class="aa" v-bind:class='{active:isActiveRuby}'>
 					<div class="sub-message-none" v-bind:class='{sub:isActiveRuby}'>
 						工夫した点
 					</div>
-					<br>
-					また、HTMLを学んだ理由としては</span><br>
-					そのため此のときに此のようなことに苦労しました<br>
-					頑張ろうと思いました。<br>
-					また、HTMLを学んだ理由としては
+					<p class="re-content">Rubyを学ぶ際に私が工夫したことはエラーとの向き合い方です。サーバサイドの言語なのでエラーと向き合う場面が多く、一つづつ何が読み込めてないか徹底的にエラーと向き合いました</p>
           </div>
           <label v-on:click='isActiveRuby=!isActiveRuby' class="readmore-label" for="check7">
 					</label>
@@ -144,7 +141,7 @@
 					mysql
 				</div>
 				<div class="readmore">
-					fafa
+					<p>私がmysqlで学んだことはdb設計です。sequelproを用いてdbを可視化しdbを適切に設計できるようになりました</p>
 					<div class="readmore_more">
           <input id="check8" class="readmore-check" type="checkbox">
           <div class="readmore-content">
@@ -152,11 +149,7 @@
 					<div class="sub-message-none" v-bind:class='{sub:isActiveMysql}'>
 						工夫した点
 					</div>
-					<br>
-					また、HTMLを学んだ理由としては</span><br>
-					そのため此のときに此のようなことに苦労しました<br>
-					頑張ろうと思いました。<br>
-					また、HTMLを学んだ理由としては
+					<p class="re-content">私がmysqlで工夫したことは情報の洗い出しです。どうしても作り始める情報の修正を用いられました。そこであえて情報を広く取り修正を少なくすることを試みました</p></span>
           </div>
           <label @click='isActiveMysql=!isActiveMysql' class="readmore-label" for="check8">
 					</label>
@@ -184,6 +177,121 @@
 </script>
 
 <style scoped>
+p {
+	text-indent: 1em;
+}
+.re-content {
+	margin: 3% 0;
+	border-bottom: 3px solid #fa5252;
+}
+.left::before {
+   content:"";
+   display:inline-block;
+   width:2px;
+   height:300px;
+   background-color: rgba(85, 82, 81, 0.514);
+   position:absolute;
+   top:-2px;
+   left:10%;
+   filter: drop-shadow(50%);
+   z-index: -1;
+ }
+ .right::before {
+   content:"";
+   display:inline-block;
+   width:2px;
+   height:300px;
+   background-color: rgba(85, 82, 81, 0.514);
+   position:absolute;
+   top:-2px;
+   left:50%;
+   filter: drop-shadow(50%);
+   z-index: -1;
+ }
+.header_left {
+    display: inline-block;
+    color: #4e60ff;
+    background: #ffffff;
+		padding: 1%;
+    /*transform: rotate(-10deg);*/
+    font-size: 2vw;
+    margin-bottom: 5%;
+    border: 1px solid #CCC;
+    border-top: 3px solid #fa5252;
+		color: #fa5252;
+    width: 40%;
+    height: 5%;
+    left: 48%;
+    top: 5%;
+    z-index: １;
+		font-weight: bold;
+  }
+	.header_left01 {
+    display: inline-block;
+    color: #4e60ff;
+    background: #ffffff;
+		padding: 1%;
+    /*transform: rotate(-10deg);*/
+    font-size: 2vw;
+    margin-top: 5%;
+    border: 1px solid #CCC;
+    border-top: 3px solid #fa5252;
+		color: #fa5252;
+    width: 40%;
+    height: 5%;
+    left: 38%;
+    top: 5%;
+    z-index: １;
+		font-weight: bold;
+  }
+  .day_left::before {
+   content:"";
+   display:inline-block;
+   width:3px;
+   height:60px;
+   background-color: rgba(85, 82, 81, 0.514);
+   position:absolute;
+   top:-5%;
+   left:35%;
+   filter: drop-shadow(50%);
+   z-index: -1;
+ }
+ .day_right::before {
+   content:"";
+   display:inline-block;
+   width:3px;
+   height:60px;
+   background-color: rgba(85, 82, 81, 0.514);
+   position:absolute;
+   top:-5%;
+   left:65%;
+   filter: drop-shadow(50%);
+   z-index: -1;
+ }
+ .day_left01::before {
+   content:"";
+   display:inline-block;
+   width:3px;
+   height:30px;
+   background-color: rgba(85, 82, 81, 0.514);
+   position:absolute;
+   top:100%;
+   left:75%;
+   filter: drop-shadow(50%);
+   z-index: 1;
+ }
+ .day_right01::before {
+   content:"";
+   display:inline-block;
+   width:3px;
+   height:30px;
+   background-color: rgba(85, 82, 81, 0.514);
+   position:absolute;
+   top:100%;
+   left:25%;
+   filter: drop-shadow(50%);
+   z-index: 1
+ }
   .readmore{
     position: relative;
     box-sizing: border-box;
@@ -193,6 +301,7 @@
     border: 1px solid #ff7d5c;
 		text-align: start;
 		color: #ff7d5c;
+		border-bottom: 1px solid #ff7d5c;
 }
 .readmore_more{
     position: relative;
@@ -494,6 +603,7 @@
     font-weight: bold;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
 		margin-top: 5%;
+		margin-bottom: 5%;
 	}
 	.ruby_top {
 		background: transparent;
@@ -516,6 +626,7 @@
     font-weight: bold;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
 		margin-top: 5%;
+		margin-bottom: 5%;
 	}
 	.mysql_top {
 		background: transparent;
@@ -524,6 +635,29 @@
 	.mysql_content {
 		background: transparent;
 		padding: 10%;
-		text-align: start;
+		text-align: star
 	}
+	.sub {
+    filter: opacity(100%);
+    padding-top: 2%;
+    display: table;
+    margin: 0 auto;
+    z-index: 2;
+    padding: 0 10px;
+    background-color: #fa5252;
+    color: white;
+    border-radius: 10px;
+    margin-top: 3%;
+    text-align: center;
+  }
+	.sub::before {
+  content:"";
+   display:block;
+   width: 450%;
+   height:3px;
+   background-color: #fa5252;
+   position:absolute;
+   top: -15px;
+   left: -200%;
+}
 </style>

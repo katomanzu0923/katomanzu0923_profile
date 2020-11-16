@@ -1,17 +1,17 @@
 <template>
-	<div class="home_message">
-    <div  class="header_left">
+	<div class="vue">
+    <div  class="products-header">
       動的アプリケーション
     </div>
-		<div class="product">
-			<div class="product01">
-					Train Matching
+		<div class="products-body">
+			<div class="product-title">
+					<h2>Train Matching</h2>
 			</div>
-			<div class="product01_content">
+			<div class="product_content">
           <div>
             <img src="@/assets/train.png" alt="次へ" class="main">
           </div>
-          <div class="content_left">
+          <div class="product-content-left">
             <ul>
               <h3>＜作成時に工夫した点＞</h3>
               <li>
@@ -31,7 +31,7 @@
               </li>
             </ul>
           </div>
-          <div class="content_right">
+          <div class="product-content-right">
             <h3>＜作成後の反省点＞</h3>
             <ul>
               <li>
@@ -51,17 +51,17 @@
               </li>
             </ul>
           </div>
-          <div class="product01_content_more">	
+          <div class="product-content-readmore">	
             <input id="check1" class="readmore-check" type="checkbox">
             <div class="product01_content_more-content">
-              <div class="sub-message-none" v-bind:class='{sub:isActiveProduct01}'>
+              <div class="none" v-bind:class='{isActive:isActiveProduct01}'>
                 各ページの詳細
               </div><br>
               <div>
               <div>
               </div>
               <div class="product_top">
-                <img src="@/assets/915333465e0072b4b9412b3c48c4926b.gif" alt="次へ" class="ff">
+                <img src="@/assets/915333465e0072b4b9412b3c48c4926b.gif" alt="次へ" class="product-gif">
                 <div class="product_top_coment">
                   <h3 class="title_top">Topページ</h3>
                   <p>このサイトのTopページ。ユーザーに応じてクリックなど余分な動作をすることなく各言語使用者を適切なページへ誘導。<br>
@@ -74,7 +74,7 @@
                 </div>
               </div>
               <div class="product_login">
-                <img src="@/assets/5c513750d58970280c3cea39f9ef16b2.gif" alt="次へ" class="ff">
+                <img src="@/assets/5c513750d58970280c3cea39f9ef16b2.gif" alt="次へ" class="product-gif">
                 <div class="product_login_coment">
                   <h3 class="title_login">ログインページ</h3>
                   <p>リアルタイムバリデーション機能を実装。フォームの記述に応じてエラーがある場合はエラー理由表示、エラーがない場合はオッケーマークを表示。また、この時国籍の情報を取得し、以後それに応じた表示の多言語化を実装。<br>
@@ -86,7 +86,7 @@
                 </div>
               </div>
               <div class="product_area">
-                <img src="@/assets/431a3eab6ad967fa7aaae871fb1b8e57.gif" alt="次へ" class="ff">
+                <img src="@/assets/431a3eab6ad967fa7aaae871fb1b8e57.gif" alt="次へ" class="product-gif">
                 <div class="product_login_coment">
                   <h3 class="title_login">エリアページ</h3>
                   <p>行き先に関して、写真は文字より情報量の多いという考えのもと画像を多用し行き先を誘導。<br>
@@ -98,7 +98,7 @@
                 </div>
               </div>
               <div class="product_info">
-                <img src="@/assets/1c381f0e13da74e62c607421d8c94ab1.gif" alt="次へ" class="ff">
+                <img src="@/assets/1c381f0e13da74e62c607421d8c94ab1.gif" alt="次へ" class="product-gif">
                 <div class="product_login_coment">
                   <h3 class="title_login">チケットページ</h3>
                   <p>を用いてチケットの情報並べて表示。また、他のページにおいても共通であるが、ぼかしを導入してハンバーグメニューを強調。<p>
@@ -115,18 +115,18 @@
         </div>
 			</div>
 		</div>
-    <div  class="header_left01">
+    <div  class="products-header">
       静的アプリケーション
     </div>
-		<div class="product">
-			<div class="product01">
-					katomanzu0923-profile
+		<div class="products-body">
+			<div class="product-title">
+					<h2>katomanzu0923_profile</h2>
 			</div>
-			<div class="product01_content">
+			<div class="product_content">
           <div>
             <img src="@/assets/profile_top.gif" alt="次へ" class="main">
           </div>
-          <div class="content_left">
+          <div class="product-content-left">
             <ul>
               <h3>＜作成して工夫した点＞</h3>
               <li>
@@ -146,7 +146,7 @@
               </li>
             </ul>
           </div>
-          <div class="content_right">
+          <div class="product-content-right">
             <h3>＜作成して反省すべき点＞</h3>
             <ul>
               <li>
@@ -166,17 +166,17 @@
               </li>
             </ul>
           </div>
-          <div class="product01_content_more">	
+          <div class="product-content-readmore">	
             <input id="check2" class="readmore-check" type="checkbox">
             <div class="product01_content_more-content">
-              <div class="sub-message-none" v-bind:class='{sub:isActiveProduct01}'>
-                作成したアプリの詳細
+              <div class="none" v-bind:class='{isActive:isActiveProduct02}'>
+                各ページの詳細
               </div><br>
               <div>
               <div>
               </div>
               <div class="product_top">
-                <img src="@/assets/profile_top.gif" alt="次へ" class="ff">
+                <img src="@/assets/profile_top.gif" alt="次へ" class="product-gif">
                 <div class="product_top_coment">
                   <h3 class="title_top">Profileページ</h3>
                   基本情報や自身の説明を記載。<br>
@@ -187,7 +187,7 @@
                 </div>
               </div>
               <div class="product_login">
-                <img src="@/assets/programing.gif" alt="次へ" class="ff">
+                <img src="@/assets/programing.gif" alt="次へ" class="product-gif">
                 <div class="product_login_coment">
                   <h3 class="title_login">Programingページ</h3>
                   これまでに学んだ言語に関して記載<br>
@@ -198,7 +198,7 @@
                 </div>
               </div>
               <div class="product_area">
-                <img src="@/assets/products.gif" alt="次へ" class="ff">
+                <img src="@/assets/products.gif" alt="次へ" class="product-gif">
                 <div class="product_login_coment">
                   <h3 class="title_login">Productsページ</h3>
                   自身でゼロから考えた動的、静的アプリケーションに関して記載。<br>
@@ -209,7 +209,7 @@
                 </div>
               </div>
               <div class="product_info">
-                <img src="@/assets/web_design.gif" alt="次へ" class="ff">
+                <img src="@/assets/web_design.gif" alt="次へ" class="product-gif">
                 <div class="product_login_coment">
                   <h3 class="title_info">Web Designページ</h3>
                   Webデザインの領域で作ったパーツを記載<br>
@@ -219,7 +219,7 @@
                 </div>
               </div>
               <div class="product_info">
-                <img src="@/assets/and_more.gif" alt="次へ" class="ff">
+                <img src="@/assets/and_more.gif" alt="次へ" class="product-gif">
                 <div class="product_login_coment">
                   <h3 class="title_info">And moreページ</h3>
                   上記以外でWeb開発、制作の力になるような技術に関して記載<br>
@@ -236,7 +236,6 @@
         </div>
 			</div>
 		</div>
-		<h2>and more</h2>
 	</div>
 </template>
 
@@ -256,15 +255,33 @@ export default {
     text-indent: 1em;
     background: transparent;
   }
-  .home_message {
+  h2 {
+		text-align: center;
+    width: 60%;
+		position: relative;
+    display: inline-block;
+    padding: 0 5px;
+    color: #1bdf14;
+    background: transparent;
+	}
+  h3 {
+    text-align: center;
+  }
+  a {
+  color: #1bdf14;
+  border:1px solid #1bdf14;
+  text-decoration: none;
+  padding: 5px;
+  margin: 1%;
+}
+  .vue {
 		position: absolute;
 		color: black;
 		text-align: center;
 	}
-  .header_left {
+  .products-header {
     display: inline-block;
-    color: #4e60ff;
-    background: #ffffff;
+    background: rgba(253, 253, 253, 0.767);
 		padding: 1%;
     /*transform: rotate(-10deg);*/
     font-size: 2vw;
@@ -279,92 +296,80 @@ export default {
     z-index: 1;
 		font-weight: bold;
   }
-  .day_left::before {
-   content:"";
-   display:inline-block;
-   width:3px;
-   height:90px;
-   background-color: rgba(85, 82, 81, 0.514);
-   position:absolute;
-   top:-2%;
-   left:35%;
-   filter: drop-shadow(50%);
-   z-index: -1;
- }
- .day_right::before {
-   content:"";
-   display:inline-block;
-   width:3px;
-   height:90px;
-   background-color: rgba(85, 82, 81, 0.514);
-   position:absolute;
-   top:-2%;
-   left:65%;
-   filter: drop-shadow(50%);
-   z-index: -11;
- }
- .header_left01 {
-    display: inline-block;
-    color: #4e60ff;
-    background: #ffffff;
-		padding: 1%;
-    /*transform: rotate(-10deg);*/
-    font-size: 2vw;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    border: 1px solid #CCC;
-    border-top: 3px solid #1bdf14;
-		color: #1bdf14;
-    width: 40%;
-    height: 5%;
-    left: 38%;
-    top: 5%;
+
+  .products-body {
+		flex-basis: 40%;
+		position: relative;
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #f7f7f7;
+    border-top: solid 6px #1bdf14;/*左線*/
+    color: #1bdf14;/*文字色*/
     font-weight: bold;
-    z-index: 1;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    margin-bottom: 5%;
+	}
+	.product-title {
+		background: transparent;
+		color: #1bdf14;
   }
- .day_left01::before {
-   content:"";
-   display:inline-block;
-   width:3px;
-   height:30px;
-   background-color: rgba(85, 82, 81, 0.514);
-   position:absolute;
-   top:100%;
-   left:40%;
-   filter: drop-shadow(50%);
-   z-index: 1;
- }
- .day_right01::before {
-   content:"";
-   display:inline-block;
-   width:3px;
-   height:30px;
-   background-color: rgba(85, 82, 81, 0.514);
-   position:absolute;
-   top:100%;
-   left:60%;
-   filter: drop-shadow(50%);
-   z-index: 1;
- }
+  
   .main {
     width: 100%;
+    border:solid 1px rgba(128, 128, 128, 0.658);
   }
-  .content_left {
+
+  .product_content{
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #7fe07b;
+		text-align: start;
+		color: #7fe07b;
+}
+
+  .product-content-left {
     display: inline-block;
     left: 0;
     width: 40%;
     margin-left: 5%;
   }
-  .content_right {
+  .product-content-right {
     display: inline-block;
     right: 0;
     width: 50%;
     margin-left: 2%;
   }
-  h3 {
-    text-align: center;
-  }
-  .product_top {
+  
+  .product-content-readmore{
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px;
+		text-align: start;
+		color: #7fe07b;
+}
+	
+.product01_content_more-content{
+    position: relative;
+    overflow: hidden;
+    /*以下お好み*/
+    /*高さの初期値*/
+    height: 20px;
+}
+.product01_content_more-content::before {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    content: "";
+    height: 50px;
+    background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 10%, rgba(255,255,255,0.8) 10%, #fff 100%);
+    background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 10%, #fff 10%);
+}
+
+.product_top {
     position: relative;
     padding-top: 1%;
     margin: 0 1%;
@@ -374,7 +379,7 @@ export default {
     text-align: center;
     margin-top: 3%;
   }
-  .ff {
+  .product-gif {
     width: 70%;
     border: 1px solid rgba(0, 0, 0, 0.589);
   }
@@ -473,96 +478,8 @@ export default {
     margin-left: 10%;
     margin-bottom: 2%;
   }
-	h2 {
-		text-align: center;
-    width: 60%;
-		position: relative;
-    display: inline-block;
-    padding: 0 5px;
-		margin-bottom: 5%;
-		color: #1bdf14;
-		margin-top: 5%;
-	}
-	h2::before {
-		position: absolute;
-    content: '';
-    top: 0;
-    right: 5px;
-    width: 5px;
-    height: 100%;
-    border: 5px solid #7fe07b;
-    border-left: none;
-	}
- h2::after {
-		position: absolute;
-    content: '';
-    top: 0;
-    left: 5px;
-    width: 5px;
-    height: 100%;
-    border: 5px solid #7fe07b;
-    border-right: none;
-		margin-bottom: 5%;
-	}
-	.product {
-		flex-basis: 40%;
-		position: relative;
-    display: block;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    background: #f7f7f7;
-    border-top: solid 6px #1bdf14;/*左線*/
-    color: #1bdf14;/*文字色*/
-    font-weight: bold;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
-	}
-	.product01 {
-		background: transparent;
-		color: #1bdf14;
-	}
-  .product01_content_more{
-    position: relative;
-    box-sizing: border-box;
-    /*以下お好み*/
-    /* ボーダーを付ける場合 */
-    padding: 10px;
-		text-align: start;
-		color: #7fe07b;
-}
-	.html_content {
-		background: transparent;
-		padding: 10%;
-		text-align: start;
-		color: #7fe07b;
-	}
-	.product01_content{
-    position: relative;
-    box-sizing: border-box;
-    /*以下お好み*/
-    /* ボーダーを付ける場合 */
-    padding: 10px;
-    border: 1px solid #7fe07b;
-		text-align: start;
-		color: #7fe07b;
-}
-.product01_content_more-content{
-    position: relative;
-    overflow: hidden;
-    /*以下お好み*/
-    /*高さの初期値*/
-    height: 20px;
-}
-.product01_content_more-content::before {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    content: "";
-    height: 50px;
-    background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 10%, rgba(255,255,255,0.8) 10%, #fff 100%);
-    background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 10%, #fff 10%);
-}
+
+
 .readmore-label{
     display: table;
     bottom: 5px;
@@ -599,10 +516,10 @@ export default {
 .readmore-check:checked ~ .product01_content_more-content::before {
     display: none;
 }
-.sub-message-none {
+.none {
 	filter: opacity(0%);
 }
-.sub {
+.isActive {
 	filter: opacity(100%);
 	color: #1bdf14;
 	text-align: center;
@@ -617,7 +534,7 @@ export default {
 	color: #f7f7f7;
   margin-top: 1%;
 }
-.sub::before {
+.isActive::before {
   content:"";
   display:block;
   height:2px;
@@ -626,17 +543,6 @@ export default {
   position: absolute;
   top: -10px;
   left: -300%;
-}
-
-.aa {
-  filter: opacity(0);
-}
-a {
-  color: #1bdf14;
-  border:1px solid #1bdf14;
-  text-decoration: none;
-  padding: 5px;
-  margin: 1%;
 }
 
 </style>

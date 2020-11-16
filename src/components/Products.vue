@@ -51,9 +51,9 @@
               </li>
             </ul>
           </div>
-          <div class="product-content-readmore">	
+          <div class="product-readmore-body">	
             <input id="check1" class="readmore-check" type="checkbox">
-            <div class="product01_content_more-content">
+            <div class="product-readmore">
               <div class="none" v-bind:class='{isActive:isActiveProduct01}'>
                 各ページの詳細
               </div><br>
@@ -110,7 +110,7 @@
               </div>
             </div>
           </div>
-          <label v-on:click='isActiveProduct01=!isActiveProduct01' class="readmore-label" for="check1">
+          <label v-on:click='isActiveProduct01=!isActiveProduct01' class="products-label" for="check1">
 					</label>
         </div>
 			</div>
@@ -166,9 +166,9 @@
               </li>
             </ul>
           </div>
-          <div class="product-content-readmore">	
+          <div class="product-readmore-body">	
             <input id="check2" class="readmore-check" type="checkbox">
-            <div class="product01_content_more-content">
+            <div class="product-readmore">
               <div class="none" v-bind:class='{isActive:isActiveProduct02}'>
                 各ページの詳細
               </div><br>
@@ -231,7 +231,7 @@
               </div>
             </div>
           </div>
-          <label v-on:click='isActiveProduct02=!isActiveProduct02' class="readmore-label" for="check2">
+          <label v-on:click='isActiveProduct02=!isActiveProduct02' class="products-label" for="check2">
 					</label>
         </div>
 			</div>
@@ -342,7 +342,7 @@ export default {
     margin-left: 2%;
   }
   
-  .product-content-readmore{
+  .product-readmore-body{
     position: relative;
     box-sizing: border-box;
     padding: 10px;
@@ -350,14 +350,12 @@ export default {
 		color: #7fe07b;
 }
 	
-.product01_content_more-content{
+.product-readmore{
     position: relative;
     overflow: hidden;
-    /*以下お好み*/
-    /*高さの初期値*/
     height: 20px;
 }
-.product01_content_more-content::before {
+.product-readmore::before {
     display: block;
     position: absolute;
     bottom: 0;
@@ -480,7 +478,7 @@ export default {
   }
 
 
-.readmore-label{
+.products-label{
     display: table;
     bottom: 5px;
     position: absolute;
@@ -496,24 +494,24 @@ export default {
 		text-align: center;
 		color: #f7f7f7;
 }
-.readmore-label:before{
+.products-label:before{
     content: '↓作成したアプリの詳細↓';
 }
 .readmore-check{
     display: none;
 }
-.readmore-check:checked ~ .readmore-label{
+.readmore-check:checked ~ .products-label{
     position: static;
     transform: translateX(0);
     -webkit-transform: translateX(0);
 }
-.readmore-check:checked ~ .readmore-label:before{
+.readmore-check:checked ~ .products-label:before{
     content: '閉じる';
 }
-.readmore-check:checked ~ .product01_content_more-content{
+.readmore-check:checked ~ .product-readmore{
     height: auto;
 }
-.readmore-check:checked ~ .product01_content_more-content::before {
+.readmore-check:checked ~ .product-readmore::before {
     display: none;
 }
 .none {

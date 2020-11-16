@@ -1,9 +1,9 @@
 <template>
 	<div class="programing_message">
-		<div  class="header_left">
+		<div  class="programing-header">
       フロントエンド
     </div>
-		<div class="front">
+		<div class="programing-body">
 			<div class="html">
 				<div class="html_main">
 					HTML
@@ -184,31 +184,7 @@ p {
 	margin: 3% 0;
 	border-bottom: 3px solid #fa5252;
 }
-.left::before {
-   content:"";
-   display:inline-block;
-   width:2px;
-   height:300px;
-   background-color: rgba(85, 82, 81, 0.514);
-   position:absolute;
-   top:-2px;
-   left:10%;
-   filter: drop-shadow(50%);
-   z-index: -1;
- }
- .right::before {
-   content:"";
-   display:inline-block;
-   width:2px;
-   height:300px;
-   background-color: rgba(85, 82, 81, 0.514);
-   position:absolute;
-   top:-2px;
-   left:50%;
-   filter: drop-shadow(50%);
-   z-index: -1;
- }
-.header_left {
+.programing-header {
     display: inline-block;
     color: #4e60ff;
     background: #ffffff;
@@ -225,158 +201,15 @@ p {
     top: 5%;
     z-index: １;
 		font-weight: bold;
-  }
-	.header_left01 {
-    display: inline-block;
-    color: #4e60ff;
-    background: #ffffff;
-		padding: 1%;
-    /*transform: rotate(-10deg);*/
-    font-size: 2vw;
-    margin-top: 5%;
-    border: 1px solid #CCC;
-    border-top: 3px solid #fa5252;
-		color: #fa5252;
-    width: 40%;
-    height: 5%;
-    left: 38%;
-    top: 5%;
-    z-index: １;
-		font-weight: bold;
-  }
-  .day_left::before {
-   content:"";
-   display:inline-block;
-   width:3px;
-   height:60px;
-   background-color: rgba(85, 82, 81, 0.514);
-   position:absolute;
-   top:-5%;
-   left:35%;
-   filter: drop-shadow(50%);
-   z-index: -1;
- }
- .day_right::before {
-   content:"";
-   display:inline-block;
-   width:3px;
-   height:60px;
-   background-color: rgba(85, 82, 81, 0.514);
-   position:absolute;
-   top:-5%;
-   left:65%;
-   filter: drop-shadow(50%);
-   z-index: -1;
- }
- .day_left01::before {
-   content:"";
-   display:inline-block;
-   width:3px;
-   height:30px;
-   background-color: rgba(85, 82, 81, 0.514);
-   position:absolute;
-   top:100%;
-   left:75%;
-   filter: drop-shadow(50%);
-   z-index: 1;
- }
- .day_right01::before {
-   content:"";
-   display:inline-block;
-   width:3px;
-   height:30px;
-   background-color: rgba(85, 82, 81, 0.514);
-   position:absolute;
-   top:100%;
-   left:25%;
-   filter: drop-shadow(50%);
-   z-index: 1
- }
-  .readmore{
-    position: relative;
-    box-sizing: border-box;
-    /*以下お好み*/
-    /* ボーダーを付ける場合 */
-    padding: 10px;
-    border: 1px solid #ff7d5c;
-		text-align: start;
-		color: #ff7d5c;
-		border-bottom: 1px solid #ff7d5c;
-}
-.readmore_more{
-    position: relative;
-    box-sizing: border-box;
-    /*以下お好み*/
-    /* ボーダーを付ける場合 */
-    padding: 10px;
-		text-align: start;
-		color: #ff7d5c;
-}
-.readmore-content{
-    position: relative;
-    overflow: hidden;
-    /*以下お好み*/
-    /*高さの初期値*/
-    height: 20px;
-}
-.readmore-content::before {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    content: "";
-    height: 50px;
-    background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 10%, rgba(255,255,255,0.8) 10%, #fff 100%);
-    background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 10%, #fff 10%);
-}
-.readmore-label{
-    display: table;
-    bottom: 5px;
-    position: absolute;
-    bottom: 5px;
-    left: 50%;
-		width: 60%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    margin: 0 auto;
-    z-index: 2;
-    padding: 0 10px;
-    background-color: #fa5252;
-    border-radius: 10px;
-		text-align: center;
-		color: #f7f7f7;
-}
-.readmore-label:before{
-    content: '↓工夫した点↓';
-}
-.readmore-check{
-    display: none;
-}
-.readmore-check:checked ~ .readmore-label{
-    position: static;
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-}
-.readmore-check:checked ~ .readmore-label:before{
-    content: '閉じる';
-}
-.readmore-check:checked ~ .readmore-content{
-    height: auto;
-}
-.readmore-check:checked ~ .readmore-content::before {
-    display: none;
-}
-.sub-message-none {
-	filter: opacity(0%);
-}
-.sub {
-	filter: opacity(100%);
-	color: #ff4618;
-	text-align: center;
-	border-top: 3px solid #ff7c5c;
-  padding-top: 2%;
-}
+	}
+	.programing-body {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		/*padding: 5%;*/
+	}
+	
+  
   .programing_message {
 		position: absolute;
 		color: black;
@@ -384,7 +217,7 @@ p {
 	}
 
 
-	.front {
+	.programing-body {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -637,6 +470,93 @@ p {
 		padding: 10%;
 		text-align: star
 	}
+
+
+.readmore{
+    position: relative;
+    box-sizing: border-box;
+    /*以下お好み*/
+    /* ボーダーを付ける場合 */
+    padding: 10px;
+    border: 1px solid #ff7d5c;
+		text-align: start;
+		color: #ff7d5c;
+		border-bottom: 1px solid #ff7d5c;
+}
+.readmore_more{
+    position: relative;
+    box-sizing: border-box;
+    /*以下お好み*/
+    /* ボーダーを付ける場合 */
+    padding: 10px;
+		text-align: start;
+		color: #ff7d5c;
+}
+.readmore-content{
+    position: relative;
+    overflow: hidden;
+    /*以下お好み*/
+    /*高さの初期値*/
+    height: 20px;
+}
+.readmore-content::before {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    content: "";
+    height: 50px;
+    background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 10%, rgba(255,255,255,0.8) 10%, #fff 100%);
+    background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 10%, #fff 10%);
+}
+.readmore-label{
+    display: table;
+    bottom: 5px;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+		width: 60%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    margin: 0 auto;
+    z-index: 2;
+    padding: 0 10px;
+    background-color: #fa5252;
+    border-radius: 10px;
+		text-align: center;
+		color: #f7f7f7;
+}
+.readmore-label:before{
+    content: '↓工夫した点↓';
+}
+.readmore-check{
+    display: none;
+}
+.readmore-check:checked ~ .readmore-label{
+    position: static;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+.readmore-check:checked ~ .readmore-label:before{
+    content: '閉じる';
+}
+.readmore-check:checked ~ .readmore-content{
+    height: auto;
+}
+.readmore-check:checked ~ .readmore-content::before {
+    display: none;
+}
+.sub-message-none {
+	filter: opacity(0%);
+}
+.sub {
+	filter: opacity(100%);
+	color: #ff4618;
+	text-align: center;
+	border-top: 3px solid #ff7c5c;
+  padding-top: 2%;
+}
 	.sub {
     filter: opacity(100%);
     padding-top: 2%;

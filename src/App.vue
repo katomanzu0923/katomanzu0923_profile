@@ -1,5 +1,15 @@
 <template>
   <div>
+    <div  class="to" v-if=" isLoad ===  'a'">
+      <div  class="module">
+          <h1 class="boo">フロントエンドエンジニアを目指す、未経験者の</h1>
+          <span class="front-m">学</span><span class="front-n">び</span><span class="middle-b">L</span><span class="back-v">o</span><span class="back-c">g</span>
+          <div class="h">HTML</div><div class="s">SCSS</div><div class="v">Vue.js</div><div class="r">Ruby</div>
+      </div>
+      <button  class="bo" @click="isLoad = 'b'; day_calculation()">見にいく</button>
+    </div>
+    <div v-else>
+    </div>
     <div class="header">
         <div v-if="isActive01 === 'a'">
           <div  class="header-right">
@@ -80,6 +90,7 @@
       <div class="right">
       </div>
     </div> 
+    
     <div class="menu_button">
       <button @click="currentComponet = 'Home'; change_home()"  class="home">{{ home }}</button>
       <button @click="currentComponet = 'Programing'; change_program(); " class="programing">{{ programing }}</button>
@@ -87,10 +98,13 @@
       <button @click="currentComponet = 'WebDesign'; change_design()" class="webdesign">{{ design }}</button>
       <button @click="currentComponet = 'AndMore'; change_more()" class="more">{{ more }}</button>
     </div>  
+
     <div>
       <component :is="currentComponet" class="contents"></component>
     </div>  
+    
   </div>
+  
 </template>
 
 
@@ -113,10 +127,16 @@ export default {
       design: "WebDesign",
       more: "And more",
       isActive01: "g",
+      isLoad: "a",
     };
   },
+  mounted: {
+    window:addEventListener('load', () => {
+      alert;
+    })
+  },
   methods: {
-    window:onload = function() {
+    day_calculation() {
       let today = new Date();
       let start = new Date( '2020/8/3 00:00');
       let ago = (today - start) / 86400000;
@@ -175,7 +195,7 @@ export default {
     Products,
     WebDesign,
     AndMore,
-    Home
+    Home,
   }
 
 };
@@ -187,6 +207,201 @@ export default {
     font-size: 2vh;
     box-sizing: border-box;
   }
+  .to {
+    position: absolute;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    font-family: arial black;
+    background: transparent;
+    backdrop-filter: blur(5px);
+  }
+  .module {
+    position: absolute;
+    position: fixed;
+    left: 0;
+    top: 15%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #4e60ffb6;
+    font-size: 3vw;
+    z-index: 3;
+    background: transparent;
+    font-family: arial black;
+  }
+  
+
+  .bo {
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    width: 10%;
+    z-index: 4;
+    height: 5%;
+    font-weight: bold;
+    text-shadow: 3px 3px 0 #4ec7ffd3;
+    -webkit-text-stroke: 1px #888;
+    color: rgb(218, 248, 255);
+    font-size: 1.5vw;
+  }
+  button {
+    background: #4ec7ffd3;
+    border: none;
+  }
+  .boo {
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    color: rgba(0, 0, 255, 0.699);
+  }
+  .h {
+    position: absolute;
+    display: inline-block;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 3px 3px 0 #4e60ffd3;
+    -webkit-text-stroke: 1px #888;
+    background: transparent;
+    backdrop-filter: blur(1000px);
+    font-size: 1.5vw;
+    transform: rotate(-25deg);
+    top: 23%;
+    left: 58%;
+  }
+  .s {
+    position: absolute;
+    display: inline-block;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 3px 3px 0 #ff4ecad3;
+    -webkit-text-stroke: 1px #888;
+    background: transparent;
+    font-size: 2vw;
+    transform: rotate(5deg);
+    top: 20%;
+    left: 33%;
+  }
+  .v {
+    position: absolute;
+    display: inline-block;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 3px 3px 0 #54ff4ed3;
+    -webkit-text-stroke: 1px #888;
+    padding: 3px 0 10px;
+    background: transparent;
+    backdrop-filter: blur(1000px);
+    font-size: 3vw;
+    transform: rotate(10deg);
+    top: 32%;
+    left: 54%;
+  }
+  .r {
+    position: absolute;
+    display: inline-block;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 3px 3px 0 #f02727d3;
+    -webkit-text-stroke: 1px #888;
+    padding: 3px 0 10px;
+    background: transparent;
+    backdrop-filter: blur(1000px);
+    font-size: 2vw;
+    transform: rotate(-15deg);
+    top: 30%;
+    left: 40%;
+  }
+  .front-m {
+    display: inline-block;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 3px 3px 0 #4e60ffd3;
+    -webkit-text-stroke: 1px #888;
+    padding: 3px 0 10px;
+    background: transparent;
+    backdrop-filter: blur(1000px);
+    font-size: 6vw;
+    transform: rotate(-25deg);
+  }
+  .front-n {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 3px 3px 0 #fa5252d5;
+    -webkit-text-stroke: 1px #888;
+    padding: 0 0 10px;
+    display: inline-block;
+    background: transparent;
+    backdrop-filter: blur(2000px);
+    font-size: 6vw;
+    margin-top: 50px;
+  }
+  .middle-b {
+    display: inline-block;
+    background: transparent;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 3px 3px 0 #1bdf1483;
+    -webkit-text-stroke: 1px rgb(116, 116, 116);
+    padding: 0 0 10px;
+    background: transparent;
+    font-size: 9vw;
+  }
+  .back-v {
+    display: inline-block;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 3px 3px 0 #00d0ec96;
+    -webkit-text-stroke: 1px #888;
+    padding: 0 0 1%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    font-size: 7vw;
+  }
+  .back-c {
+    display: inline-block;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 3px 3px 0 #f94eff8e;
+    -webkit-text-stroke: 1px #888;
+    padding: 0 0 1%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    font-size: 5vw;
+    transform: rotate(25deg);
+    margin: 7px;
+  }
+  .front-m::before {
+   content:"";
+   display:inline-block;
+   width:2px;
+   height:48px;
+   border-radius: 10px;
+   background-color: #4e60ff88;
+   position:absolute;
+   top:40px;
+   left:50%;
+   filter: drop-shadow(50%);
+   z-index: -1;
+   transform: rotate(-15deg);
+ }
+ .back-c::before {
+   content:"";
+   display:inline-block;
+   width:2px;
+   height:28px;
+   border-radius: 10px;
+   background-color: #4e60ff88;
+   position:absolute;
+   top:89%;
+   left:30%;
+   filter: drop-shadow(50%);
+   z-index: -1;
+   transform: rotate(18deg);
+ }
   .header-right {
     display: inline-block;
     position: absolute;
@@ -277,30 +492,7 @@ export default {
     z-index: 2;
     padding: 1%;
   }
-  .day_left::before {
-   content:"";
-   display:inline-block;
-   width:2px;
-   height:60px;
-   background-color: rgba(98, 162, 235, 0.514);
-   position:absolute;
-   top:0;
-   left:50%;
-   filter: drop-shadow(50%);
-   z-index: 0;
- }
- .day_right::before {
-   content:"";
-   display:inline-block;
-   width:3px;
-   height:60px;
-   background-color: rgba(98, 162, 235, 0.514);
-   position:absolute;
-   top:0;
-   left:55%;
-   filter: drop-shadow(50%);
-   z-index: 0;
- }
+  
   .active {
     position: absolute;
     width: 100%;
@@ -1012,7 +1204,7 @@ export default {
   .menu_button {
     margin-left: 2.5%;
     position: fixed;
-    background: #f7f7f7;
+    background: #ffffff;
     width: 20%;
     top: 20%;
     padding: 2%;

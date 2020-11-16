@@ -120,23 +120,23 @@
     </div>
 		<div class="product">
 			<div class="product01">
-					Train Matching
+					katomanzu0923-profile
 			</div>
 			<div class="product01_content">
           <div>
-            <img src="@/assets/train.png" alt="次へ" class="main">
+            <img src="@/assets/profile_top.gif" alt="次へ" class="main">
           </div>
           <div class="content_left">
             <ul>
               <h3>＜作成して工夫した点＞</h3>
               <li>
-                多言語化対応
+                Vue.jsを用いたアプリケーションの作成
               </li>
               <li>
-                
+                動作を軽くするため画像の割合を極力減らすCSS設計
               </li>
               <li>
-
+                統一した彩度でサイトを設計した事
               </li>
               <li>
 
@@ -150,13 +150,13 @@
             <h3>＜作成して反省すべき点＞</h3>
             <ul>
               <li>
-                コード設計が煩雑になり可読性が著しく低下した事
+                Vue.jsのコンポーネントをうまく活用できなかった事
               </li>
               <li>
-                画像の多用によりUIが著しく低下した事
+                装飾をCSSのみと拘っていたため不自然なヘッダーになってしまった事
               </li>
               <li>
-                jQueryの運用に際して、コード量が膨大になった事
+                
               </li>
               <li>
 
@@ -167,7 +167,7 @@
             </ul>
           </div>
           <div class="product01_content_more">	
-            <input id="check1" class="readmore-check" type="checkbox">
+            <input id="check2" class="readmore-check" type="checkbox">
             <div class="product01_content_more-content">
               <div class="sub-message-none" v-bind:class='{sub:isActiveProduct01}'>
                 作成したアプリの詳細
@@ -176,40 +176,62 @@
               <div>
               </div>
               <div class="product_top">
-                <img src="@/assets/915333465e0072b4b9412b3c48c4926b.gif" alt="次へ" class="ff">
+                <img src="@/assets/profile_top.gif" alt="次へ" class="ff">
                 <div class="product_top_coment">
-                  <h3 class="title_top">・Topページ</h3>
-                  多言語対応としてマウスオーバーで日本語、英語、中国語に対応。<br>
-                  背景の写真は各言語利用者を想定して写真を選定
+                  <h3 class="title_top">Profileページ</h3>
+                  基本情報や自身の説明を記載。<br>
+                  <div class="product_link">
+                    <span class="code_link"><a href="https://github.com/katomanzu0923/katomanzu0923_profile/blob/master/src/App.vue" target="_blank">App.vue</a></span>
+                    <span class="code_link"><a href="https://github.com/katomanzu0923/katomanzu0923_profile/blob/master/src/components/Home.vue" target="_blank">Home.vue</a></span>
+                  </div>
                 </div>
               </div>
               <div class="product_login">
-                <img src="@/assets/5c513750d58970280c3cea39f9ef16b2.gif" alt="次へ" class="ff">
+                <img src="@/assets/programing.gif" alt="次へ" class="ff">
                 <div class="product_login_coment">
-                  <h3 class="title_login">ログインページ</h3>
-                  多言語対応としてマウスオーバーで日本語、英語、中国語に対応。<br>
-                  背景の写真は各言語利用者を想定して写真を選定
+                  <h3 class="title_login">Programingページ</h3>
+                  これまでに学んだ言語に関して記載<br>
+                  ページ遷移を用いる事なく情報をコンパクトにした
+                  <div class="product_link">
+                    <span class="code_link"><a href="https://github.com/katomanzu0923/katomanzu0923_profile/blob/master/src/components/Programing.vue" target="_blank">Programing.vue</a></span>
+                  </div>
                 </div>
               </div>
               <div class="product_area">
-                <img src="@/assets/431a3eab6ad967fa7aaae871fb1b8e57.gif" alt="次へ" class="ff">
-                <div class="product_area_coment">
-                  <h3 class="title_area">エリアページ</h3>
-                  多言語対応としてマウスオーバーで日本語、英語、中国語に対応。<br>
-                  背景の写真は各言語利用者を想定して写真を選定
+                <img src="@/assets/products.gif" alt="次へ" class="ff">
+                <div class="product_login_coment">
+                  <h3 class="title_login">Productsページ</h3>
+                  自身でゼロから考えた動的、静的アプリケーションに関して記載。<br>
+                  各ページのコードを直接みれるように記述。その際はページ遷移の手間を防ぐために外部リンクとして遷移するようにした
+                  <div class="product_link">
+                    <span class="code_link"><a href="https://github.com/katomanzu0923/katomanzu0923_profile/blob/master/src/components/Products.vue" target="_blank">Products.vue</a></span>
+                  </div>
                 </div>
               </div>
               <div class="product_info">
-                <img src="@/assets/1c381f0e13da74e62c607421d8c94ab1.gif" alt="次へ" class="ff">
-                <div class="product_info_coment">
-                  <h3 class="title_info">ログインページ</h3>
-                  多言語対応としてマウスオーバーで日本語、英語、中国語に対応。<br>
-                  背景の写真は各言語利用者を想定して写真を選定
+                <img src="@/assets/web_design.gif" alt="次へ" class="ff">
+                <div class="product_login_coment">
+                  <h3 class="title_info">Web Designページ</h3>
+                  Webデザインの領域で作ったパーツを記載<br>
+                  <div class="product_link">
+                    <span class="code_link"><a href="https://github.com/katomanzu0923/katomanzu0923_profile/blob/master/src/components/WebDesign.vue" target="_blank">Web Design.vue</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="product_info">
+                <img src="@/assets/and_more.gif" alt="次へ" class="ff">
+                <div class="product_login_coment">
+                  <h3 class="title_info">And moreページ</h3>
+                  上記以外でWeb開発、制作の力になるような技術に関して記載<br>
+                  作成物はあまり必要ないと考えているが、その作成物が作れるようになるまでの成長過程に、価値があるであろう学びがあったため、その学びを記述
+                  <div class="product_link">
+                    <span class="code_link"><a href="https://github.com/katomanzu0923/katomanzu0923_profile/blob/master/src/components/AndMore.vue" target="_blank">And More.vue</a></span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <label v-on:click='isActiveProduct01=!isActiveProduct01' class="readmore-label" for="check1">
+          <label v-on:click='isActiveProduct02=!isActiveProduct02' class="readmore-label" for="check2">
 					</label>
         </div>
 			</div>

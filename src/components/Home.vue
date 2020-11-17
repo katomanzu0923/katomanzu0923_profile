@@ -39,7 +39,7 @@
             <div class="content1">
               HTMLって何？という状態。
             </div>
-            <div class="a">
+            <div class="arrow">
             </div>
             <div class="content2">
               <p>様々な言語を使って表現の仕組みは理解したが、世の中にそれを実現させるためには何が必要かどの手段が最適なのかがわからない状態</p>
@@ -47,11 +47,9 @@
           </div>
           <input id="check2" class="home_content-check" type="checkbox">
           <div class="home_content-content">
-          <span class="aa" v-bind:class='{active:isActivePro}'>
-          <div class="aa" v-bind:class='{sub:isActivePro}'>
+          <div class="none" v-bind:class='{sub:isActivePro}'>
             学ぶ際に工夫していた事
           </div> 
-					</span>
           <p class="re-content">プログラミング言語で何が出来るのかという事を意識しながら学習を進めました。また、学習する過程で出来るようになった事を完成しているwebサイトと比較してこのサイトのここはこの言語が使われれているのだろうかと意識しながら学習を進めました。</p>
           </div>
           <label v-on:click='isActivePro=!isActivePro' class="home_content-label" for="check2">
@@ -63,7 +61,7 @@
             <div class="content1">
               <p>様々な言語を使って表現の仕組みは理解したが、世の中にそれを実現させるためには何が必要かどの手段が最適なのかがわからない状態</p>
             </div>
-            <div class="a">
+            <div class="arrow">
             </div>
             <div class="content2">
               <p>Ruby on rainls を用いてマークアップ言語からプログラミング言語を駆使して静的及び動的アプリケーションを開発できる状態へと成長。また、プログラミング言語だけでなく、slak,ターミナル、github,mysqlなどweb開発に必要な知識や武器を取得し使える状態へと成長</p>
@@ -71,11 +69,9 @@
           </div>
           <input id="check３" class="home_content-check" type="checkbox">
           <div class="home_content-content">
-          <span class="aa" v-bind:class='{active:isActiveTech}'>
-          <div class="aa" v-bind:class='{sub:isActiveTech}'>
+          <div class="none" v-bind:class='{sub:isActiveTech}'>
             学ぶ際に工夫していた事
           </div> 
-					</span>
            <p class="re-content">曖昧な事をゼロにする事を意識しながら学習を進めました。常にわからない事はメンターに質問出来る環境にあったのでどんなことでも質問をしてわからない事を潰していきました。<br>
            また、質問がより自分のためになるようにわからない点に対してqiitaなどのwebサイトを用いてある程度答えを出して質問することによって自己解決能力を効率よく高めることに成功しました。</p>
           </div>
@@ -88,7 +84,7 @@
             <div class="content1">
               <p>Ruby on rails Web開発を行う中でできることが増えた反面自分に必要なことが、自分の現在地が明確にわかる状態</p>
             </div>
-            <div class="a">
+            <div class="arrow">
             </div>
             <div class="content2">
               <p>Scssを用いて差的な開発における最適css設計、現在多用されているモダンなjavascriptであるvueを用いた開発ができる状態へと成長</p>
@@ -97,7 +93,7 @@
           <input id="check4" class="home_content-check" type="checkbox">
           <div class="home_content-content">
           <span>
-          <div class="aa" v-bind:class='{sub:isActive}'>
+          <div class="none" v-bind:class='{sub:isActive}'>
             学ぶ際に工夫していた事
           </div> 
 					</span>
@@ -164,7 +160,9 @@ p {
   margin-bottom: 3%;
   font-size: 1vw;
 }
-
+.none {
+  filter: opacity(0);
+}
 .home_profile_left_content {
   display: flex;
   justify-content: space-around;
@@ -241,7 +239,7 @@ p {
 h1 {
   text-align: center;
 }
-.aa {
+.a {
   filter: opacity(0);
 }
 .sub {
@@ -269,7 +267,7 @@ h1 {
   align-items: center;
 }
 
-.a {
+.arrow {
   height: 0;
   border-left: 15px solid #4e5fff;
   border-top: 15px solid transparent;

@@ -1,5 +1,19 @@
 # katomanzu0923_profile
 
+## Description
+フロントエンドエンジニアを目指すために学習した記録
+
+this tool is the my study log for front-end engineer
+
+## Demo
+
+![result](f0d63d25708f09acfda94815e906e244.gif)
+
+
+
+
+
+
 ## Project setup
 ```
 npm install

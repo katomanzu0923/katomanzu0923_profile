@@ -7,7 +7,7 @@ this tool is the my study log for front-end engineer
 
 ## Demo
 
-![result](f0d63d25708f09acfda94815e906e244.gif)
+![Image from Gyazo](https://i.gyazo.com/a557419f530c9d5d83994b04159f5a69.gif)](https://gyazo.com/a557419f530c9d5d83994b04159f5a69)
 
 
 

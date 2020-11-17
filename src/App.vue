@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div  class="to" v-if=" isLoad ===  'a'">
-      <div  class="module">
-          <h1 class="boo">フロントエンドエンジニアを目指す、未経験者の</h1>
-          <span class="front-m">学</span><span class="front-n">び</span><span class="middle-b">L</span><span class="back-v">o</span><span class="back-c">g</span>
-          <div class="h">HTML</div><div class="s">SCSS</div><div class="v">Vue.js</div><div class="r">Ruby</div>
+    <div  class="open" v-if=" isOpen ===  'a'">
+      <div  class="open-body">
+          <h1 class="open-title">フロントエンドエンジニアを目指す、未経験者の</h1>
+          <span class="open-main01">学</span><span class="open-main02">び</span><span class="open-main03">L</span><span class="open-main04">o</span><span class="open-main05">g</span>
+          <div class="open-sub01">HTML</div><div class="open-sub02">SCSS</div><div class="open-sub03">Vue.js</div><div class="open-sub04">Ruby</div>
       </div>
-      <button  class="bo" @click="isLoad = 'b'; day_calculation()">見にいく</button>
+      <button  class="open-button" @click="isOpen = 'b'; day_calculation()">見にいく!</button>
     </div>
     <div v-else>
     </div>
@@ -15,8 +15,8 @@
           <div  class="header-right">
             Profile
           </div>
-          <div  class="header_right_home">
-            <span class="front1">学</span><span class="front">び</span><span class="middle">L</span><span class="back">o</span><span class="back1">g</span>
+          <div  class="header_left_title">
+            <span class="front">学</span><span class="front01">び</span><span class="middle">L</span><span class="back">o</span><span class="back1">g</span>
           </div>
           <div  class="header_left_home">
              {{ message }}<span class="header_left-sub-bottom">日</span>
@@ -27,7 +27,7 @@
           <div  class="header-right-programing">
             Programing
           </div>
-          <div  class="header_right_home">
+          <div  class="header_left_title">
             <span class="programing-front1">学</span><span class="programing-front">び</span><span class="programing-middle">L</span><span class="programing-back">o</span><span class="programing-back1">g</span>
           </div>
           <div  class="header_left_programing">
@@ -39,7 +39,7 @@
           <div  class="header-right-products">
             Products
           </div>
-          <div  class="header_right_products">
+          <div  class="header_left_title">
             <span class="products-front1">学</span><span class="products-front">び</span><span class="products-middle">L</span><span class="products-back">o</span><span class="products-back1">g</span>
           </div>
           <div  class="header_left_products">
@@ -51,7 +51,7 @@
           <div  class="header-right-design">
             Web  Design
           </div>
-          <div  class="header_right_design">
+          <div  class="header_left_title">
             <span class="design-front1">学</span><span class="design-front">び</span><span class="design-middle">L</span><span class="design-back">o</span><span class="design-back1">g</span>
           </div>
           <div  class="header_left_design">
@@ -63,7 +63,7 @@
           <div  class="header-right-more">
             And more
           </div>
-          <div  class="header_right_more">
+          <div  class="header_left_title">
             <span class="more-front1">学</span><span class="more-front">び</span><span class="more-middle">L</span><span class="more-back">o</span><span class="more-back1">g</span>
           </div>
           <div  class="header_left_more">
@@ -75,7 +75,7 @@
           <div  class="header-right">
             Profile
           </div>
-          <div  class="header_right_home">
+          <div  class="header_left_title">
             <span class="front1">学</span><span class="front">び</span><span class="middle">L</span><span class="back">o</span><span class="back1">g</span>
           </div>
           <div  class="header_left_home">
@@ -83,12 +83,6 @@
              <span class="header_left-sub-top">学習開始から</span>
           </div>
         </div>
-      <div class="header_right">  
-      </div>
-      <div class="left">
-      </div>
-      <div class="right">
-      </div>
     </div> 
     
     <div class="menu_button">
@@ -127,13 +121,8 @@ export default {
       design: "WebDesign",
       more: "And more",
       isActive01: "g",
-      isLoad: "a",
+      isOpen: "a",
     };
-  },
-  mounted: {
-    window:addEventListener('load', () => {
-      alert;
-    })
   },
   methods: {
     day_calculation() {
@@ -207,7 +196,7 @@ export default {
     font-size: 2vh;
     box-sizing: border-box;
   }
-  .to {
+  .open {
     position: absolute;
     position: fixed;
     left: 0;
@@ -219,7 +208,7 @@ export default {
     background: transparent;
     backdrop-filter: blur(5px);
   }
-  .module {
+  .open-body {
     position: absolute;
     position: fixed;
     left: 0;
@@ -234,31 +223,30 @@ export default {
     font-family: arial black;
   }
   
-
-  .bo {
+  .open-button {
     position: absolute;
     left: 45%;
     top: 40%;
     width: 10%;
     z-index: 4;
-    height: 5%;
     font-weight: bold;
     text-shadow: 3px 3px 0 #4ec7ffd3;
     -webkit-text-stroke: 1px #888;
     color: rgb(218, 248, 255);
     font-size: 1.5vw;
+    border-radius: 4px;
   }
   button {
     background: #4ec7ffd3;
     border: none;
   }
-  .boo {
+  .open-title {
     position: absolute;
     left: 10%;
     width: 80%;
     color: rgba(0, 0, 255, 0.699);
   }
-  .h {
+  .open-sub01 {
     position: absolute;
     display: inline-block;
     font-weight: bold;
@@ -272,7 +260,7 @@ export default {
     top: 23%;
     left: 58%;
   }
-  .s {
+  .open-sub02 {
     position: absolute;
     display: inline-block;
     font-weight: bold;
@@ -285,7 +273,7 @@ export default {
     top: 20%;
     left: 33%;
   }
-  .v {
+  .open-sub03 {
     position: absolute;
     display: inline-block;
     font-weight: bold;
@@ -300,7 +288,7 @@ export default {
     top: 32%;
     left: 54%;
   }
-  .r {
+  .open-sub04 {
     position: absolute;
     display: inline-block;
     font-weight: bold;
@@ -315,7 +303,7 @@ export default {
     top: 30%;
     left: 40%;
   }
-  .front-m {
+  .open-main01 {
     display: inline-block;
     font-weight: bold;
     color: rgba(0, 0, 0, 0);
@@ -327,7 +315,7 @@ export default {
     font-size: 6vw;
     transform: rotate(-25deg);
   }
-  .front-n {
+  .open-main02 {
     font-weight: bold;
     color: rgba(0, 0, 0, 0);
     text-shadow: 3px 3px 0 #fa5252d5;
@@ -339,7 +327,7 @@ export default {
     font-size: 6vw;
     margin-top: 50px;
   }
-  .middle-b {
+  .open-main03 {
     display: inline-block;
     background: transparent;
     font-weight: bold;
@@ -350,7 +338,7 @@ export default {
     background: transparent;
     font-size: 9vw;
   }
-  .back-v {
+  .open-main04 {
     display: inline-block;
     font-weight: bold;
     color: rgba(0, 0, 0, 0);
@@ -361,7 +349,7 @@ export default {
     backdrop-filter: blur(10px);
     font-size: 7vw;
   }
-  .back-c {
+  .open-main05 {
     display: inline-block;
     font-weight: bold;
     color: rgba(0, 0, 0, 0);
@@ -374,34 +362,6 @@ export default {
     transform: rotate(25deg);
     margin: 7px;
   }
-  .front-m::before {
-   content:"";
-   display:inline-block;
-   width:2px;
-   height:48px;
-   border-radius: 10px;
-   background-color: #4e60ff88;
-   position:absolute;
-   top:40px;
-   left:50%;
-   filter: drop-shadow(50%);
-   z-index: -1;
-   transform: rotate(-15deg);
- }
- .back-c::before {
-   content:"";
-   display:inline-block;
-   width:2px;
-   height:28px;
-   border-radius: 10px;
-   background-color: #4e60ff88;
-   position:absolute;
-   top:89%;
-   left:30%;
-   filter: drop-shadow(50%);
-   z-index: -1;
-   transform: rotate(18deg);
- }
   .header-right {
     display: inline-block;
     position: absolute;
@@ -493,22 +453,6 @@ export default {
     padding: 1%;
   }
   
-  .active {
-    position: absolute;
-    width: 100%;
-    right: 0;
-    top: 50%;
-    text-align: center;
-    transform: translateY(-50%);
-    color: rgb(62, 192, 23);
-    background: transparent;
-    font-size: 2vw;
-    padding: 5px;
-    filter: opacity(0);
-  }
-  .active1 {
-    filter: opacity(30%);
-  }
   .front1::before {
    content:"";
    display:inline-block;
@@ -537,21 +481,8 @@ export default {
    z-index: -1;
    transform: rotate(18deg);
  }
-  .header_right {
-    background: #f7f7f7;
-    box-sizing: border-box;
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    height: 10%;
-    width: 75%;
-    box-shadow:0px 0px 5px 0px rgb(88, 88, 88);
-    font-weight: bold;
-    text-align: center;
   
-  }
-  
-  .header_right_home {
+  .header_left_title {
     position: absolute;
     position: fixed;
     width: 15%;
@@ -563,7 +494,6 @@ export default {
     font-size: 7vw;
     z-index: 1;
     font-family: arial black;
-
   }
   .header_left_home {
     display: inline-block;
@@ -584,7 +514,6 @@ export default {
     top: 10%;
     z-index: 1;
     font-weight: bold;
-
   }
   .front {
     font-weight: bold;
@@ -592,10 +521,20 @@ export default {
     text-shadow: 3px 3px 0 #4e60ff88;
     -webkit-text-stroke: 1px #888;
     padding: 0 0 10px;
+    display: inline-block;
     background: transparent;
     font-size: 2vw;
+    transform: rotate(-25deg);
+    margin-top: 50px;
   }
   .front1 {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 3px 3px 0 #4e60ff88;
+    -webkit-text-stroke: 1px #888;
+    padding: 0 0 10px;
+    background: transparent;
+    font-size: 2vw;
     font-weight: bold;
     color: rgba(0, 0, 0, 0);
     text-shadow: 3px 3px 0 #4e60ff88;
@@ -1035,7 +974,6 @@ export default {
     position: absolute;
     position: fixed;
     background: #ffffff;
-    /*transform: rotate(-10deg);*/
     font-size: 1.5vw;
     margin: 0 1%;
     padding: 10px;
@@ -1133,11 +1071,6 @@ export default {
    transform: rotate(18deg);
  }
 
-
- 
-
-
-
   .header_right_home:after {
   content: '';
   position: absolute;
@@ -1204,7 +1137,7 @@ export default {
   .menu_button {
     margin-left: 2.5%;
     position: fixed;
-    background: #ffffff;
+    background: #f7f7f7;
     width: 20%;
     top: 20%;
     padding: 2%;
@@ -1225,7 +1158,7 @@ export default {
     display: inline-block;
     padding: 0.5em 1em;
     text-decoration: none;
-    background: #f7f7f7;
+    background: white;
     border-left: solid 6px #919cff;/*左線*/
     color: #919cff;/*文字色*/
     font-weight: bold;
@@ -1245,7 +1178,7 @@ export default {
     display: block;
     padding: 0.5em 1em;
     text-decoration: none;
-    background: #f7f7f7;
+    background: white;
     border-left: solid 6px #ff7c5c;/*左線*/
     color: #ff7c5c;/*文字色*/
     font-weight: bold;
@@ -1265,7 +1198,7 @@ export default {
     display: block;
     padding: 0.5em 1em;
     text-decoration: none;
-    background: #f7f7f7;
+    background: white;
     border-left: solid 6px #7fe07b;/*左線*/
     color: #7fe07b;/*文字色*/
     font-weight: bold;
@@ -1280,12 +1213,11 @@ export default {
     border-left: solid 6px #f7f7f7;/*左線*/
     color: #f7f7f7;/*文字色*/
   }
-
   .webdesign {
     display: block;
     padding: 0.5em 1em;
     text-decoration: none;
-    background: #f7f7f7;
+    background: white;
     border-left: solid 6px #7bd4e0;/*左線*/
     color: #7bd4e0;/*文字色*/
     font-weight: bold;
@@ -1300,12 +1232,11 @@ export default {
     border-left: solid 6px #f7f7f7;/*左線*/
     color: #f7f7f7;/*文字色*/
   }
-
   .more {
     display: block;
     padding: 0.5em 1em;
     text-decoration: none;
-    background: #f7f7f7;
+    background: white;
     border-left: solid 6px #f691fa;/*左線*/
     color: #f691fa;/*文字色*/
     font-weight: bold;

@@ -7,7 +7,21 @@ this tool is the my study log for front-end engineer
 
 ## Demo
 
-![Image from Gyazo](https://i.gyazo.com/a557419f530c9d5d83994b04159f5a69.gif)](https://gyazo.com/a557419f530c9d5d83994b04159f5a69)
+Top
+[![Image from Gyazo](https://i.gyazo.com/d9189513a60df28bc3ba2e3240ec8c1d.gif)](https://gyazo.com/d9189513a60df28bc3ba2e3240ec8c1d)
+
+プログラミングに関して
+[![Image from Gyazo](https://i.gyazo.com/f0d63d25708f09acfda94815e906e244.gif)](https://gyazo.com/f0d63d25708f09acfda94815e906e244)
+
+制作物に関して
+[![Image from Gyazo](https://i.gyazo.com/cfb318334364da4dc1aba25114214feb.gif)](https://gyazo.com/cfb318334364da4dc1aba25114214feb)
+
+その他の技術に関して
+[![Image from Gyazo](https://i.gyazo.com/3545643fd42c4c05e4a8f38d86be13fd.gif)](https://gyazo.com/3545643fd42c4c05e4a8f38d86be13fd)
+
+## URL
+
+https://katomanzu0923-profile.netlify.app/
 
 
 

@@ -13,7 +13,9 @@
 					<div class="readmore_more">	
             <input id="check1" class="readmore-check" type="checkbox">
           <div class="readmore-content">
-            <span class="aa" v-bind:class='{active:isActiveHtml}'><div class="sub-message-none" v-bind:class='{sub:isActiveHtml}'>工夫した点</div></span>
+            <div class="sub-message-none" v-bind:class='{sub:isActiveHtml}'>
+							工夫した点
+						</div>
 						<p class="re-content">HTMLを学ぶ際に工夫したことはコードの可読性を高めることです。属性名を後で別の人が読んでもわかるようにする記述することによって再現性の高いコードを記述することができました</p>
           </div>
           <label v-on:click='isActiveHtml=!isActiveHtml' class="programing-label" for="check1"></label>
@@ -29,7 +31,9 @@
 					<div class="readmore_more">
           <input id="check2" class="readmore-check" type="checkbox">
           <div class="readmore-content">
-            <span class="aa" v-bind:class='{active:isActiveCss}'><div class="sub-message-none" v-bind:class='{sub:isActiveCss}'>工夫した点</div></span>
+						<div class="sub-message-none" v-bind:class='{sub:isActiveCss}'>
+							工夫した点
+						</div>
 						<p class="re-content">を学ぶ際に工夫したことは記述を一つ一つ理解したことで。開発を行う中で複雑なcssを検索して見つけ記述していく中でこの記述はこの意味があると一つ一つコピペで終わらせずに理解に試みました。</p>
           </div>
           <label v-on:click='isActiveCss=!isActiveCss' class="programing-label" for="check2">
@@ -46,9 +50,10 @@
 					<div class="readmore_more">
           <input id="check3" class="readmore-check" type="checkbox">
           <div class="readmore-content">
-            <span class="aa" v-bind:class='{active:isActiveScss}'><div class="sub-message-none" v-bind:class='{sub:isActiveScss}'>
-							工夫した点</div>
-							<p class="re-content">SCSSを学ぶ際に工夫したことは必ずコンパイルされた後のcssを見返したことです。また、scssを学ぶ前のcssとscssを見比べることによってここがより可読性の高い設計ができると振り返りを多く行いました</p></span>
+            <div class="sub-message-none" v-bind:class='{sub:isActiveScss}'>
+							工夫した点
+						</div>
+						<p class="re-content">SCSSを学ぶ際に工夫したことは必ずコンパイルされた後のcssを見返したことです。また、scssを学ぶ前のcssとscssを見比べることによってここがより可読性の高い設計ができると振り返りを多く行いました</p>
           </div>
           <label v-on:click='isActiveScss=!isActiveScss' class="programing-label" for="check3">
 					</label>
@@ -100,11 +105,10 @@
 					<p>私がVue.jsではモダンなフロント構築を学びました。componentや仮装dom、spaなど現在のフロント構築に必要な技術を学び、活かした記述を行いました</p>
 					<div class="readmore_more"><input id="check6" class="readmore-check" type="checkbox">
           <div class="readmore-content">
-          <span class="aa" v-bind:class='{active:isActiveVue}'>
 					<div class="sub-message-none" v-bind:class='{sub:isActiveVue}'>
 						工夫した点
 					</div>
-					<p class="re-content">Vue.jsを学ぶ際に工夫したことは仮想DOMの理解です。今後reactも学ぶ予定ですので両者に共通する仮想DOMの理解を徹底することに工夫しました</p></span>
+					<p class="re-content">Vue.jsを学ぶ際に工夫したことは仮想DOMの理解です。今後reactも学ぶ予定ですので両者に共通する仮想DOMの理解を徹底することに工夫しました</p>
           </div>
           <label v-on:click='isActiveVue=!isActiveVue' class="programing-label" for="check6">
 					</label>
@@ -115,7 +119,7 @@
 		<div  class="programing-header">
       サーバーサイド
     </div>
-		<div class="server"> 
+		<div class="programing-body"> 
 			<div class="ruby">
 				<div class="ruby_top">
 					Ruby
@@ -177,6 +181,7 @@
 <style scoped>
 p {
 	text-indent: 1em;
+	font-size: 1.5vw;
 }
 
 h2 {
@@ -214,8 +219,9 @@ h2 {
 		margin-top: 5%;
 	}
 .re-content {
-	margin: 3% 0;
 	border-bottom: 3px solid #fa5252;
+	padding: 3%;
+	margin-bottom: 3%;
 }
 .programing-header {
     display: inline-block;
@@ -232,15 +238,20 @@ h2 {
     top: 5%;
     z-index: １;
 		font-weight: bold;
-		margin-bottom: 5%;
 	}
 	.programing-body {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		/*padding: 5%;*/
 	}
-	
+	@media screen and (max-width: 950px){
+		.programing-body {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			flex-direction:column;
+	}
+	}
   
   .programing_message {
 		position: absolute;
@@ -296,6 +307,8 @@ h2 {
     color: #ff7c5c;/*文字色*/
     font-weight: bold;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+		margin-top: 5%;
+		margin-bottom: 5%;
 	}
 	.html_main {
 		background: transparent;
@@ -305,6 +318,7 @@ h2 {
 		background: transparent;
 		padding: 10%;
 		text-align: start;
+		font-size: 2vw;
 	}
 	.css {
 		flex-basis: 40%;
@@ -317,7 +331,14 @@ h2 {
     color: #ff7c5c;/*文字色*/
     font-weight: bold;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+		margin-top:5% ;
 	}
+	@media screen and (max-width: 950px){
+		.css {
+			margin-top: 0;
+		}
+	}
+
 	.css_top {
 		background: transparent;
 		color: #fa5252;
@@ -436,6 +457,7 @@ h2 {
     color: #ff7c5c;/*文字色*/
     font-weight: bold;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+		margin-top: 5%;
 		margin-bottom: 5%;
 	}
 	.ruby_top {
@@ -458,8 +480,15 @@ h2 {
     color: #ff7c5c;/*文字色*/
     font-weight: bold;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+		margin-top: 5%;
 		margin-bottom: 5%;
 	}
+	@media screen and (max-width: 950px){
+		.mysql {
+		margin-bottom: 20%;
+	}
+	}
+	
 	.mysql_top {
 		background: transparent;
 		color:#fa5252;
@@ -478,6 +507,7 @@ h2 {
 		text-align: start;
 		color: #ff7d5c;
 		border-bottom: 1px solid #ff7d5c;
+		margin-bottom: 5%;
 }
 .readmore_more{
     position: relative;
@@ -517,9 +547,11 @@ h2 {
     border-radius: 10px;
 		text-align: center;
 		color: #f7f7f7;
+		font-size: 1.5vw;
 }
 .programing-label:before{
     content: '↓工夫した点↓';
+		font-size: 1.5vw;
 }
 .readmore-check{
     display: none;
@@ -531,6 +563,7 @@ h2 {
 }
 .readmore-check:checked ~ .programing-label:before{
     content: '閉じる';
+		font-size: 1.5vw;
 }
 .readmore-check:checked ~ .readmore-content{
     height: auto;
@@ -560,6 +593,7 @@ h2 {
     border-radius: 10px;
     margin-top: 3%;
     text-align: center;
+		font-size: 1.5vw;
   }
 	.sub::before {
   content:"";

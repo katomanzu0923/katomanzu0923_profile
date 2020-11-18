@@ -84,6 +84,9 @@
           </div>
         </div>
     </div> 
+     <div>
+      <component :is="currentComponet" class="contents"></component>
+    </div>  
     
     <div class="menu_button">
       <button @click="currentComponet = 'Home'; change_home()"  class="home">{{ home }}</button>
@@ -93,9 +96,7 @@
       <button @click="currentComponet = 'AndMore'; change_more()" class="more">{{ more }}</button>
     </div>  
 
-    <div>
-      <component :is="currentComponet" class="contents"></component>
-    </div>  
+   
     
   </div>
   
@@ -398,6 +399,8 @@ export default {
     z-index: 2;
     padding: 1%;
   }
+  
+ 
   .header-right-products {
     display: inline-block;
     position: absolute;
@@ -453,7 +456,8 @@ export default {
     padding: 1%;
   }
   
-  .front1::before {
+
+ .front1::before {
    content:"";
    display:inline-block;
    width:2px;
@@ -461,7 +465,7 @@ export default {
    border-radius: 10px;
    background-color: #4e60ff88;
    position:absolute;
-   top:40px;
+   top:55%;
    left:50%;
    filter: drop-shadow(50%);
    z-index: -1;
@@ -484,35 +488,32 @@ export default {
   
   .header_left_title {
     position: absolute;
-    position: fixed;
     width: 15%;
     left: 8%;
     top: 3.5%;
     text-align: ce1nter;
     transform: translateY(-50%);
     color: #4e60ffb6;
-    font-size: 7vw;
     z-index: 1;
     font-family: arial black;
   }
   .header_left_home {
     display: inline-block;
     position: absolute;
-    position: fixed;
     color: #4e60ff;
     background: #ffffff;
-    /*transform: rotate(-10deg);*/
+    text-align: center;
     font-size: 1.5vw;
     margin: 0 1%;
     padding: 10px;
     border: 1px solid #CCC;
     border-top: 3px solid #4e60ff;
 		color: #4e60ff88;
-    width: 5%;
+    width: 6%;
     height: 5%;
-    left: 9%;
-    top: 10%;
-    z-index: 1;
+    left: 8%;
+    top: 9%;
+    z-index: 3;
     font-weight: bold;
   }
   .front {
@@ -523,7 +524,6 @@ export default {
     padding: 0 0 10px;
     display: inline-block;
     background: transparent;
-    font-size: 2vw;
     transform: rotate(-25deg);
     margin-top: 50px;
   }
@@ -542,7 +542,6 @@ export default {
     padding: 0 0 10px;
     display: inline-block;
     background: transparent;
-    font-size: 2vw;
     transform: rotate(-25deg);
     margin-top: 50px;
   }
@@ -583,7 +582,6 @@ export default {
   
 .header_right_programing{
     position: absolute;
-    position: fixed;
     width: 15%;
     left: 8%;
     top: 3.5%;
@@ -597,7 +595,6 @@ export default {
   .header_left_programing {
     display: inline-block;
     position: absolute;
-    position: fixed;
     color: #4e60ff;
     background: #ffffff;
     /*transform: rotate(-10deg);*/
@@ -698,30 +695,7 @@ export default {
    z-index: -1;
    transform: rotate(18deg);
  }
-  .day_left_programing::before {
-   content:"";
-   display:inline-block;
-   width:3px;
-   height:60px;
-   background-color: #fa5252a9;
-   position:absolute;
-   top:0;
-   left:50%;
-   filter: drop-shadow(50%);
-   z-index: 0;
- }
- .day_right_programing::before {
-   content:"";
-   display:inline-block;
-   width:3px;
-   height:60px;
-   background-color: #fa52529d;
-   position:absolute;
-   top:0;
-   left:55%;
-   filter: drop-shadow(50%);
-   z-index: 0;
- }
+
  .header_right_products{
     position: absolute;
     position: fixed;
@@ -1148,6 +1122,22 @@ export default {
     flex-direction: column;
     justify-content: space-between
   }
+  @media screen and (max-width: 950px){
+		.menu_button {
+    position: fixed;
+    display: block;
+    background: #f7f7f7;
+    width: 95%;
+    left: 0;
+    top: 90%;
+    height: 10%;
+    text-align: center;
+    box-shadow:0px 0px 5px 0px rgb(88, 88, 88);
+    display: flex;
+    flex-direction:row;
+    z-index: 2;
+  }
+	}
   button {
     width: 100%;
   }
@@ -1164,6 +1154,7 @@ export default {
     font-weight: bold;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
   }
+ 
   .home:active {
     box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
     transform: translateY(2px);
@@ -1257,4 +1248,14 @@ export default {
     width: 65%;
     top: 20%;
   }
+  @media screen and (max-width: 950px){
+		.contents {
+    display: inline-block;
+    right: 5%;
+    width: 90%;
+    top: 20%;
+    height: 50%;
+    margin-bottom: 30%;
+  }
+	}
 </style>

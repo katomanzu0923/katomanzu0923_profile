@@ -7,25 +7,23 @@
       <div class="home_profile">
         <div class="home_profile_left">
           <div class="en">
+            h
           </div>
           <div class="name">
             加藤貴大
           </div>
-          <div class="home_profile_left_content">
-            <div class="right">
-              <a href="mailto:katomanzu86@gmail.com"><img src="@/assets/gmail-logo.png" class="ff"></a>
-            </div>
-            <div class="left">
-              <a href="https://github.com/katomanzu0923"><img src="@/assets/download.png" alt="次へ" class="ff"></a>
-            </div>
-          </div>
+        </div>  
+        <div class="home-profile-right">
+            <p>今年の2月まで既卒の状態で新卒就活を始めるも歩みたい道がわからず悩む日々。そんな中webエンジニアとして活躍したいと思いwebエンジニアを志す。まずは力をつけたい。このwebサイトはそんな学習中での気づきのログです。
+            </p>
         </div>
-        <div class="home_profile_right">
-          <div class="home_profile_right_top">
-          </div>
-          <div class="home_profile_right_content">
-            <p>今年の2月まで既卒の状態で新卒就活を始めるも歩みたい道がわからず悩む日々。そんな中webエンジニアとして活躍したいと思いwebエンジニアを志す。まずは力をつけたい。このwebサイトはそんな学習中での気づきのログです。</p>
-          </div>
+      </div>
+      <div class="home_profile">
+        <div class="left">
+          連絡はこちらから→<span><a href="mailto:katomanzu86@gmail.com"><img src="@/assets/gmail-logo.png" class="ff"></a></span>
+        </div>
+        <div class="right">
+          GitHubはこちらから→<span><a href="https://github.com/katomanzu0923" target="_blank"><img src="@/assets/download.png" class="ff"></a></span>
         </div>
       </div>
 		</div>
@@ -37,7 +35,7 @@
           <h1>Progate</h1>
           <div class="topic0">
             <div class="content1">
-              HTMLって何？という状態。
+              <p>HTMLって何？という状態。</p>
             </div>
             <div class="arrow">
             </div>
@@ -123,28 +121,43 @@ export default {
 p {
   text-indent: 1em;
   background: transparent;
+  font-size: 1.5vw;
+}
+a {
+  background: transparent;
 }
 .re-content {
   border-bottom: 3px solid #4e60ff;
   margin: 1% 0;
   padding-bottom: 2%;
 }
+
 .home_profile {
   position: relative;
     box-sizing: border-box;
-    /*以下お好み*/
-    /* ボーダーを付ける場合 */
     border: 1px solid #4e60ff81;
 		text-align: start;
 		color: #919cff;
-
 }
+@media screen and (max-width:639px) {
+  
+}
+
 .home_profile_left {
   display: inline-block;
-  left: 0;
-  top: 0;
   width: 40%;
+  margin-top: 3%;
   text-align: center;
+  vertical-align: auto;
+}
+.home-profile-right {
+  display: inline-block;
+  width: 50%;
+  padding: 2% 5%;
+  color: rgba(0, 0, 255, 0.603);
+  text-align: start;
+  vertical-align: top;
+  
 }
 .en {
   top: 0;
@@ -157,61 +170,25 @@ p {
   background-size: cover;
 }
 .name {
-  margin-bottom: 3%;
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 .none {
+  width: 40%;
   filter: opacity(0);
 }
-.home_profile_left_content {
-  display: flex;
-  justify-content: space-around;
-}
 .right {
-  width: 50%;
-}
-.home_profile_left_content::after {
-  content:"";
-   display:inline-block;
-   width:1px;
-   height:29%;
-   bottom: 1%;
-   background-color:#4e60ff81;
-   position: absolute;
-}
-.left::before {
-  content:"連絡はこちらへ";
-   display:block;
-   width:18%;
-   height:1px;
-   background-color:#4e60ff81;
-   position:absolute;
-   top:69%;
-   left:1%;
-}
-.left {
-  width: 50%;
-}
-.right::before {
-  content:"Githubは下から";
-   display:block;
-   width:16%;
-   height:1px;
-   background-color:#4e60ff81;
-   position:absolute;
-   top:69%;
-   left: 21%;
-}
-.home_profile_right {
+  text-align: center;
   display: inline-block;
-  position: absolute;
-  top: 5%;
-  right: 0;
-  width: 60%;
-  height: 90%;
-  padding-left: 2%;
-  border-left: 1px solid #4e60ff81;
+  width: 50%;
+  vertical-align: top;
 }
+
+.left {
+  text-align: center;
+  display: inline-block;
+  width: 50%;
+}
+
 
 
 .home_profile_right_top {
@@ -228,8 +205,8 @@ p {
   height: 300px;
 }
 .ff {
-  width: 10%;
-  margin-top: 10%;
+  width: 6%;
+  margin-left: 4%;
 }
 .home_profile_right_content {
   display: inline-block;
@@ -336,9 +313,11 @@ h1 {
     border-radius: 10px;
 		text-align: center;
 		color: #f7f7f7;
+    font-size: 1.5vw;
 }
 .home_content-label:before{
     content: '↓学びの際に工夫した事↓';
+    font-size: 1.5vw;
 }
 .home_content-check{
     display: none;
@@ -350,6 +329,7 @@ h1 {
 }
 .home_content-check:checked ~ .home_content-label:before{
     content: '閉じる';
+    font-size: 1.5vw;
 }
 .home_content-check:checked ~ .home_content-content{
     height: auto;
@@ -410,6 +390,20 @@ h1 {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
     margin-bottom: 1%;
 	}
+  @media screen and (max-width: 950px){
+		.home_main {
+		flex-basis: 40%;
+		position: relative;
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #f7f7f7;
+    border-top: solid 6px #4e5fff;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    margin-bottom: 20%;
+  }
+	}
 	.home_title {
 		background: transparent;
 		color: #4e5fff;
@@ -433,6 +427,7 @@ h1 {
     border-radius: 10px;
     margin-top: 1%;
     text-align: center;
+    font-size: 1.5vw;
   }
   .sub::before {
   content:"";

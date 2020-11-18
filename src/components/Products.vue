@@ -20,15 +20,7 @@
               <li>
                 ユーザー視点にそったDB設計
               </li>
-              <li>
 
-              </li>
-              <li>
-
-              </li>
-              <li>
-
-              </li>
             </ul>
           </div>
           <div class="product-content-right">
@@ -43,12 +35,7 @@
               <li>
                 jQueryの多用の結果、コード量が膨大になった事
               </li>
-              <li>
-
-              </li>
-              <li>
-
-              </li>
+              
             </ul>
           </div>
           <div class="product-readmore-body">	
@@ -61,9 +48,9 @@
               <div>
               </div>
               <div class="product_top">
+                <h3 class="title_top">Topページ</h3>
                 <img src="@/assets/915333465e0072b4b9412b3c48c4926b.gif" alt="次へ" class="product-gif">
                 <div class="product_top_coment">
-                  <h3 class="title_top">Topページ</h3>
                   <p>このサイトのTopページ。ユーザーに応じてクリックなど余分な動作をすることなく各言語使用者を適切なページへ誘導。<br>
                   テキストのフォントサイズは言語別に調整し、背景の写真は各言語利用者にマッチした写真をで誘導を促す。<br>
                   このページのコードはこちらから</p>
@@ -73,22 +60,22 @@
                   </div>
                 </div>
               </div>
-              <div class="product_login">
+              <div class="product_top">
+                <h3 class="title_top">ログインページ</h3>
                 <img src="@/assets/5c513750d58970280c3cea39f9ef16b2.gif" alt="次へ" class="product-gif">
-                <div class="product_login_coment">
-                  <h3 class="title_login">ログインページ</h3>
+                <div class="product_top_coment">
                   <p>リアルタイムバリデーション機能を実装。フォームの記述に応じてエラーがある場合はエラー理由表示、エラーがない場合はオッケーマークを表示。また、この時国籍の情報を取得し、以後それに応じた表示の多言語化を実装。<br>
                   このページのコードはこちらから</p>
                   <div class="product_link">
-                    <span class="product_link" target="_blank"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/views/devise/registrations/new.html.erb" target="_blank">HTML</a></span><span class="product_link"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/assets/stylesheets/registrations.scss" target="_blank">SCSS</a></span>
-                    <span class="product_link"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/javascript/registrations.js">Javascript</a></span>
+                    <span  target="_blank"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/views/devise/registrations/new.html.erb" target="_blank">HTML</a></span><span><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/assets/stylesheets/registrations.scss" target="_blank">SCSS</a></span>
+                    <span ><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/javascript/registrations.js">Javascript</a></span>
                   </div>  
                 </div>
               </div>
-              <div class="product_area">
+              <div class="product_top">
+                <h3 class="title_top">エリアページ</h3>
                 <img src="@/assets/431a3eab6ad967fa7aaae871fb1b8e57.gif" alt="次へ" class="product-gif">
-                <div class="product_login_coment">
-                  <h3 class="title_login">エリアページ</h3>
+                <div class="product_top_coment">
                   <p>行き先に関して、写真は文字より情報量の多いという考えのもと画像を多用し行き先を誘導。<br>
                   このページのコードはこちらから</p>
                   <div class="product_link">
@@ -97,10 +84,10 @@
                   </div>
                 </div>
               </div>
-              <div class="product_info">
+              <div class="product_top">
+                <h3 class="title_top">チケットページ</h3>
                 <img src="@/assets/1c381f0e13da74e62c607421d8c94ab1.gif" alt="次へ" class="product-gif">
-                <div class="product_login_coment">
-                  <h3 class="title_login">チケットページ</h3>
+                <div class="product_top_coment">
                   <p>を用いてチケットの情報並べて表示。また、他のページにおいても共通であるが、ぼかしを導入してハンバーグメニューを強調。<p>
                   <div class="product_link">
                     <span class="product_link"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/views/kanto_info/index.erb" target="_blank">HTML</a></span><span class="product_link"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/assets/stylesheets/info.scss" target="_blank">SCSS</a></span>
@@ -176,9 +163,9 @@
               <div>
               </div>
               <div class="product_top">
+                <h3 class="title_top">Profileページ</h3>
                 <img src="@/assets/profile_top.gif" alt="次へ" class="product-gif">
                 <div class="product_top_coment">
-                  <h3 class="title_top">Profileページ</h3>
                   基本情報や自身の説明を記載。<br>
                   <div class="product_link">
                     <span class="code_link"><a href="https://github.com/katomanzu0923/katomanzu0923_profile/blob/master/src/App.vue" target="_blank">App.vue</a></span>
@@ -186,10 +173,10 @@
                   </div>
                 </div>
               </div>
-              <div class="product_login">
+              <div class="product_top">
+                <h3 class="title_top">Programingページ</h3>
                 <img src="@/assets/programing.gif" alt="次へ" class="product-gif">
-                <div class="product_login_coment">
-                  <h3 class="title_login">Programingページ</h3>
+                <div class="product_top_coment">
                   これまでに学んだ言語に関して記載<br>
                   ページ遷移を用いる事なく情報をコンパクトにした
                   <div class="product_link">
@@ -197,10 +184,10 @@
                   </div>
                 </div>
               </div>
-              <div class="product_area">
+              <div class="product_top">
+                <h3 class="title_top">Productsページ</h3>
                 <img src="@/assets/products.gif" alt="次へ" class="product-gif">
-                <div class="product_login_coment">
-                  <h3 class="title_login">Productsページ</h3>
+                <div class="product_top_coment">
                   自身でゼロから考えた動的、静的アプリケーションに関して記載。<br>
                   各ページのコードを直接みれるように記述。その際はページ遷移の手間を防ぐために外部リンクとして遷移するようにした
                   <div class="product_link">
@@ -208,24 +195,24 @@
                   </div>
                 </div>
               </div>
-              <div class="product_info">
+              <div class="product_top">
+                <h3 class="title_top">Web Designページ</h3>
                 <img src="@/assets/web_design.gif" alt="次へ" class="product-gif">
-                <div class="product_login_coment">
-                  <h3 class="title_info">Web Designページ</h3>
+                <div class="product_top_coment">
                   Webデザインの領域で作ったパーツを記載<br>
                   <div class="product_link">
                     <span class="code_link"><a href="https://github.com/katomanzu0923/katomanzu0923_profile/blob/master/src/components/WebDesign.vue" target="_blank">Web Design.vue</a></span>
                   </div>
                 </div>
               </div>
-              <div class="product_info">
+              <div class="product_top">
+                <h3 class="title_top">And moreページ</h3>
                 <img src="@/assets/and_more.gif" alt="次へ" class="product-gif">
-                <div class="product_login_coment">
-                  <h3 class="title_info">And moreページ</h3>
+                <div class="product_top_coment">
                   上記以外でWeb開発、制作の力になるような技術に関して記載<br>
-                  作成物はあまり必要ないと考えているが、その作成物が作れるようになるまでの成長過程に、価値があるであろう学びがあったため、その学びを記述
+                  作成物はあまり必要ないと考えているが、その作成物が作れるようになるまでの成長過程に、価値があるであろう学びがあったため、その学びを記述<br>
                   <div class="product_link">
-                    <span class="code_link"><a href="https://github.com/katomanzu0923/katomanzu0923_profile/blob/master/src/components/AndMore.vue" target="_blank">And More.vue</a></span>
+                    <span><a href="https://github.com/katomanzu0923/katomanzu0923_profile/blob/master/src/components/AndMore.vue" target="_blank">And More.vue</a></span>
                   </div>
                 </div>
               </div>
@@ -254,6 +241,7 @@ export default {
   p {
     text-indent: 1em;
     background: transparent;
+    font-size: 1.5vw;
   }
   h2 {
 		text-align: center;
@@ -263,6 +251,7 @@ export default {
     padding: 0 5px;
     color: #1bdf14;
     background: transparent;
+    font-size: 3vw;
 	}
   h3 {
     text-align: center;
@@ -271,8 +260,12 @@ export default {
   color: #1bdf14;
   border:1px solid #1bdf14;
   text-decoration: none;
-  padding: 5px;
+  width: 50%;
+  padding: 3px;
   margin: 1%;
+}
+li {
+  margin-bottom: 1%;
 }
   .vue {
 		position: absolute;
@@ -310,6 +303,11 @@ export default {
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
     margin-bottom: 5%;
 	}
+  @media screen and (max-width: 950px){
+		.products-body {
+		margin-bottom: 20%;
+	}
+	}
 	.product-title {
 		background: transparent;
 		color: #1bdf14;
@@ -321,6 +319,7 @@ export default {
   }
 
   .product_content{
+    display: inline-block;
     position: relative;
     box-sizing: border-box;
     padding: 10px;
@@ -332,14 +331,20 @@ export default {
   .product-content-left {
     display: inline-block;
     left: 0;
+    top: 0;
     width: 40%;
     margin-left: 5%;
+    font-size: 1.5vw;
+    margin: none;
+    vertical-align: top;
   }
   .product-content-right {
     display: inline-block;
     right: 0;
     width: 50%;
     margin-left: 2%;
+    font-size: 1.5vw;
+    vertical-align: top;
   }
   
   .product-readmore-body{
@@ -367,45 +372,66 @@ export default {
     background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 10%, #fff 10%);
 }
 
-.product_top {
+  .product_top {
     position: relative;
-    padding-top: 1%;
-    margin: 0 1%;
+    margin-bottom: 1%;
   }
   .product_link {
-    width: 100%;
     text-align: center;
     margin-top: 3%;
+    font-size: 1vw;
+    margin: 1%;
+    padding-bottom: 3%;
   }
   .product-gif {
-    width: 70%;
+    width: 60%;
+    margin-left: 3%;
     border: 1px solid rgba(0, 0, 0, 0.589);
   }
+  @media screen and (max-width: 950px){
+		.product-gif {
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+	}
+	}
   .product_top_coment {
     display: inline-block;
-    position: absolute;
     text-align: start;
     width: 30%;
     top: 0;
-    height: 90%;
     padding-top: 3%;
-    margin-left: 1%;
+    font-size: 1.5vw;
+    top: 15%;
+    padding: 1%;
+    vertical-align: top;
   }
+  @media screen and (max-width: 950px){
+		.product_top_coment {
+			display: block;
+      position: unset;
+    width: 100%;
+    height: 90%;
+    top: 50%;
+    padding-top: 3%;
+    font-size: 1.5vw;
+    background: transparent;
+	}
+	}
   .title_top {
     text-align: center;
     background-color: #1bdf14;
     border-radius: 10px;
-    text-align: center;
     color: white;
-    width: 80%;
-    margin-left: 10%;
     margin-bottom: 2%;
+    font-size: 1.5vw;
   }
   .product_login {
     position: relative;
     padding-top: 1%;
     margin: 0 1%;
     border-top: solid 2px #7fe07b;
+    font-size: 1.5vw;
   }
   .product_login_coment {
     display: inline-block;
@@ -415,6 +441,7 @@ export default {
     top: 0;
     padding-top: 3%;
     margin-left: 1%;
+    font-size: 1.5vw;
   }
   .title_login {
     text-align: center;
@@ -422,9 +449,9 @@ export default {
     border-radius: 10px;
     text-align: center;
     color: white;
-    width: 80%;
     margin-left: 10%;
     margin-bottom: 2%;
+    font-size: 1.5vw;
   }
   .product_area {
     position: relative;
@@ -475,6 +502,7 @@ export default {
     width: 80%;
     margin-left: 10%;
     margin-bottom: 2%;
+    font-size: 1.5vw;
   }
 
 
@@ -493,9 +521,11 @@ export default {
     border-radius: 10px;
 		text-align: center;
 		color: #f7f7f7;
+    font-size: 1.5vw;
 }
 .products-label:before{
     content: '↓作成したアプリの詳細↓';
+    font-size: 1.5vw;
 }
 .readmore-check{
     display: none;
@@ -507,6 +537,7 @@ export default {
 }
 .readmore-check:checked ~ .products-label:before{
     content: '閉じる';
+    font-size: 1.5vw;
 }
 .readmore-check:checked ~ .product-readmore{
     height: auto;

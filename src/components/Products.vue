@@ -3,7 +3,7 @@
     <div  class="products-header">
       動的アプリケーション
     </div>
-		<div class="products-body">
+		<div class="products-body01">
 			<div class="product-title">
 					<h2>Train Matching</h2>
 			</div>
@@ -105,7 +105,7 @@
     <div  class="products-header">
       静的アプリケーション
     </div>
-		<div class="products-body">
+		<div class="products-body02">
 			<div class="product-title">
 					<h2>katomanzu0923_profile</h2>
 			</div>
@@ -290,7 +290,20 @@ li {
 		font-weight: bold;
   }
 
-  .products-body {
+  .products-body01 {
+		flex-basis: 40%;
+		position: relative;
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #f7f7f7;
+    border-top: solid 6px #1bdf14;/*左線*/
+    color: #1bdf14;/*文字色*/
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    margin-bottom: 5%;
+	}
+  .products-body02 {
 		flex-basis: 40%;
 		position: relative;
     display: block;
@@ -304,8 +317,8 @@ li {
     margin-bottom: 5%;
 	}
   @media screen and (max-width: 950px){
-		.products-body {
-		margin-bottom: 20%;
+		.products-body02 {
+		margin-bottom: 30%;
 	}
 	}
 	.product-title {

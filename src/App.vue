@@ -1146,13 +1146,14 @@ export default {
   }
   .home {
     display: inline-block;
-    padding: 0.5em 1em;
+    padding: 0.5em 0.5%;
     text-decoration: none;
     background: white;
     border-left: solid 6px #919cff;/*左線*/
     color: #919cff;/*文字色*/
     font-weight: bold;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    font-size: 1.5vw;
   }
  
   .home:active {
@@ -1174,6 +1175,7 @@ export default {
     color: #ff7c5c;/*文字色*/
     font-weight: bold;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    font-size: 1.5vw;
   }
 
   .programing:active {
@@ -1194,6 +1196,7 @@ export default {
     color: #7fe07b;/*文字色*/
     font-weight: bold;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    font-size: 1.5vw;
   }
   .products:active {
     box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
@@ -1206,13 +1209,14 @@ export default {
   }
   .webdesign {
     display: block;
-    padding: 0.5em 1em;
+    padding: 0.5em 1%;
     text-decoration: none;
     background: white;
     border-left: solid 6px #7bd4e0;/*左線*/
     color: #7bd4e0;/*文字色*/
     font-weight: bold;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    font-size: 1.5vw;
   }
   .webdesign:active {
     box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
@@ -1225,7 +1229,7 @@ export default {
   }
   .more {
     display: block;
-    padding: 0.5em 1em;
+    padding: 0.5em 1%;
     text-decoration: none;
     background: white;
     border-left: solid 6px #f691fa;/*左線*/

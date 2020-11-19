@@ -182,7 +182,16 @@
 p {
 	text-indent: 1em;
 	font-size: 1.5vw;
+	padding-bottom: 2%;
+	border-bottom: 1px double rgba(255, 0, 0, 0.329);
+	margin-bottom: 2%;
 }
+@media screen and (max-width: 950px){
+		p {
+			margin-bottom: 0;
+		}
+	}
+
 
 h2 {
 		text-align: center;
@@ -210,7 +219,7 @@ h2 {
     left: 5px;
     width: 5px;
     height: 100%;
-    border: 5px solid #ff7c5c;
+    border: 3px solid #ff7c5c;
     border-right: none;
 		margin-bottom: 5%;
 	}
@@ -219,9 +228,8 @@ h2 {
 		margin-top: 5%;
 	}
 .re-content {
-	border-bottom: 3px solid #fa5252;
-	padding: 3%;
-	margin-bottom: 3%;
+	padding: 3% 0; 
+	margin-bottom: 2%;
 }
 .programing-header {
     display: inline-block;
@@ -476,8 +484,8 @@ h2 {
     padding: 0.5em 1em;
     text-decoration: none;
     background: #f7f7f7;
-    border-top: solid 6px #ff7c5c;/*左線*/
-    color: #ff7c5c;/*文字色*/
+    border-top: solid 6px #ff7c5c;
+    color: #ff7c5c;
     font-weight: bold;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
 		margin-top: 5%;
@@ -485,7 +493,7 @@ h2 {
 	}
 	@media screen and (max-width: 950px){
 		.mysql {
-		margin-bottom: 20%;
+		margin-bottom: 30%;
 	}
 	}
 	
@@ -506,7 +514,6 @@ h2 {
     border: 1px solid #ff7d5c;
 		text-align: start;
 		color: #ff7d5c;
-		border-bottom: 1px solid #ff7d5c;
 		margin-bottom: 5%;
 }
 .readmore_more{
@@ -574,13 +581,6 @@ h2 {
 .sub-message-none {
 	filter: opacity(0%);
 }
-.sub {
-	filter: opacity(100%);
-	color: #ff4618;
-	text-align: center;
-	border-top: 3px solid #ff7c5c;
-  padding-top: 2%;
-}
 	.sub {
     filter: opacity(100%);
     padding-top: 2%;
@@ -591,18 +591,7 @@ h2 {
     background-color: #fa5252;
     color: white;
     border-radius: 10px;
-    margin-top: 3%;
     text-align: center;
 		font-size: 1.5vw;
   }
-	.sub::before {
-  content:"";
-   display:block;
-   width: 450%;
-   height:3px;
-   background-color: #fa5252;
-   position:absolute;
-   top: -15px;
-   left: -200%;
-}
 </style>

@@ -1,6 +1,6 @@
 <template>
 	<div class="home_top">
-    <div class="home_main">
+    <div class="home_myself">
       <div class="home_title">
         自己紹介
       </div>
@@ -127,9 +127,10 @@ a {
   background: transparent;
 }
 .re-content {
-  border-bottom: 3px solid #4e60ff;
   margin: 1% 0;
   padding-bottom: 2%;
+  padding: 2% 0;
+  border-bottom: 2px double #919cff;
 }
 
 .home_profile {
@@ -180,13 +181,14 @@ a {
   text-align: center;
   display: inline-block;
   width: 50%;
-  vertical-align: top;
+  font-size: 2vw;
 }
 
 .left {
   text-align: center;
   display: inline-block;
   width: 50%;
+  font-size: 2vw;
 }
 
 
@@ -232,16 +234,18 @@ h1 {
 .topic0 {
   display: flex;
   align-items: center;
+  border-bottom: 2px double #919cff;
 }
 .topic1 {
   display: flex;
   align-items: center;
-  
+  border-bottom: 2px double #919cff;
 }
 
 .topic2 {
   display: flex;
   align-items: center;
+  border-bottom: 2px double #919cff;
 }
 
 .arrow {
@@ -282,8 +286,6 @@ h1 {
 .home_content-content{
     position: relative;
     overflow: hidden;
-    /*以下お好み*/
-    /*高さの初期値*/
     height: 20px;
 }
 .home_content-content::before {
@@ -303,7 +305,6 @@ h1 {
     position: absolute;
     bottom: 5px;
     left: 50%;
-		width: 10%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     margin: 0 auto;
@@ -378,7 +379,7 @@ h1 {
     border-right: none;
 		margin-bottom: 5%;
 	}
-	.home_main {
+	.home_myself {
 		flex-basis: 40%;
 		position: relative;
     display: block;
@@ -402,6 +403,32 @@ h1 {
     font-weight: bold;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
     margin-bottom: 20%;
+  }
+	}
+  .home_main {
+		flex-basis: 40%;
+		position: relative;
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #f7f7f7;
+    border-top: solid 6px #4e5fff;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    margin-bottom: 1%;
+	}
+  @media screen and (max-width: 950px){
+		.home_main {
+		flex-basis: 40%;
+		position: relative;
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #f7f7f7;
+    border-top: solid 6px #4e5fff;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    margin-bottom: 30%;
   }
 	}
 	.home_title {

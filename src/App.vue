@@ -5,8 +5,8 @@
           <h1 class="open-title">フロントエンドエンジニアを目指す、未経験者の</h1>
           <span class="open-main01">学</span><span class="open-main02">び</span><span class="open-main03">L</span><span class="open-main04">o</span><span class="open-main05">g</span>
           <div class="open-sub01">HTML</div><div class="open-sub02">SCSS</div><div class="open-sub03">Vue.js</div><div class="open-sub04">Ruby</div>
+          <button  class="open-button" @click="isOpen = 'b'; day_calculation()">見にいく!</button>
       </div>
-      <button  class="open-button" @click="isOpen = 'b'; day_calculation()">見にいく!</button>
     </div>
     <div v-else>
     </div>
@@ -16,10 +16,10 @@
             Profile
           </div>
           <div  class="header_left_title">
-            <span class="front">学</span><span class="front01">び</span><span class="middle">L</span><span class="back">o</span><span class="back1">g</span>
+            <span class="front1">学</span><span class="front">び</span><span class="middle">L</span><span class="back">o</span><span class="back1">g</span>
           </div>
           <div  class="header_left_home">
-             {{ message }}<span class="header_left-sub-bottom">日</span>
+             <span class="day">{{ message }}</span><span class="header_left-sub-bottom">日</span>
              <span class="header_left-sub-top">学習開始から</span>
           </div>
         </div>
@@ -31,7 +31,7 @@
             <span class="programing-front1">学</span><span class="programing-front">び</span><span class="programing-middle">L</span><span class="programing-back">o</span><span class="programing-back1">g</span>
           </div>
           <div  class="header_left_programing">
-             {{ message }}<span class="header_left-sub-bottom">日</span>
+             <span class="day">{{ message }}</span><span class="header_left-sub-bottom">日</span>
              <span class="header_left-sub-top">学習開始から</span>
           </div>
         </div>
@@ -43,7 +43,7 @@
             <span class="products-front1">学</span><span class="products-front">び</span><span class="products-middle">L</span><span class="products-back">o</span><span class="products-back1">g</span>
           </div>
           <div  class="header_left_products">
-            {{ message }}<span class="header_left-sub-bottom">日</span>
+            <span class="day">{{ message }}</span><span class="header_left-sub-bottom">日</span>
             <span class="header_left-sub-top">学習開始から</span>
           </div>
         </div>
@@ -55,7 +55,7 @@
             <span class="design-front1">学</span><span class="design-front">び</span><span class="design-middle">L</span><span class="design-back">o</span><span class="design-back1">g</span>
           </div>
           <div  class="header_left_design">
-            {{ message }}<span class="header_left-sub-bottom">日</span>
+            <span class="day">{{ message }}</span><span class="header_left-sub-bottom">日</span>
             <span class="header_left-sub-top">学習開始から</span>
           </div>
         </div>
@@ -67,7 +67,7 @@
             <span class="more-front1">学</span><span class="more-front">び</span><span class="more-middle">L</span><span class="more-back">o</span><span class="more-back1">g</span>
           </div>
           <div  class="header_left_more">
-            {{ message }}<span class="header_left-sub-bottom">日</span>
+            <span class="day">{{ message }}</span><span class="header_left-sub-bottom">日</span>
             <span class="header_left-sub-top">学習開始から</span>
           </div>
         </div>
@@ -79,7 +79,7 @@
             <span class="front1">学</span><span class="front">び</span><span class="middle">L</span><span class="back">o</span><span class="back1">g</span>
           </div>
           <div  class="header_left_home">
-             {{ message }}<span class="header_left-sub-bottom">日</span>
+             <span class="day">{{ message }}</span><span class="header_left-sub-bottom">日</span>
              <span class="header_left-sub-top">学習開始から</span>
           </div>
         </div>
@@ -194,9 +194,25 @@ export default {
 <style scoped>
 
   * {
-    font-size: 2vh;
+    font-size: 1.5vw;
     box-sizing: border-box;
   }
+  .day {
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    background: transparent;
+    left: 20%;
+  }
+  @media screen and (max-width: 950px){
+    .day {
+      font-size: 2vw;
+      bottom: 0;
+      background: transparent;
+    }
+  }
+
   .open {
     position: absolute;
     position: fixed;
@@ -204,7 +220,7 @@ export default {
     top: 0;
     width: 100%;
     height: 100%;
-    z-index: 3;
+    z-index: 10;
     font-family: arial black;
     background: transparent;
     backdrop-filter: blur(5px);
@@ -224,10 +240,11 @@ export default {
     font-family: arial black;
   }
   
+  
   .open-button {
     position: absolute;
     left: 45%;
-    top: 40%;
+    top: 25%;
     width: 10%;
     z-index: 4;
     font-weight: bold;
@@ -236,6 +253,13 @@ export default {
     color: rgb(218, 248, 255);
     font-size: 1.5vw;
     border-radius: 4px;
+  }
+   @media screen and (max-width: 950px){
+     .open-button {
+       top: 13%;
+       width: 15%;
+       left: 42.5%;
+     }
   }
   button {
     background: #4ec7ffd3;
@@ -246,6 +270,8 @@ export default {
     left: 10%;
     width: 80%;
     color: rgba(0, 0, 255, 0.699);
+  }
+  @media screen and (max-width: 950px){
   }
   .open-sub01 {
     position: absolute;
@@ -260,6 +286,10 @@ export default {
     transform: rotate(-25deg);
     top: 23%;
     left: 58%;
+  } @media screen and (max-width: 950px){
+    .open-sub01 {
+      top: 12%;
+    }
   }
   .open-sub02 {
     position: absolute;
@@ -273,6 +303,11 @@ export default {
     transform: rotate(5deg);
     top: 20%;
     left: 33%;
+  }
+  @media screen and (max-width: 950px){
+    .open-sub02 {
+      top: 11%;
+    }
   }
   .open-sub03 {
     position: absolute;
@@ -289,6 +324,11 @@ export default {
     top: 32%;
     left: 54%;
   }
+   @media screen and (max-width: 950px){
+     .open-sub03 {
+       top: 15%;
+     }
+  }
   .open-sub04 {
     position: absolute;
     display: inline-block;
@@ -303,6 +343,11 @@ export default {
     transform: rotate(-15deg);
     top: 30%;
     left: 40%;
+  }
+   @media screen and (max-width: 950px){
+     .open-sub04 {
+       top: 16%;
+     }
   }
   .open-main01 {
     display: inline-block;
@@ -371,22 +416,32 @@ export default {
     font-size: 2vw;
     border: 1px solid #CCC;
     border-top: 6px solid rgba(98, 162, 235, 0.979);
-		color: rgba(98, 162, 235, 0.514);
+		color: rgba(27, 120, 226, 0.89);
     width: 75%;
     height: 10%;
-    right: 0;
+    left: 25%;
     text-align: center;
     top: 0;
 		font-weight: bold;
     z-index: 2;
     padding: 1%;
+    line-height: 75px;
+  }
+   @media screen and (max-width: 950px){
+    .header-right {
+    font-size: 5vw;
+    width: 100%;
+    left: 0;
+    height: 10%;
+    text-align: center;
+  }
   }
   .header-right-programing {
     display: inline-block;
     position: absolute;
     color: #4e60ff;
     background: #ffffff;
-    font-size: 2vw;
+    font-size: 2.5vw;
     border: 1px solid #CCC;
     border-top: 6px solid #fa52529c;
 		color: #fa5252;
@@ -397,19 +452,24 @@ export default {
     top: 0;
 		font-weight: bold;
     z-index: 2;
-    padding: 1%;
+    line-height: 75px;
   }
-  
+  @media screen and (max-width: 950px){
+    .header-right-programing {
+    font-size: 5vw;
+    width: 100%;
+    left: 0;
+    height: 10%;
+    text-align: center;
+  }
+  }
  
   .header-right-products {
     display: inline-block;
     position: absolute;
-    color: #4e60ff;
     background: #ffffff;
-    font-size: 2vw;
+    font-size: 2.5vw;
     border: 1px solid #CCC;
-    border-top: 6px solid #1bdf1471;
-		color: #1bdf14ec;
     width: 75%;
     height: 10%;
     right: 0;
@@ -417,17 +477,28 @@ export default {
     top: 0;
 		font-weight: bold;
     z-index: 2;
-    padding: 1%;
+    line-height: 75px;
+    border-top: 6px solid #1bdf1471;
+		color: #1bdf14ec;
+  }
+  @media screen and (max-width: 950px){
+    .header-right-products {
+    font-size: 5vw;
+    width: 100%;
+    left: 0;
+    height: 10%;
+    text-align: center;
+  }
   }
   .header-right-design {
     display: inline-block;
     position: absolute;
     color: #4e60ff;
     background: #ffffff;
-    font-size: 2vw;
+    font-size: 2.5vw;
     border: 1px solid #CCC;
-    border-top: 6px solid #1fcde06c;
-		color: #00d0ecf5;
+    border-top: 6px solid #fa52529c;
+		color: #fa5252;
     width: 75%;
     height: 10%;
     right: 0;
@@ -435,17 +506,28 @@ export default {
     top: 0;
 		font-weight: bold;
     z-index: 2;
-    padding: 1%;
+    line-height: 75px;
+    border-top: 6px solid #1fcde06c;
+		color: #00d0ecf5;
+  }
+  @media screen and (max-width: 950px){
+    .header-right-design {
+    font-size: 5vw;
+    width: 100%;
+    left: 0;
+    height: 10%;
+    text-align: center;
+  }
   }
   .header-right-more {
     display: inline-block;
     position: absolute;
     color: #4e60ff;
     background: #ffffff;
-    font-size: 2vw;
+    font-size: 2.5vw;
     border: 1px solid #CCC;
-    border-top: 6px solid #f94eff70;
-		color: #f94effef;
+    border-top: 6px solid #fa52529c;
+		color: #fa5252;
     width: 75%;
     height: 10%;
     right: 0;
@@ -453,9 +535,19 @@ export default {
     top: 0;
 		font-weight: bold;
     z-index: 2;
-    padding: 1%;
+    line-height: 75px;
+    border-top: 6px solid #f94eff70;
+		color: #f94effef;
   }
-  
+  @media screen and (max-width: 950px){
+    .header-right-more {
+    font-size: 5vw;
+    width: 100%;
+    left: 0;
+    height: 10%;
+    text-align: center;
+  }
+  }
 
  .front1::before {
    content:"";
@@ -465,12 +557,17 @@ export default {
    border-radius: 10px;
    background-color: #4e60ff88;
    position:absolute;
-   top:55%;
+   top:20px;
    left:50%;
    filter: drop-shadow(50%);
-   z-index: -1;
-   transform: rotate(-15deg);
+   z-index: 1;
+   transform: rotate(-10deg);
  }
+ @media screen and (max-width: 950px){
+    .front1::before {
+      display: none;
+  }
+  }
  .back1::before {
    content:"";
    display:inline-block;
@@ -485,6 +582,11 @@ export default {
    z-index: -1;
    transform: rotate(18deg);
  }
+ @media screen and (max-width: 950px){
+    .back1::before {
+      display: none;
+  }
+  }
   
   .header_left_title {
     position: absolute;
@@ -494,56 +596,71 @@ export default {
     text-align: ce1nter;
     transform: translateY(-50%);
     color: #4e60ffb6;
-    z-index: 1;
+    z-index: 3;
     font-family: arial black;
+  }
+  @media screen and (max-width: 950px){
+    .header_left_title {
+      z-index: 2;
+      background: transparent;
+      top: 3%;
+      width: 20%;
+  }
   }
   .header_left_home {
     display: inline-block;
     position: absolute;
-    color: #4e60ff;
     background: #ffffff;
-    text-align: center;
     font-size: 1.5vw;
     margin: 0 1%;
     padding: 10px;
     border: 1px solid #CCC;
-    border-top: 3px solid #4e60ff;
-		color: #4e60ff88;
     width: 6%;
     height: 5%;
-    left: 8%;
-    top: 9%;
+    left: 8.5%;
+    top: 77px;
     z-index: 3;
     font-weight: bold;
+    border-top: 3px solid #4e60ff;
+		color: #4e60ff7a;
+  }
+  @media screen and (max-width: 950px){
+    .header_left_home {
+      left: 80%;
+      top: 3%;
+      width: 10%;
+    }
   }
   .front {
     font-weight: bold;
     color: rgba(0, 0, 0, 0);
-    text-shadow: 3px 3px 0 #4e60ff88;
-    -webkit-text-stroke: 1px #888;
-    padding: 0 0 10px;
-    display: inline-block;
-    background: transparent;
-    transform: rotate(-25deg);
-    margin-top: 50px;
-  }
-  .front1 {
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0);
-    text-shadow: 3px 3px 0 #4e60ff88;
     -webkit-text-stroke: 1px #888;
     padding: 0 0 10px;
     background: transparent;
     font-size: 2vw;
+    text-shadow: 3px 3px 0 #4e60ff88;
+  }
+  @media screen and (max-width: 950px){
+    .front {
+      font-size: 3vw;
+  }
+  }
+  .front1 {
     font-weight: bold;
     color: rgba(0, 0, 0, 0);
-    text-shadow: 3px 3px 0 #4e60ff88;
     -webkit-text-stroke: 1px #888;
     padding: 0 0 10px;
     display: inline-block;
     background: transparent;
+    font-size: 2vw;
     transform: rotate(-25deg);
     margin-top: 50px;
+    text-shadow: 3px 3px 0 #4e60ff88;
+  }
+  @media screen and (max-width: 950px){
+    .front1 {
+      font-size: 3vw;
+  }
   }
   .middle {
     display: inline-block;
@@ -557,6 +674,11 @@ export default {
     background: transparent;
     font-size: 3.25vw;
   }
+  @media screen and (max-width: 950px){
+    .middle {
+      font-size: 4.25vw;
+  }
+  }
   .back {
     display: inline-block;
     font-weight: bold;
@@ -566,6 +688,11 @@ export default {
     padding: 0 0 1%;
     background: transparent;
     font-size: 2vw;
+  }
+  @media screen and (max-width: 950px){
+    .back {
+      font-size: 3vw;
+  }
   }
   .back1 {
     display: inline-block;
@@ -578,6 +705,11 @@ export default {
     font-size: 2vw;
     transform: rotate(25deg);
     margin: 5px;
+  }
+  @media screen and (max-width: 950px){
+    .back1 {
+      font-size: 3vw;
+  }
   }
   
 .header_right_programing{
@@ -595,21 +727,26 @@ export default {
   .header_left_programing {
     display: inline-block;
     position: absolute;
-    color: #4e60ff;
     background: #ffffff;
-    /*transform: rotate(-10deg);*/
     font-size: 1.5vw;
     margin: 0 1%;
     padding: 10px;
     border: 1px solid #CCC;
     border-top: 3px solid hsla(0, 100%, 66%, 0.705);
 		color: hsla(0, 100%, 66%, 0.533);
-    width: 5%;
+    width: 6%;
     height: 5%;
-    left: 9%;
-    top: 10%;
-    z-index: 1;
+    left: 8.5%;
+    top: 77px;
+    z-index: 3;
     font-weight: bold;
+  }
+  @media screen and (max-width: 950px){
+    .header_left_programing {
+      left: 80%;
+      top: 3%;
+      width: 10%;
+    }
   }
   .programing-front {
     font-weight: bold;
@@ -619,6 +756,11 @@ export default {
     padding: 0 0 10px;
     background: transparent;
     font-size: 2vw;
+  }
+  @media screen and (max-width: 950px){
+    .programing-front {
+      font-size: 3vw;
+  }
   }
   .programing-front1 {
     font-weight: bold;
@@ -632,6 +774,11 @@ export default {
     transform: rotate(-25deg);
     margin-top: 50px;
   }
+  @media screen and (max-width: 950px){
+    .programing-front1 {
+      font-size: 3vw;
+  }
+  }
   .programing-middle {
     display: inline-block;
     background: transparent;
@@ -644,6 +791,11 @@ export default {
     background: transparent;
     font-size: 3.25vw;
   }
+   @media screen and (max-width: 950px){
+    .programing-middle {
+      font-size: 4.25vw;
+  }
+  }
   .programing-back {
     display: inline-block;
     font-weight: bold;
@@ -653,6 +805,11 @@ export default {
     padding: 0 0 1%;
     background: transparent;
     font-size: 2vw;
+  }
+   @media screen and (max-width: 950px){
+    .programing-back {
+      font-size: 3vw;
+  }
   }
   .programing-back1 {
     display: inline-block;
@@ -666,6 +823,11 @@ export default {
     transform: rotate(25deg);
     margin: 5px;
   }
+   @media screen and (max-width: 950px){
+    .programing-back1 {
+      font-size: 3vw;
+  }
+  }
   
   .programing-front1::before {
    content:"";
@@ -675,12 +837,17 @@ export default {
    border-radius: 10px;
    background-color: hsla(0, 100%, 66%, 0.533);
    position:absolute;
-   top:40px;
+   top:20px;
    left:50%;
    filter: drop-shadow(50%);
-   z-index: -1;
-   transform: rotate(-15deg);
+   z-index: 1;
+   transform: rotate(-10deg);
  }
+ @media screen and (max-width: 950px){
+    .programing-front1::before {
+      display: none;
+  }
+  }
  .programing-back1::before {
    content:"";
    display:inline-block;
@@ -695,6 +862,11 @@ export default {
    z-index: -1;
    transform: rotate(18deg);
  }
+ @media screen and (max-width: 950px){
+    .programing-back1::before {
+      display: none;
+  }
+  }
 
  .header_right_products{
     position: absolute;
@@ -712,7 +884,6 @@ export default {
   .header_left_products {
     display: inline-block;
     position: absolute;
-    position: fixed;
     color: #4e60ff;
     background: #ffffff;
     /*transform: rotate(-10deg);*/
@@ -722,12 +893,19 @@ export default {
     border: 1px solid #CCC;
     border-top: 3px solid #1bdf1471;
 		color: #1bdf14d8;
-    width: 5%;
+    width: 6%;
     height: 5%;
-    left: 9%;
-    top: 10%;
-    z-index: 1;
+    left: 8.5%;
+    top: 77px;
+    z-index: 3;
     font-weight: bold;
+  }
+  @media screen and (max-width: 950px){
+    .header_left_products {
+      left: 80%;
+      top: 3%;
+      width: 10%;
+    }
   }
   .products-front {
     font-weight: bold;
@@ -792,12 +970,17 @@ export default {
    border-radius: 10px;
    background-color: #1bdf1471;
    position:absolute;
-   top:40px;
+   top:20px;
    left:50%;
    filter: drop-shadow(50%);
-   z-index: -1;
-   transform: rotate(-15deg);
+   z-index: 1;
+   transform: rotate(-10deg);
  }
+ @media screen and (max-width: 950px){
+    .products-front1::before {
+      display: none;
+    }
+  }
  .products-back1::before {
    content:"";
    display:inline-block;
@@ -812,6 +995,12 @@ export default {
    z-index: -1;
    transform: rotate(18deg);
  }
+ @media screen and (max-width: 950px){
+    .products-back1::before {
+      display: none;
+    }
+  }
+ 
  
 
 .header_right_design{
@@ -830,21 +1019,26 @@ export default {
   .header_left_design {
     display: inline-block;
     position: absolute;
-    position: fixed;
     background: #ffffff;
-    /*transform: rotate(-10deg);*/
     font-size: 1.5vw;
     margin: 0 1%;
     padding: 10px;
     border: 1px solid #CCC;
     border-top: 3px solid #00d0ec7a;
 		color: #00d0ece7;
-    width: 5%;
+    width: 6%;
     height: 5%;
-    left: 9%;
-    top: 10%;
-    z-index: 1;
+    left: 8.5%;
+    top: 77px;
+    z-index: 3;
     font-weight: bold;
+  }
+  @media screen and (max-width: 950px){
+    .header_left_design {
+      left: 80%;
+      top: 3%;
+      width: 10%;
+    }
   }
   .design-front {
     font-weight: bold;
@@ -907,13 +1101,18 @@ export default {
    width:2px;
    height:48px;
    border-radius: 10px;
-   background-color: #00d0ec7a;
+   background-color: #7395997a;
    position:absolute;
-   top:40px;
+   top:20px;
    left:50%;
    filter: drop-shadow(50%);
-   z-index: -1;
-   transform: rotate(-15deg);
+   z-index: 1;
+   transform: rotate(-10deg);
+ }
+ @media screen and (max-width: 950px) {
+   .design-front1::before {
+     display: none;
+   }
  }
  .design-back1::before {
    content:"";
@@ -928,6 +1127,11 @@ export default {
    filter: drop-shadow(50%);
    z-index: -1;
    transform: rotate(18deg);
+ }
+ @media screen and (max-width: 950px) {
+   .design-back1::before {
+     display: none;
+   }
  }
 
 .header_right_more{
@@ -946,7 +1150,6 @@ export default {
   .header_left_more {
     display: inline-block;
     position: absolute;
-    position: fixed;
     background: #ffffff;
     font-size: 1.5vw;
     margin: 0 1%;
@@ -954,12 +1157,19 @@ export default {
     border: 1px solid #CCC;
     border-top: 3px solid #f94eff70;
 		color: #f94effd0;
-    width: 5%;
+    width: 6%;
     height: 5%;
-    left: 9%;
-    top: 10%;
-    z-index: 1;
+    left: 8.5%;
+    top: 77px;
+    z-index: 3;
     font-weight: bold;
+  }
+  @media screen and (max-width: 950px){
+    .header_left_more {
+      left: 80%;
+      top: 3%;
+      width: 10%;
+    }
   }
   .more-front {
     font-weight: bold;
@@ -1024,12 +1234,17 @@ export default {
    border-radius: 10px;
    background-color: #f94eff70;
    position:absolute;
-   top:40px;
+   top:20px;
    left:50%;
    filter: drop-shadow(50%);
-   z-index: -1;
-   transform: rotate(-15deg);
+   z-index: 1;
+   transform: rotate(-10deg);
  }
+ @media screen and (max-width: 950px){
+    .more-front1::before {
+      display: none;
+    }
+  }
  .more-back1::before {
    content:"";
    display:inline-block;
@@ -1044,6 +1259,11 @@ export default {
    z-index: -1;
    transform: rotate(18deg);
  }
+ @media screen and (max-width: 950px){
+     .more-back1::before {
+      display: none;
+    }
+  }
 
   .header_right_home:after {
   content: '';
@@ -1052,7 +1272,7 @@ export default {
   bottom: 0;
   width: 30%;
   height: 3px;
- 
+
 }
 .active:after {
   content: '';
@@ -1084,6 +1304,7 @@ export default {
   .header_left-sub-top {
     display: inline-block;
     position: absolute;
+    background: transparent;
     left: 0;
     top: 0;
     font-size: 0.1vw;

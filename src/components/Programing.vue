@@ -181,7 +181,7 @@
 <style scoped>
 p {
 	text-indent: 1em;
-	font-size: 1.5vw;
+	font-size: 1rem;
 	padding-bottom: 2%;
 	border-bottom: 1px double rgba(255, 0, 0, 0.329);
 	margin-bottom: 2%;
@@ -236,7 +236,7 @@ h2 {
     color: #4e60ff;
     background: #ffffff;
 		padding: 1%;
-    font-size: 2vw;
+    font-size: 2rem;
     border: 1px solid #CCC;
     border-top: 3px solid #fa5252;
 		color: #fa5252;
@@ -554,11 +554,11 @@ h2 {
     border-radius: 10px;
 		text-align: center;
 		color: #f7f7f7;
-		font-size: 1.5vw;
+		font-size: 1rem;
 }
 .programing-label:before{
     content: '↓工夫した点↓';
-		font-size: 1.5vw;
+		font-size: 1rem;
 }
 .readmore-check{
     display: none;
@@ -570,7 +570,7 @@ h2 {
 }
 .readmore-check:checked ~ .programing-label:before{
     content: '閉じる';
-		font-size: 1.5vw;
+		font-size: 1rem;
 }
 .readmore-check:checked ~ .readmore-content{
     height: auto;
@@ -592,6 +592,6 @@ h2 {
     color: white;
     border-radius: 10px;
     text-align: center;
-		font-size: 1.5vw;
+		font-size: 1rem;
   }
 </style>

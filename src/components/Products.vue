@@ -268,10 +268,11 @@ export default {
     padding: 0 5px;
     color: #1bdf14;
     background: transparent;
-    font-size: 3vw;
+    font-size: 2rem;
 	}
   h3 {
     text-align: center;
+    font-size: 1.5rem;
   }
   a {
   color: #1bdf14;
@@ -292,20 +293,22 @@ li {
   .products-header {
     display: inline-block;
     background: rgba(253, 253, 253, 0.767);
-		padding: 1%;
-    /*transform: rotate(-10deg);*/
-    font-size: 2vw;
+    font-size: 2rem;
     margin-bottom: 5%;
     border: 1px solid #CCC;
     border-top: 3px solid #1bdf14;
 		color: #1bdf14;
     width: 40%;
-    height: 5%;
     left: 48%;
     top: 5%;
     z-index: 1;
 		font-weight: bold;
   }
+  @media screen and (max-width: 950px){
+		.products-header {
+		width: 80%;
+	}
+	}
 
   .products-body01 {
 		flex-basis: 40%;
@@ -364,7 +367,7 @@ li {
     top: 0;
     width: 40%;
     margin-left: 5%;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     margin: none;
     vertical-align: top;
   }
@@ -373,7 +376,7 @@ li {
     right: 0;
     width: 50%;
     margin-left: 2%;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     vertical-align: top;
   }
   
@@ -408,7 +411,7 @@ li {
   }
   .product_link {
     margin-top: 3%;
-    font-size: 1vw;
+    font-size: 1rem;
     margin: 1%;
     padding-bottom: 3%;
   }
@@ -430,7 +433,7 @@ li {
     width: 30%;
     top: 0;
     padding-top: 3%;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     top: 15%;
     padding: 1%;
     vertical-align: top;
@@ -443,7 +446,7 @@ li {
     height: 90%;
     top: 50%;
     padding-top: 3%;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     background: transparent;
 	}
 	}
@@ -453,14 +456,14 @@ li {
     border-radius: 10px;
     color: white;
     margin-bottom: 2%;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
   }
   .product_login {
     position: relative;
     padding-top: 1%;
     margin: 0 1%;
     border-top: solid 2px #7fe07b;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
   }
   .product_login_coment {
     display: inline-block;
@@ -470,7 +473,7 @@ li {
     top: 0;
     padding-top: 3%;
     margin-left: 1%;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
   }
   .title_login {
     text-align: center;
@@ -480,7 +483,7 @@ li {
     color: white;
     margin-left: 10%;
     margin-bottom: 2%;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
   }
   .product_area {
     position: relative;
@@ -531,7 +534,7 @@ li {
     width: 80%;
     margin-left: 10%;
     margin-bottom: 2%;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
   }
 
 
@@ -550,11 +553,11 @@ li {
     border-radius: 10px;
 		text-align: center;
 		color: #f7f7f7;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
 }
 .products-label:before{
     content: '↓作成したアプリの詳細↓';
-    font-size: 1.5vw;
+    font-size: 1.5rem;
 }
 .readmore-check{
     display: none;
@@ -566,7 +569,7 @@ li {
 }
 .readmore-check:checked ~ .products-label:before{
     content: '閉じる';
-    font-size: 1.5vw;
+    font-size: 1.5rem;
 }
 .readmore-check:checked ~ .product-readmore{
     height: auto;

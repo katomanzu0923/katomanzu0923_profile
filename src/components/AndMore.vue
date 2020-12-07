@@ -25,7 +25,7 @@
 			<div class="more-body">
         <h2>写真撮影</h2>
 				<div class="more-content">
-					私は趣味で写真撮影を行います。構図を独学で学び友人や撮りたいと感じた物に対して趣味として撮影を行なっています。
+					<p>私は趣味で写真撮影を行います。構図を独学で学び友人や撮りたいと感じた物に対して趣味として撮影を行なっています。</p>
           <div class="more-content-comment">	
           <input id="check２" class="more-check" type="checkbox">
           <div class="more-readmore-body">
@@ -63,6 +63,7 @@ export default {
 <style  scoped>
   p {
   text-indent: 1em;
+  font-size: 1rem;
   }
 
   h2 {
@@ -73,7 +74,7 @@ export default {
     padding: 0 5px;
 		color: #f94eff;
     background: transparent;
-    font-size: 3vw;
+    font-size: 2rem;
   }
   
   .more-ruot {
@@ -171,11 +172,11 @@ export default {
 }
 .last-more-content {
   border-bottom: 2px solid #f94eff;
-  padding-bottom: 1%;
+  padding-bottom: 3%;
 }
 .readmore-label:before{
     content: 'エンジニアとして活かせる学び';
-    font-size: 1.5vw;
+    font-size: 1.5rem;
 }
 .more-check{
     display: none;
@@ -187,7 +188,7 @@ export default {
 }
 .more-check:checked ~ .readmore-label:before{
     content: '閉じる';
-    font-size: 1.5vw;
+    font-size: 1.5rem;
 }
 .more-check:checked ~ .more-readmore-body{
     height: auto;

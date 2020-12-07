@@ -50,6 +50,7 @@
           </div> 
           <p class="re-content">プログラミング言語で何が出来るのかという事を意識しながら学習を進めました。また、学習する過程で出来るようになった事を完成しているwebサイトと比較してこのサイトのここはこの言語が使われれているのだろうかと意識しながら学習を進めました。</p>
           </div>
+          <div><br></div>
           <label v-on:click='isActivePro=!isActivePro' class="home_content-label" for="check2">
 					</label>
 				</div>	
@@ -73,6 +74,7 @@
            <p class="re-content">曖昧な事をゼロにする事を意識しながら学習を進めました。常にわからない事はメンターに質問出来る環境にあったのでどんなことでも質問をしてわからない事を潰していきました。<br>
            また、質問がより自分のためになるようにわからない点に対してqiitaなどのwebサイトを用いてある程度答えを出して質問することによって自己解決能力を効率よく高めることに成功しました。</p>
           </div>
+          <div><br></div>
           <label v-on:click='isActiveTech=!isActiveTech' class="home_content-label" for="check３">
 					</label>
         </div>
@@ -91,13 +93,15 @@
           <input id="check4" class="home_content-check" type="checkbox">
           <div class="home_content-content">
           <span>
-          <div class="none" v-bind:class='{sub:isActive}'>
+          <div class="none" :class='{sub:isActive}'>
             学ぶ際に工夫していた事
           </div> 
 					</span>
+          
           <p class="re-content">曖昧な事をゼロにする事を意識しながら学習を進めました。常にわからない事はメンターに質問出来る環境にあったのでどんなことでも質問をしてわからない事を潰していきました。<br>
            また、質問がより自分のためになるようにわからない点に対してqiitaなどのwebサイトを用いてある程度答えを出して質問することによって自己解決能力を効率よく高めることに成功しました。</p>
           </div>
+          <div><br></div>
           <label v-on:click='isActive=!isActive' class="home_content-label" for="check4">
 					</label>
         </div>
@@ -121,7 +125,7 @@ export default {
 p {
   text-indent: 1em;
   background: transparent;
-  font-size: 1.5vw;
+  font-size: 1rem;
 }
 a {
   background: transparent;
@@ -181,14 +185,14 @@ a {
   text-align: center;
   display: inline-block;
   width: 50%;
-  font-size: 2vw;
+  font-size: 1.5rem;
 }
 
 .left {
   text-align: center;
   display: inline-block;
   width: 50%;
-  font-size: 2vw;
+  font-size: 1.5rem;
 }
 
 
@@ -217,6 +221,8 @@ a {
 }
 h1 {
   text-align: center;
+  font-size: 2.5rem;
+  color:#4e5fff;
 }
 .a {
   filter: opacity(0);
@@ -225,7 +231,6 @@ h1 {
 	filter: opacity(100%);
 	color: #4e5fff;
 	text-align: center;
-  border-top: 1px solid #4e60ff81;
   padding-top: 2%;
 }
 .line {
@@ -234,18 +239,16 @@ h1 {
 .topic0 {
   display: flex;
   align-items: center;
-  border-bottom: 2px double #919cff;
+
 }
 .topic1 {
   display: flex;
   align-items: center;
-  border-bottom: 2px double #919cff;
 }
 
 .topic2 {
   display: flex;
   align-items: center;
-  border-bottom: 2px double #919cff;
 }
 
 .arrow {
@@ -301,7 +304,6 @@ h1 {
 }
 .home_content-label{
     display: table;
-    bottom: 5px;
     position: absolute;
     bottom: 5px;
     left: 50%;
@@ -309,16 +311,15 @@ h1 {
     -webkit-transform: translateX(-50%);
     margin: 0 auto;
     z-index: 2;
-    padding: 0 10px;
     background-color: #4e5fff;
     border-radius: 10px;
 		text-align: center;
 		color: #f7f7f7;
-    font-size: 1.5vw;
+    font-size: 2rem;
 }
 .home_content-label:before{
     content: '↓学びの際に工夫した事↓';
-    font-size: 1.5vw;
+    font-size: 1.5rem;
 }
 .home_content-check{
     display: none;
@@ -330,7 +331,7 @@ h1 {
 }
 .home_content-check:checked ~ .home_content-label:before{
     content: '閉じる';
-    font-size: 1.5vw;
+    font-size: 1.5rem;
 }
 .home_content-check:checked ~ .home_content-content{
     height: auto;
@@ -452,9 +453,9 @@ h1 {
     background-color: #4e5fff;
     color: white;
     border-radius: 10px;
-    margin-top: 1%;
+    margin-top: 5%;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
   }
   .sub::before {
   content:"";

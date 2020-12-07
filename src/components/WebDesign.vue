@@ -10,13 +10,13 @@
 				</div>
 				<div class="readmore">
           <div>
-            元々Photoshopに関しては趣味で写真撮影、動画編集を行っており、その時にフォトショップが使えるようになりました。<br>
+            <p>元々Photoshopに関しては趣味で写真撮影、動画編集を行っており、その時にフォトショップが使えるようになりました。</p><br>
           </div>
 				</div>
 			</div>
 			<div class="design-body">
 				<div class="design_main">
-					Web制作に利用した作例
+					Web制作に作成した作例
 				</div>
 				<div class="design_content">
 					<div class="design_content_body">
@@ -143,5 +143,7 @@ export default {
     background: transparent;
     border-bottom: 1px solid #7bd4e0;
   }
-	
+	p {
+    font-size: 1rem;
+  }
 </style>

@@ -60,7 +60,7 @@ export default {
 
 
 
-<style scoped>
+<style  scoped>
   p {
   text-indent: 1em;
   }

@@ -1,7 +1,7 @@
 <template>
 	<div class="vue">
     <div  class="products-header">
-      動的アプリケーション
+      Ruby on railsを用いプロダクト
     </div>
 		<div class="products-body01">
 			<div class="product-title">
@@ -15,10 +15,10 @@
             <ul>
               <h3>＜作成時に工夫した点＞</h3>
               <li>
-                多言語化対応
+                <p>多言語化対応</p>
               </li>
               <li>
-                ユーザー視点にそったDB設計
+                <P>ユーザー視点にそったDB設計</P>
               </li>
 
             </ul>
@@ -27,13 +27,13 @@
             <h3>＜作成後の反省点＞</h3>
             <ul>
               <li>
-                コード設計が疎かにした結果、可読性が著しく低下した事
+                <p>jQueryの多用による可読性の低下</p>
               </li>
               <li>
-                画像の多用にの結果、UXが著しく低下した事
+                <p>画像の多様によるアクセススピードの低下</p>
               </li>
               <li>
-                jQueryの多用の結果、コード量が膨大になった事
+                <p></p>
               </li>
               
             </ul>
@@ -53,10 +53,11 @@
                 <div class="product_top_coment">
                   <p>このサイトのTopページ。ユーザーに応じてクリックなど余分な動作をすることなく各言語使用者を適切なページへ誘導。<br>
                   テキストのフォントサイズは言語別に調整し、背景の写真は各言語利用者にマッチした写真をで誘導を促す。<br>
-                  このページのコードはこちらから</p>
+                  </p>
+                  <h4 class="center">このページのコードは下記から</h4>
                   <div class="product_link">
-                    <span class="code_link"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/views/top/index.erb" target="_blank">HTML</a></span><span class="code_link"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/assets/stylesheets/top.scss" target="_blank">SCSS</a></span>
-                    <span class="code_link"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/javascript/top.js" target="_blank">Javascript</a></span>
+                    <span class="code_link01"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/views/top/index.erb" target="_blank">HTML</a></span><span class="code_link01"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/assets/stylesheets/top.scss" target="_blank">SCSS</a></span>
+                    <span class="code_link01"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/javascript/top.js" target="_blank">Javascript</a></span>
                   </div>
                 </div>
               </div>
@@ -65,10 +66,11 @@
                 <img src="@/assets/5c513750d58970280c3cea39f9ef16b2.gif" alt="次へ" class="product-gif">
                 <div class="product_top_coment">
                   <p>リアルタイムバリデーション機能を実装。フォームの記述に応じてエラーがある場合はエラー理由表示、エラーがない場合はオッケーマークを表示。また、この時国籍の情報を取得し、以後それに応じた表示の多言語化を実装。<br>
-                  このページのコードはこちらから</p>
+                  </p>
+                  <h4 class="center">このページのコードは下記から</h4>
                   <div class="product_link">
-                    <span  target="_blank"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/views/devise/registrations/new.html.erb" target="_blank">HTML</a></span><span><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/assets/stylesheets/registrations.scss" target="_blank">SCSS</a></span>
-                    <span ><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/javascript/registrations.js">Javascript</a></span>
+                    <span  class="code_link01"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/views/devise/registrations/new.html.erb" target="_blank">HTML</a></span><span class="code_link01"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/assets/stylesheets/registrations.scss" target="_blank">SCSS</a></span>
+                    <span class="code_link01"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/javascript/registrations.js">Javascript</a></span>
                   </div>  
                 </div>
               </div>
@@ -77,10 +79,11 @@
                 <img src="@/assets/431a3eab6ad967fa7aaae871fb1b8e57.gif" alt="次へ" class="product-gif">
                 <div class="product_top_coment">
                   <p>行き先に関して、写真は文字より情報量の多いという考えのもと画像を多用し行き先を誘導。<br>
-                  このページのコードはこちらから</p>
+                  </p>
+                  <h4 class="center">このページのコードは下記から</h4>
                   <div class="product_link">
-                    <span class="product_link"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/views/area/index.erb" target="_blank">HTML</a></span><span class="product_link" target="_blank"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/assets/stylesheets/area.scss" target="_blank">SCSS</a></span>
-                    <span class="product_link"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/javascript/area.js" target="_blank">Javascript</a></span>
+                    <span class="code_link01"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/views/area/index.erb" target="_blank">HTML</a></span><span class="code_link01" target="_blank"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/assets/stylesheets/area.scss" target="_blank">SCSS</a></span>
+                    <span class="code_link01"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/javascript/area.js" target="_blank">Javascript</a></span>
                   </div>
                 </div>
               </div>
@@ -88,10 +91,11 @@
                 <h3 class="title_top">チケットページ</h3>
                 <img src="@/assets/1c381f0e13da74e62c607421d8c94ab1.gif" alt="次へ" class="product-gif">
                 <div class="product_top_coment">
-                  <p>を用いてチケットの情報並べて表示。また、他のページにおいても共通であるが、ぼかしを導入してハンバーグメニューを強調。<p>
+                  <p>を用いてチケットの情報並べて表示。また、他のページにおいても共通であるが、ぼかしを導入してハンバーグメニューを強調。<p><br>
+                  <h4 class="center">このページのコードは下記から</h4>
                   <div class="product_link">
-                    <span class="product_link"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/views/kanto_info/index.erb" target="_blank">HTML</a></span><span class="product_link"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/assets/stylesheets/info.scss" target="_blank">SCSS</a></span>
-                    <span class="product_link"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/javascript/info.js" target="_blank">Javascript</a></span>
+                    <span class="code_link01"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/views/kanto_info/index.erb" target="_blank">HTML</a></span><span class="code_link01"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/assets/stylesheets/info.scss" target="_blank">SCSS</a></span>
+                    <span class="code_link01"><a href="https://github.com/katomanzu0923/train_ticket/blob/master/app/javascript/info.js" target="_blank">Javascript</a></span>
                   </div>
                 </div>
               </div>
@@ -103,33 +107,27 @@
 			</div>
 		</div>
     <div  class="products-header">
-      静的アプリケーション
+      Vue.jsを用いたProducts
     </div>
 		<div class="products-body02">
 			<div class="product-title">
-					<h2>katomanzu0923_profile</h2>
+					<h2>富有柿ファーム</h2>
 			</div>
 			<div class="product_content">
           <div>
-            <img src="@/assets/profile_top.gif" alt="次へ" class="main">
+            <img src="@/assets/top.png" alt="次へ" class="main">
           </div>
           <div class="product-content-left">
             <ul>
               <h3>＜作成して工夫した点＞</h3>
               <li>
-                Vue.jsを用いたアプリケーションの作成
+                <p>ユーザーの視点にそったページ構成</p>
               </li>
               <li>
-                動作を軽くするため画像の割合を極力減らすCSS設計
+                <p>web用とmobile用と画像を使い分けた点</p>
               </li>
               <li>
-                統一した彩度でサイトを設計した事
-              </li>
-              <li>
-
-              </li>
-              <li>
-
+                <p>ScSSを導入した点</p>
               </li>
             </ul>
           </div>
@@ -137,19 +135,10 @@
             <h3>＜作成して反省すべき点＞</h3>
             <ul>
               <li>
-                Vue.jsのコンポーネントをうまく活用できなかった事
+                <p>vue.routerを構想段階で考えていなかったため、大幅な変更が生じた点</p>
               </li>
               <li>
-                装飾をCSSのみと拘っていたため不自然なヘッダーになってしまった事
-              </li>
-              <li>
-                
-              </li>
-              <li>
-
-              </li>
-              <li>
-
+                <p>Web用とモバイル用のメニューを初期から考えずにデザインを決めてしまった点</p>
               </li>
             </ul>
           </div>
@@ -163,56 +152,70 @@
               <div>
               </div>
               <div class="product_top">
-                <h3 class="title_top">Profileページ</h3>
-                <img src="@/assets/profile_top.gif" alt="次へ" class="product-gif">
+                <h3 class="title_top">Topページ</h3>
+                <img src="@/assets/ec-top.gif" alt="次へ" class="product-gif">
                 <div class="product_top_coment">
-                  基本情報や自身の説明を記載。<br>
                   <div class="product_link">
-                    <span class="code_link"><a href="https://github.com/katomanzu0923/katomanzu0923_profile/blob/master/src/App.vue" target="_blank">App.vue</a></span>
-                    <span class="code_link"><a href="https://github.com/katomanzu0923/katomanzu0923_profile/blob/master/src/components/Home.vue" target="_blank">Home.vue</a></span>
+                    <p>ヘッダーは擬似要素でボーダーラインを作り、vue.jsを用いて要素に応じた遷移を実現しました。また、top画面はcssのアニメーションではなくて、Vue.jsのtransitionを用いて画像を滑らかに切り替わるようにしました。<br></p>
+                    <h4 class="center">このページのコードは下記から</h4>
+                    <span class="code_link"><a href="https://github.com/katomanzu0923/ec-persimmon/blob/master/src/components/Top.vue" target="_blank">Top.vue</a></span>
                   </div>
                 </div>
               </div>
               <div class="product_top">
-                <h3 class="title_top">Programingページ</h3>
-                <img src="@/assets/programing.gif" alt="次へ" class="product-gif">
+                <h3 class="title_top">商品説明ページ</h3>
+                <img src="@/assets/ec-about.gif" alt="次へ" class="product-gif">
                 <div class="product_top_coment">
-                  これまでに学んだ言語に関して記載<br>
-                  ページ遷移を用いる事なく情報をコンパクトにした
+                  <p>画像の遷移の際に今どこにいるのかに関しては、v-バインドを用いてclassの変更によって実現しました。また、コンテンツ全体で柿が表現できるようにカラーとボーターを調整してあります。<br></p>
+                  <h4 class="center">このページのコードは下記から</h4>
                   <div class="product_link">
-                    <span class="code_link"><a href="https://github.com/katomanzu0923/katomanzu0923_profile/blob/master/src/components/Programing.vue" target="_blank">Programing.vue</a></span>
+                    <span class="code_link"><a href="https://github.com/katomanzu0923/ec-persimmon/blob/master/src/components/About.vue" target="_blank">About.vue</a></span>
                   </div>
                 </div>
               </div>
               <div class="product_top">
-                <h3 class="title_top">Productsページ</h3>
-                <img src="@/assets/products.gif" alt="次へ" class="product-gif">
+                <h3 class="title_top">商品一覧ページ</h3>
+                <img src="@/assets/ec-buy.gif" alt="次へ" class="product-gif">
                 <div class="product_top_coment">
-                  自身でゼロから考えた動的、静的アプリケーションに関して記載。<br>
-                  各ページのコードを直接みれるように記述。その際はページ遷移の手間を防ぐために外部リンクとして遷移するようにした
+                  <p>V-modelでデータのバインディングを行い購入ページへデータをpropsに渡しています。また、選択した購入数に応じた処理による購入制限やリアルタイムで購入数が判断できるようになっています。
+                    <br>
+                  </p>
+                  <h4 class="center">このページのコードは下記から</h4>
                   <div class="product_link">
-                    <span class="code_link"><a href="https://github.com/katomanzu0923/katomanzu0923_profile/blob/master/src/components/Products.vue" target="_blank">Products.vue</a></span>
+                    <span class="code_link"><a href="https://github.com/katomanzu0923/ec-persimmon/blob/master/src/components/Buy.vue" target="_blank">Buy.vue</a></span>
                   </div>
                 </div>
               </div>
               <div class="product_top">
-                <h3 class="title_top">Web Designページ</h3>
-                <img src="@/assets/web_design.gif" alt="次へ" class="product-gif">
+                <h3 class="title_top">購入ページ１</h3>
+                <img src="@/assets/ec-perches01.gif" alt="次へ" class="product-gif">
                 <div class="product_top_coment">
-                  Webデザインの領域で作ったパーツを記載<br>
+                  <p>それぞれの記述に対してによるバリデーションや 未入力で入力が進むのを防ぐ処理をリアルタイムで行っています。また、購入方法によって異なる購入金額になるようになっています。<br></p>
+                  <h4 class="center">このページのコードは下記から</h4>
                   <div class="product_link">
-                    <span class="code_link"><a href="https://github.com/katomanzu0923/katomanzu0923_profile/blob/master/src/components/WebDesign.vue" target="_blank">Web Design.vue</a></span>
+                    <span class="code_link"><a href="https://github.com/katomanzu0923/ec-persimmon/blob/master/src/components/Perches.vue" target="_blank">Perches.vue</a></span>
                   </div>
                 </div>
               </div>
               <div class="product_top">
-                <h3 class="title_top">And moreページ</h3>
-                <img src="@/assets/and_more.gif" alt="次へ" class="product-gif">
+                <h3 class="title_top">購入ページ２</h3>
+                <img src="@/assets/ec-perches02.gif" alt="次へ" class="product-gif">
                 <div class="product_top_coment">
-                  上記以外でWeb開発、制作の力になるような技術に関して記載<br>
-                  作成物はあまり必要ないと考えているが、その作成物が作れるようになるまでの成長過程に、価値があるであろう学びがあったため、その学びを記述<br>
+                  <p>子コンポーネントから親コンポーネントのデータの引き継ぎや時間差で関数を発生させることによって購入後のに元に戻るようになっています。<br></p>
+                  <h4 class="center">このページのコードは下記から</h4>
                   <div class="product_link">
-                    <span><a href="https://github.com/katomanzu0923/katomanzu0923_profile/blob/master/src/components/AndMore.vue" target="_blank">And More.vue</a></span>
+                    <span class="code_link"><a href="https://github.com/katomanzu0923/ec-persimmon/blob/master/src/components/Perches.vue" target="_blank">Perches.vue</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="product_top">
+                <h3 class="title_top">お問い合わせページ</h3>
+                <img src="@/assets/ec-contact.gif" alt="次へ" class="product-gif">
+                <div class="product_top_coment">
+                  <p>現在の入力位置がわかりやすいようにリアルタイムで記述内容を処理しています。また、送信が完了したら最初の状態に戻るようになっています。<br></p>
+                  <h4 class="center">このページのコードは下記から</h4>
+                  <div class="product_link">
+                    <span class="code_link"><a href="https://github.com/katomanzu0923/ec-persimmon/blob/master/src/components/Contact.vue" target="_blank">Contact.vue</a></span>
                   </div>
                 </div>
               </div>
@@ -241,7 +244,21 @@ export default {
   p {
     text-indent: 1em;
     background: transparent;
-    font-size: 1.5vw;
+    font-size: 1rem;
+  }
+  .center {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .code_link01 {
+    display: inline-block;
+    margin: 1%;
+    text-align: center;
+  }
+  .code_link {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
   }
   h2 {
 		text-align: center;
@@ -390,7 +407,6 @@ li {
     margin-bottom: 1%;
   }
   .product_link {
-    text-align: center;
     margin-top: 3%;
     font-size: 1vw;
     margin: 1%;

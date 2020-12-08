@@ -5,7 +5,7 @@
     </div>
 		<div class="products-body01">
 			<div class="product-title">
-					<h2>Train Matching</h2>
+        Train Ticket
 			</div>
 			<div class="product_content">
           <div>
@@ -38,6 +38,7 @@
               
             </ul>
           </div>
+          <div class="products-label01">このwebアプリケーションへは<a class="url" href="https://train-ticket-0923.herokuapp.com/" target="_blank">こちら</a>から</div>
           <div class="product-readmore-body">	
             <input id="check1" class="readmore-check" type="checkbox">
             <div class="product-readmore">
@@ -131,6 +132,7 @@
               </li>
             </ul>
           </div>
+          
           <div class="product-content-right">
             <h3>＜作成して反省すべき点＞</h3>
             <ul>
@@ -142,6 +144,7 @@
               </li>
             </ul>
           </div>
+          <div class="products-label01">このwebアプリケーションへは<a class="url" href="https://ec-persimmon.netlify.app/" target="_blank">こちら</a>から</div>
           <div class="product-readmore-body">	
             <input id="check2" class="readmore-check" type="checkbox">
             <div class="product-readmore">
@@ -281,9 +284,24 @@ export default {
   width: 50%;
   padding: 3px;
   margin: 1%;
+  text-align: center;
 }
 li {
   margin-bottom: 1%;
+}
+.webUrl {
+  text-align: center;
+  color: #7ee07b8a;
+  border: unset;
+}
+.url {
+  color: green;
+  border: unset;
+  background: #1bdf14;
+  border-bottom:1px solid #1bdf14;
+}
+.url:hover {
+  background: rgba(255, 255, 255, 0.281);
 }
   .vue {
 		position: absolute;
@@ -537,18 +555,27 @@ li {
     font-size: 1.5rem;
   }
 
-
+.products-label01{
+  display: block;
+    width: 35%;
+    margin: 1% auto 0 auto;
+    z-index: 2;
+    background-color: #1bdf14;
+    border-radius: 10px;
+		text-align: center;
+		color: #f7f7f7;
+    font-size: 1rem;
+}
 .products-label{
     display: table;
     bottom: 5px;
     position: absolute;
     left: 50%;
-		width: 20%;
+		width: 35%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     margin: 1% auto 0 auto;
     z-index: 2;
-    padding: 0 10px;
     background-color: #1bdf14;
     border-radius: 10px;
 		text-align: center;
@@ -556,7 +583,7 @@ li {
     font-size: 1rem;
 }
 .products-label:before{
-    content: '↓作成したアプリの詳細↓';
+    content: '作成したアプリの中身の概要はこちらから';
     font-size: 1rem;
 }
 .readmore-check{

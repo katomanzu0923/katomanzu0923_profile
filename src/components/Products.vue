@@ -553,11 +553,11 @@ li {
     border-radius: 10px;
 		text-align: center;
 		color: #f7f7f7;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .products-label:before{
     content: '↓作成したアプリの詳細↓';
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .readmore-check{
     display: none;
@@ -569,7 +569,7 @@ li {
 }
 .readmore-check:checked ~ .products-label:before{
     content: '閉じる';
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .readmore-check:checked ~ .product-readmore{
     height: auto;

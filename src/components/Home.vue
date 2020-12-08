@@ -50,12 +50,11 @@
           </div> 
           <p class="re-content">プログラミング言語で何が出来るのかという事を意識しながら学習を進めました。また、学習する過程で出来るようになった事を完成しているwebサイトと比較してこのサイトのここはこの言語が使われれているのだろうかと意識しながら学習を進めました。</p>
           </div>
-          <div><br></div>
           <label v-on:click='isActivePro=!isActivePro' class="home_content-label" for="check2">
 					</label>
 				</div>	
         <div class="home_content">
-          <h1 class="line">TECH::CHANP</h1>
+          <h1 class="line">TECH  CAMP</h1>
           <div class="topic1">
             <div class="content1">
               <p>様々な言語を使って表現の仕組みは理解したが、世の中にそれを実現させるためには何が必要かどの手段が最適なのかがわからない状態</p>
@@ -74,7 +73,6 @@
            <p class="re-content">曖昧な事をゼロにする事を意識しながら学習を進めました。常にわからない事はメンターに質問出来る環境にあったのでどんなことでも質問をしてわからない事を潰していきました。<br>
            また、質問がより自分のためになるようにわからない点に対してqiitaなどのwebサイトを用いてある程度答えを出して質問することによって自己解決能力を効率よく高めることに成功しました。</p>
           </div>
-          <div><br></div>
           <label v-on:click='isActiveTech=!isActiveTech' class="home_content-label" for="check３">
 					</label>
         </div>
@@ -101,7 +99,6 @@
           <p class="re-content">曖昧な事をゼロにする事を意識しながら学習を進めました。常にわからない事はメンターに質問出来る環境にあったのでどんなことでも質問をしてわからない事を潰していきました。<br>
            また、質問がより自分のためになるようにわからない点に対してqiitaなどのwebサイトを用いてある程度答えを出して質問することによって自己解決能力を効率よく高めることに成功しました。</p>
           </div>
-          <div><br></div>
           <label v-on:click='isActive=!isActive' class="home_content-label" for="check4">
 					</label>
         </div>
@@ -315,11 +312,11 @@ h1 {
     border-radius: 10px;
 		text-align: center;
 		color: #f7f7f7;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 .home_content-label:before{
     content: '↓学びの際に工夫した事↓';
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .home_content-check{
     display: none;
@@ -331,7 +328,7 @@ h1 {
 }
 .home_content-check:checked ~ .home_content-label:before{
     content: '閉じる';
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .home_content-check:checked ~ .home_content-content{
     height: auto;
@@ -455,7 +452,7 @@ h1 {
     border-radius: 10px;
     margin-top: 5%;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .sub::before {
   content:"";

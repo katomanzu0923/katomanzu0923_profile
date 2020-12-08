@@ -158,7 +158,7 @@ export default {
     background-color: #f94eff;
     border-radius: 10px;
 		text-align: center;
-    font-size: 1.5vw;
+    font-size: 1rem;
 		color: #f7f7f7;
     margin-top: 1%;
 }
@@ -176,7 +176,7 @@ export default {
 }
 .readmore-label:before{
     content: 'エンジニアとして活かせる学び';
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .more-check{
     display: none;
@@ -188,7 +188,7 @@ export default {
 }
 .more-check:checked ~ .readmore-label:before{
     content: '閉じる';
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .more-check:checked ~ .more-readmore-body{
     height: auto;
@@ -213,7 +213,7 @@ export default {
 	text-align: center;
 	color: #f7f7f7;
   margin-top: 1%;
-
+  font-size: 1rem;
 }
 .isActive::before {
   content:"";

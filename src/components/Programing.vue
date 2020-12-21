@@ -70,7 +70,7 @@
           <input id="check4" class="readmore-check" type="checkbox">
           <div class="readmore-content">
             <span class="aa" v-bind:class='{active:isActiveJavascript}'><div class="sub-message-none" v-bind:class='{sub:isActiveJavascript}'>工夫した点</div>
-						<p class="re-content">Javascriptを学ぶ際に工夫したことは検証ツールを必ず用いたことです。イベントを発火するたびに要素が取れているかなど確認しJavascriptにおけるライサイクルを理解することに執着しました</p></span>
+						<p class="re-content">Javascriptを学ぶ際に工夫したことは検証ツールを必ず用いたことです。イベントを発火するたびに要素が取れているかなど確認しJavascriptにおけるライフサイクルを理解することに執着しました</p></span>
           </div>
           <label v-on:click='isActiveJavascript=!isActiveJavascript' class="programing-label" for="check4">
 					</label>

@@ -13,29 +13,24 @@
           </div>
           <div class="product-content-left">
             <ul>
-              <h3>＜作成時に工夫した点＞</h3>
+              <h3>このアプリケーション全体の紹介</h3>
               <li>
-                <p>多言語化対応</p>
+                <p>日本語の他英語、中国語を考慮した設計</p>
               </li>
               <li>
-                <P>ユーザー視点にそったDB設計</P>
+                <p>UI、UXを意識したDB設計</p>
               </li>
-
             </ul>
           </div>
           <div class="product-content-right">
-            <h3>＜作成後の反省点＞</h3>
+            <h3>開発環境</h3>
             <ul>
-              <li>
-                <p>jQueryの多用による可読性の低下</p>
+              <li>使用言語
+                <p>HTML SCSS jQuery mysql</p>
               </li>
-              <li>
-                <p>画像の多様によるアクセススピードの低下</p>
+              <li>開発環境
+                <p>GitHub  vscode</p>
               </li>
-              <li>
-                <p></p>
-              </li>
-              
             </ul>
           </div>
           <div class="products-label01">このwebアプリケーションへは<a class="url" href="https://train-ticket-0923.herokuapp.com/" target="_blank">こちら</a>から</div>
@@ -120,27 +115,24 @@
           </div>
           <div class="product-content-left">
             <ul>
-              <h3>＜作成して工夫した点＞</h3>
+              <h3>このアプリケーション全体の紹介</h3>
               <li>
-                <p>ユーザーの視点にそったページ構成</p>
+                <p>Vue.jsを用いたSPAアプリケーション</p>
               </li>
               <li>
-                <p>web用とmobile用と画像を使い分けた点</p>
-              </li>
-              <li>
-                <p>ScSSを導入した点</p>
+                <p>axiosを用いた非同期でのサーバーサイドとの連携</p>
               </li>
             </ul>
           </div>
           
           <div class="product-content-right">
-            <h3>＜作成して反省すべき点＞</h3>
+            <h3>開発環境</h3>
             <ul>
-              <li>
-                <p>vue.routerを構想段階で考えていなかったため、大幅な変更が生じた点</p>
+              <li>使用言語
+                <p>HTML SCSS Vue.js</p>
               </li>
-              <li>
-                <p>Web用とモバイル用のメニューを初期から考えずにデザインを決めてしまった点</p>
+              <li>開発環境
+                <p>GitHub  vscode  firebase</p>
               </li>
             </ul>
           </div>
@@ -213,9 +205,9 @@
               </div>
               <div class="product_top">
                 <h3 class="title_top">お問い合わせページ</h3>
-                <img src="@/assets/ec-contact.gif" alt="次へ" class="product-gif">
+                <img src="@/assets/contacts.gif" alt="次へ" class="product-gif">
                 <div class="product_top_coment">
-                  <p>現在の入力位置がわかりやすいようにリアルタイムで記述内容を処理しています。また、送信が完了したら最初の状態に戻るようになっています。<br></p>
+                  <p>現在の入力位置がわかりやすいようにリアルタイムで記述内容を処理しています。また、送信後は入力内容を反映した内容が表示され、firebaseのクラウドストレージに送信内容が保存されるなどサーバーサイドを含んだ実装も一部取り入れています。<br></p>
                   <h4 class="center">このページのコードは下記から</h4>
                   <div class="product_link">
                     <span class="code_link"><a href="https://github.com/katomanzu0923/ec-persimmon/blob/master/src/components/Contact.vue" target="_blank">Contact.vue</a></span>
@@ -225,6 +217,76 @@
             </div>
           </div>
           <label v-on:click='isActiveProduct02=!isActiveProduct02' class="products-label" for="check2">
+					</label>
+        </div>
+			</div>
+		</div>
+    <div class="products-body02">
+			<div class="product-title">
+					<h2>面接練習アプリ</h2>
+			</div>
+			<div class="product_content">
+          <div>
+            <img src="@/assets/top.png" alt="次へ" class="main">
+          </div>
+          <div class="product-content-left">
+            <ul>
+              <h3>このアプリケーション全体の紹介</h3>
+              <li>
+                <p>Vue.jsを用いたSPAアプリケーション</p>
+              </li>
+              <li>
+                <p>axiosを用いた非同期でのサーバーサイドとの連携</p>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="product-content-right">
+            <h3>開発環境</h3>
+            <ul>
+              <li>使用言語
+                <p>HTML SCSS Vue.js </p>
+              </li>
+              <li>開発環境
+                <p>GitHub  vscode  firebase</p>
+              </li>
+            </ul>
+          </div>
+          <div class="products-label01">このwebアプリケーションへは<a class="url" href="https://interview0923.netlify.app/" target="_blank">こちら</a>から</div>
+          <div class="product-readmore-body">	
+            <input id="check3" class="readmore-check" type="checkbox">
+            <div class="product-readmore">
+              <div class="none" v-bind:class='{isActive:isActiveProduct02}'>
+                各ページの詳細
+              </div><br>
+              <div>
+              <div>
+              </div>
+              <div class="product_top">
+                <h3 class="title_top">Topページ</h3>
+                <img src="@/assets/ec-top.gif" alt="次へ" class="product-gif">
+                <div class="product_top_coment">
+                  <div class="product_link">
+                    <p>ヘッダーは擬似要素でボーダーラインを作り、vue.jsを用いて要素に応じた遷移を実現しました。また、top画面はcssのアニメーションではなくて、Vue.jsのtransitionを用いて画像を滑らかに切り替わるようにしました。<br></p>
+                    <h4 class="center">このページのコードは下記から</h4>
+                    <span class="code_link"><a href="https://github.com/katomanzu0923/interview/blob/master/src/App.vue" target="_blank">Top.vue</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="product_top">
+                <h3 class="title_top">未登録ユーザー</h3>
+                <img src="@/assets/ec-about.gif" alt="次へ" class="product-gif">
+                <div class="product_top_coment">
+                  <p>画像の遷移の際に今どこにいるのかに関しては、v-バインドを用いてclassの変更によって実現しました。また、コンテンツ全体で柿が表現できるようにカラーとボーターを調整してあります。<br></p>
+                  <h4 class="center">このページのコードは下記から</h4>
+                  <div class="product_link">
+                    <span class="code_link"><a href="https://github.com/katomanzu0923/interview/blob/master/src/components/NewContents.vue" target="_blank">About.vue</a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <label v-on:click='isActiveProduct02=!isActiveProduct02' class="products-label" for="check3">
 					</label>
         </div>
 			</div>

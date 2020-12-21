@@ -7,14 +7,14 @@
       <div class="home_profile">
         <div class="home_profile_left">
           <div class="en">
-            h
+            
           </div>
           <div class="name">
             加藤貴大
           </div>
         </div>  
         <div class="home-profile-right">
-            <p>今年の2月まで既卒の状態で新卒就活を始めるも歩みたい道がわからず悩む日々。そんな中webエンジニアとして活躍したいと思いwebエンジニアを志す。まずは力をつけたい。このwebサイトはそんな学習中での気づきのログです。
+            <p>今年の2月まで既卒の状態で新卒就活を始めるも歩みたい道がわからず悩む日々。そんな中webエンジニアとして活躍したいと思いwebエンジニアを志す。まずは力をつけたい。このwebサイトはそんな学習中での気づきです。
             </p>
         </div>
       </div>
@@ -62,7 +62,7 @@
             <div class="arrow">
             </div>
             <div class="content2">
-              <p>Ruby on rainls を用いてマークアップ言語からプログラミング言語を駆使して静的及び動的アプリケーションを開発できる状態へと成長。また、プログラミング言語だけでなく、slak,ターミナル、github,mysqlなどweb開発に必要な知識や武器を取得し使える状態へと成長</p>
+              <p>Ruby on rainls を用いてマークアップ言語やプログラミング言語を駆使して静的及び動的アプリケーションを開発できる状態へと成長。また、プログラミング言語だけでなく、slak,ターミナル、github,mysqlなどweb開発に必要な知識や武器を取得し使える状態へと成長</p>
             </div>
           </div>
           <input id="check３" class="home_content-check" type="checkbox">
@@ -80,12 +80,12 @@
           <h1 class="line">Udemy</h1>
           <div class="topic2">
             <div class="content1">
-              <p>Ruby on rails Web開発を行う中でできることが増えた反面自分に必要なことが、自分の現在地が明確にわかる状態</p>
+              <p>一通り学習を終えアプリケーションを作れるようになったため、自分に足りない技術を自らの意思で考えて学びの選択ができる状態</p>
             </div>
             <div class="arrow">
             </div>
             <div class="content2">
-              <p>Scssを用いて差的な開発における最適css設計、現在多用されているモダンなjavascriptであるvueを用いた開発ができる状態へと成長</p>
+              <p>Scssを用いた最適なcss設計、現在多用されているモダンなjavascriptであるvue.jsを用いた開発ができる状態へと成長</p>
             </div>
           </div>
           <input id="check4" class="home_content-check" type="checkbox">
@@ -96,8 +96,7 @@
           </div> 
 					</span>
           
-          <p class="re-content">曖昧な事をゼロにする事を意識しながら学習を進めました。常にわからない事はメンターに質問出来る環境にあったのでどんなことでも質問をしてわからない事を潰していきました。<br>
-           また、質問がより自分のためになるようにわからない点に対してqiitaなどのwebサイトを用いてある程度答えを出して質問することによって自己解決能力を効率よく高めることに成功しました。</p>
+          <p class="re-content">今まで学習したjQueryとの違いを意識しながらVue.jsを学習しました。また、映像教材であったため質問環境がTECHCAMPより整っていなかった為、Vue.jsの公式ドキュメントを積極的に活用し理解を進めました。</p>
           </div>
           <label v-on:click='isActive=!isActive' class="home_content-label" for="check4">
 					</label>
@@ -275,8 +274,6 @@ h1 {
 .home_content{
     position: relative;
     box-sizing: border-box;
-    /*以下お好み*/
-    /* ボーダーを付ける場合 */
     padding: 10px;
     border: 1px solid #4e60ff81;
 		text-align: start;
@@ -329,6 +326,7 @@ h1 {
 .home_content-check:checked ~ .home_content-label:before{
     content: '閉じる';
     font-size: 1rem;
+    padding: 10px;
 }
 .home_content-check:checked ~ .home_content-content{
     height: auto;
@@ -446,7 +444,7 @@ h1 {
     display: table;
     margin: 0 auto;
     z-index: 2;
-    padding: 0 10px;
+    padding: 0;
     background-color: #4e5fff;
     color: white;
     border-radius: 10px;

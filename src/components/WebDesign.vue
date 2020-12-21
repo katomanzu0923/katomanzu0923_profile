@@ -23,13 +23,19 @@
             <div class="design-content-product01">
               <img src="@/assets/name2.png" alt="次へ" class="jpf">
                 <div class="design-content-coment">
-                  ・CSSだけでは不可能なボタンを作成。
+                  ・はためく国旗を再現
                 </div>
             </div>
             <div class="design-content-product02">
               <img src="@/assets/name3.png" alt="次へ" class="jpf">
                 <div class="design-content-coment">
-                  ・CSSだけでは不可能なバナーを作成。
+                  ・CSSだけでは難しいテキストを作成。
+                </div>
+            </div>
+            <div class="design-content-product01">
+              <img src="@/assets/name4.png" alt="次へ" class="jpf">
+                <div class="design-content-coment">
+                  ・柿模様を模した色に加え葉っぱを追加
                 </div>
             </div>
         </div>

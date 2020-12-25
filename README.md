@@ -24,7 +24,9 @@ about the other skill
 
 ## URL
 
-https://katomanzu0923-profile.netlify.app/
+https://katomanzu-profile.netlify.app
+
+
 
 
 

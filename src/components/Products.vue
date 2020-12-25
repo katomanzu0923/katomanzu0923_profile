@@ -227,7 +227,7 @@
 			</div>
 			<div class="product_content">
           <div>
-            <img src="@/assets/top.png" alt="次へ" class="main">
+            <img src="@/assets/c7ef024946fb12c9725c2c51924909ac (1).gif" alt="次へ" class="main">
           </div>
           <div class="product-content-left">
             <ul>
@@ -264,23 +264,34 @@
               </div>
               <div class="product_top">
                 <h3 class="title_top">Topページ</h3>
-                <img src="@/assets/ec-top.gif" alt="次へ" class="product-gif">
+                <img src="@/assets/f0a7ce303bd21e5f65711131c6969340.gif" alt="次へ" class="product-gif">
                 <div class="product_top_coment">
                   <div class="product_link">
-                    <p>ヘッダーは擬似要素でボーダーラインを作り、vue.jsを用いて要素に応じた遷移を実現しました。また、top画面はcssのアニメーションではなくて、Vue.jsのtransitionを用いて画像を滑らかに切り替わるようにしました。<br></p>
+                    <p><br></p>
                     <h4 class="center">このページのコードは下記から</h4>
-                    <span class="code_link"><a href="https://github.com/katomanzu0923/interview/blob/master/src/App.vue" target="_blank">Top.vue</a></span>
+                    <span class="code_link"><a href="https://github.com/katomanzu0923/interview/blob/master/src/App.vue" target="_blank">App.vue</a></span>
                   </div>
                 </div>
               </div>
               <div class="product_top">
-                <h3 class="title_top">未登録ユーザー</h3>
-                <img src="@/assets/ec-about.gif" alt="次へ" class="product-gif">
+                <h3 class="title_top">面接ページ01</h3>
+                <img src="@/assets/inter01.gif" alt="次へ" class="product-gif">
                 <div class="product_top_coment">
-                  <p>画像の遷移の際に今どこにいるのかに関しては、v-バインドを用いてclassの変更によって実現しました。また、コンテンツ全体で柿が表現できるようにカラーとボーターを調整してあります。<br></p>
+                  <p>質問内容をランダムに表示し、毎回内容が異なる面接を実装<br></p>
                   <h4 class="center">このページのコードは下記から</h4>
                   <div class="product_link">
-                    <span class="code_link"><a href="https://github.com/katomanzu0923/interview/blob/master/src/components/NewContents.vue" target="_blank">About.vue</a></span>
+                    <span class="code_link"><a href="https://github.com/katomanzu0923/interview/blob/master/src/components/NewContents.vue" target="_blank">.NewContentsvue</a></span>
+                  </div>
+                </div>
+              </div>
+              <div class="product_top">
+                <h3 class="title_top">面接ページ02</h3>
+                <img src="@/assets/inter02.gif" alt="次へ" class="product-gif">
+                <div class="product_top_coment">
+                  <p>質問中に気づいたことをメモし、面接終了後に全て振り返れるように保存機能を実装<br></p>
+                  <h4 class="center">このページのコードは下記から</h4>
+                  <div class="product_link">
+                    <span class="code_link"><a href="https://github.com/katomanzu0923/interview/blob/master/src/components/NewContents.vue" target="_blank">NewContentsvue</a></span>
                   </div>
                 </div>
               </div>
